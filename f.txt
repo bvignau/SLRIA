@@ -1,0 +1,17 @@
+entry
+title 
+url 
+author 
+year 
+booktitle
+journal
+chapter
+editor
+howpublished
+institution
+month
+number
+organization
+pages
+publisher
+volume
