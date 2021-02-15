@@ -25,7 +25,7 @@ def ExtractTextFromPDF(filename,path):
         text = ""
         for page in doc:
             text += page.getText()
-    with open(path+"/temp.txt", 'w', encoding='utf-8') as of:
+    with open(path+"/text_"+filename+".txt", 'w', encoding='utf-8') as of:
         of.write(text)
         
 def CorrectEncodeSave(text,filename):
@@ -40,18 +40,15 @@ def CorrectEncodeSave(text,filename):
                 of.write(r)
     
 
-def ExtractReferencesFromPDF(filename:str,round:int):
-    if ".pdf" not in filename:
-        print("error not a pdf file, exit")
+def ExtractReferencesFromTxt(filename:str,round:int):
+    if ".txt" not in filename:
+        print("error not a txt file, exit")
         exit
     else :
-        fname=filename.strip().split(".")[0]+"-temp.txt"
-        find_references_in_text("temp.txt",fname)
-        val=os.system("anystyle -f bib parse "+fname+ " bib_round_"+str(round))
+        val=os.system("anystyle -f bib parse "+filename+ " bib_round_"+str(round))
         if val != 0:
             print("ERROR WHILE PARSING REFERENCES")
             print(val)
             exit(1)
-        os.remove(fname)
-        os.remove("temp.txt")
+
 

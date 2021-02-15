@@ -1,4 +1,3 @@
-from pdfToBib import ExtractReferencesFromPDF
 from references import *
 from bibParser import *
 from request import *
@@ -86,19 +85,31 @@ def main():
             requests, COMPARISON, KWORDS, NKWORDS, ROUND, PAPERS_BY_REQUEST, DATABASES = ConfigParse(BASE_DIR, False)
             folder_path="/papers_round_"+str(ROUND)
             os.chdir(BASE_DIR)
-            
-
+            SnowballExtract(folder_path)
+            print("References Extracted for Round "+str(ROUND))
+            print("Please check for error, in each reference file")
             # Check round folder
             # for each folder, extract References
             # ASK to check txt file
         if arg.command == "merge" :
             print("TOFO")
+            requests, COMPARISON, KWORDS, NKWORDS, ROUND, PAPERS_BY_REQUEST, DATABASES = ConfigParse(BASE_DIR, True)
+            folder_path="/papers_round_"+str(ROUND)
+            os.chdir(BASE_DIR)
             # Find good folder / round
             # dump bib
+            SnowballDumpReferences(folder_path,ROUND)
+            #########
+            references_lists=CreateRefLists("bib_round_"+str(ROUND))
+            if ROUND > 0 :
+                references_lists.append(GetReferencesFromPreviousRound(ROUND))
             # merge references
+            merged_ref=Round_Merge_All_List(references_lists)
             # generate new bib
             # generate csv with all new papers
-            # generate folders for all new papers
+            # update filters with papers title & auth
+            # generate filtered csv => title OR auth filter
+            # generate folders for all filtered papers
             # update round
 
 if __name__ == "__main__":
