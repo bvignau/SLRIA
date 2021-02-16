@@ -1,6 +1,7 @@
 from references import *
 from bibParser import *
 from request import *
+from snowball import *
 import configparser
 import argparse
 import os
@@ -81,9 +82,8 @@ def main():
             StatsForRequests(sorted_papers,merged_papers,PAPERS_BY_REQUEST,requests,DATABASES,BASE_DIR)
             GenDirectoriesForPapers(merged_papers,sorted_papers,BASE_DIR,0)
         if arg.command == "extract" :
-            print("TODO")
             requests, COMPARISON, KWORDS, NKWORDS, ROUND, PAPERS_BY_REQUEST, DATABASES = ConfigParse(BASE_DIR, False)
-            folder_path="/papers_round_"+str(ROUND)
+            folder_path="./papers_round_"+str(ROUND)
             os.chdir(BASE_DIR)
             SnowballExtract(folder_path)
             print("References Extracted for Round "+str(ROUND))
@@ -93,23 +93,27 @@ def main():
             # ASK to check txt file
         if arg.command == "merge" :
             print("TOFO")
-            requests, COMPARISON, KWORDS, NKWORDS, ROUND, PAPERS_BY_REQUEST, DATABASES = ConfigParse(BASE_DIR, True)
-            folder_path="/papers_round_"+str(ROUND)
+            requests, COMPARISON, KWORDS, NKWORDS, ROUND, PAPERS_BY_REQUEST, DATABASES = ConfigParse(BASE_DIR, False)
+            folder_path="./papers_round_"+str(ROUND)
             os.chdir(BASE_DIR)
             # Find good folder / round
             # dump bib
             SnowballDumpReferences(folder_path,ROUND)
             #########
-            references_lists=CreateRefLists("bib_round_"+str(ROUND))
+            references_lists=CreateRefLists("bib_round_"+str(ROUND),ROUND)
             if ROUND > 0 :
                 references_lists.append(GetReferencesFromPreviousRound(ROUND))
             # merge references
-            merged_ref=Round_Merge_All_List(references_lists)
+            merged_ref=Round_Merge_All_List(references_lists,level=COMPARISON)
             # generate new bib
+            genBib(merged_ref,"bib_round_"+str(ROUND)+".bib")
             # generate csv with all new papers
+            genCSV(merged_ref,"bib_round_"+str(ROUND)+".csv")
             # update filters with papers title & auth
             # generate filtered csv => title OR auth filter
+            Gen_filtered_CSVs(merged_ref,ROUND,"filtered_new_papers_round_"+str(ROUND)+".csv",KWORDS,NKWORDS)
             # generate folders for all filtered papers
+            os.mkdir("papers_round"+str(ROUND+1))
             # update round
 
 if __name__ == "__main__":

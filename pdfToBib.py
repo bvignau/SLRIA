@@ -21,12 +21,16 @@ def find_references_in_text(input_filename:str, output_filename:str):
 
 
 def ExtractTextFromPDF(filename,path):
-    with fitz.open(path+filename) as doc:
-        text = ""
-        for page in doc:
-            text += page.getText()
-    with open(path+"/text_"+filename+".txt", 'w', encoding='utf-8') as of:
-        of.write(text)
+    if os.path.exists(path+filename) :
+        with fitz.open(path+filename) as doc:
+            text = ""
+            for page in doc:
+                text += page.getText()
+        with open(path+"/text_"+filename+".txt", 'w', encoding='utf-8') as of:
+            of.write(text)
+    else :
+        print("error no file "+path+filename)
+
         
 def CorrectEncodeSave(text,filename):
     with open(filename,'w', encoding='utf-8') as of:
@@ -45,10 +49,8 @@ def ExtractReferencesFromTxt(filename:str,round:int):
         print("error not a txt file, exit")
         exit
     else :
-        val=os.system("anystyle -f bib parse "+filename+ " bib_round_"+str(round))
+        val=os.system("anystyle -f bib parse '"+filename+ "' bib_round_"+str(round))
         if val != 0:
-            print("ERROR WHILE PARSING REFERENCES")
-            print(val)
-            exit(1)
+            print("[!] ERROR "+str(val)+" WHILE PARSING REFERENCES OF "+filename)
 
 

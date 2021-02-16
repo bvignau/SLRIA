@@ -6,7 +6,7 @@ TITLE = 40
 OTHERS = 1 
 class Reference():
     def __init__(self):
-        self.ID=""
+        self.ID="unknow"
         self.ENTRYTYPE =""
         self.title = ""
         self.url = ""
@@ -25,9 +25,11 @@ class Reference():
         self.publisher=""
         self.volume=""
         self.appearance=0 # nombre de fois que la référence est apparue dans notre recherche
+        self.round=0
     
 
-    def create_Ref(self,ref):
+    def create_Ref(self,ref,slr_round):
+        self.round=slr_round
         if 'ENTRYTYPE' in ref:
             self.ENTRYTYPE = str(ref['ENTRYTYPE'])
         else:
@@ -35,9 +37,9 @@ class Reference():
         if 'ID' in ref:
             self.ID = str(ref['ID'])
         else:
-            self.ID ="unknow ID"
+            self.ID ="unknow_ID"
         if 'title' in ref:
-            self.title  = str(ref['title'])
+            self.title  = str(ref['title']).lower()
             if self.title[-1:] == '”':
                 self.title=self.title[:-1]
         else:
@@ -47,7 +49,7 @@ class Reference():
         else:
             self.url  ="unknow url"
         if 'author' in ref:
-            self.author  = str(ref['author'])
+            self.author  = str(ref['author']).lower()
         else:
             self.author  ="unknow author"
         if 'year' in ref:
@@ -55,11 +57,11 @@ class Reference():
         else:
             self.year  ="unknow year"
         if 'booktitle' in ref:
-            self.booktitle = str(ref['booktitle'])
+            self.booktitle = str(ref['booktitle']).lower()
         else:
             self.booktitle ="unknow booktitle"
         if 'journal' in ref:
-            self.journal = str(ref['journal'])
+            self.journal = str(ref['journal']).lower()
         else:
             self.journal ="unknow journal"
         if 'chapter' in ref:
@@ -67,7 +69,7 @@ class Reference():
         else:
             self.chapter ="unknow chapter"
         if 'editor' in ref:
-            self.editor = str(ref['editor'])
+            self.editor = str(ref['editor']).lower()
         else:
             self.editor ="unknow editor"
         if 'howpublished' in ref:
@@ -75,7 +77,7 @@ class Reference():
         else:
             self.howpublished ="unknow howpublished"
         if 'institution' in ref:
-            self.institution = str(ref['institution'])
+            self.institution = str(ref['institution']).lower()
         else:
             self.institution ="unknow institution"
         if 'month' in ref:
@@ -87,7 +89,7 @@ class Reference():
         else:
             self.number ="unknow number"
         if 'organization' in ref:
-            self.organization = str(ref['organization'])
+            self.organization = str(ref['organization']).lower()
         else:
             self.organization ="unknow organization"
         if 'pages' in ref:
@@ -97,12 +99,12 @@ class Reference():
         else:
             self.pages ="unknow pages"
         if 'publisher' in ref:
-            self.publisher = str(ref['publisher'])
+            self.publisher = str(ref['publisher']).lower()
             
         else:
             self.publisher ="unknow publisher"
         if 'volume' in ref:
-            self.volume = str(ref['volume'])
+            self.volume = str(ref['volume']).lower()
         else:
             self.volume ="unknow volume"
         self.appearance=1
@@ -114,15 +116,15 @@ class Reference():
         return self.title+" authored by "+self.author+" in "+self.journal
     
     def CSV_Line(self):
-        return self.title+";"+self.url+";"+self.author+";"+self.journal+";"+self.year+";"
+        return self.title+";"+self.author+";"+self.journal+";"+str(self.year)+";"+str(self.round)+";"+str(self.appearance)+";\n"
 
 def authorsComp(R1,R2):
     score=0.0
     if "unknow" in R1.author or "unknow" in R2.author : # si l'un des deux est inconnu, pas de comparaisaon possible
         return 0
     else :
-        auth1=R1.author.split("AND")
-        auth2=R2.author.split("AND")
+        auth1=R1.author.split("and")
+        auth2=R2.author.split("and")
         for a1 in auth1 :
             if a1 in auth2 :
                 score+=AUTHORS/len(auth1)
@@ -150,8 +152,12 @@ def RefCompare(R1:Reference, R2:Reference, lvl:int):
 
 def MergeRef(R1:Reference,R2:Reference, lvl:int):
     if RefCompare(R1,R2,lvl) :
-        R1.appearance+=1
-        return [R1]
+        if R1.round < R2.round :
+            R1.appearance+=R2.appearance
+            return [R1]
+        else :
+            R2.appearance+=R1.appearance
+            return [R2]
     else :
         return [R1,R2]
 
@@ -244,16 +250,23 @@ def genBib(refList, file):
     for ref in refList:
         entry={}
         for a in attr :
-            if  a != 'appearance' :
+            if  a != 'appearance' and a != 'round':
                 att=getattr(ref, a, "unknow")
-                if "unknow" not in att : 
+                if "unknow" not in str(att) or a == 'ID': 
                     entry[a]=att
         entries.append(entry)
     db=BibDatabase()
     db.entries=entries
     writer = BibTexWriter()
-    with open(file, "w") as bibfile:
+    with open("./final_bib/"+file, "w") as bibfile:
         bibfile.write(writer.write(db))
+
+
+def genCSV(L:list,file):
+    with open("./csv/"+file,"w") as csvFile :
+        csvFile.write("title;author;journal;year;round;appearance;\n")
+        for ref in L :
+            csvFile.write(ref.CSV_Line())
 
 def printList(L:list):
     for r in L :
