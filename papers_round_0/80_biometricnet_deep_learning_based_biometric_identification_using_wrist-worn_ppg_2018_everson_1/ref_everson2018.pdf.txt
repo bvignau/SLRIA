@@ -1,0 +1,16 @@
+ 
+Bonissi, R. Donida Labati, L. Perico, R. Sassi, F. Scotti, and L.  Sparagino, "A preliminary study on continuous authentication methods  for photoplethysmographic biometrics", in Proc. of the 2013 IEEE  Workshop on Biometric Measurements and Systems for Security and  Medical Applications (BioMS 2013).  
+A. Lourenço, H. Silva, A. Fred, "Unveiling the biometric potential of  finger-based ecg signals", Computational intelligence and neuroscience,  vol. 2011, pp. 5, 2011  
+Y. Gu, Y. Zhang, Y. Zhang, "A novel biometric approach in human  verification by photoplethysmographic signals", 4th International IEEE  EMBS Special Topic Conference on Information Technology  Applications in Biomedicine, pp. 13-14, 2003.  
+Y. Gu, Y. Zhang, "Photoplethysmographic authentication through fuzzy  logic", IEEE EMBS Asian-Pacific Conference on Biomedical  Engineering, pp. 136-137, 2003.  
+P. Spachos, J. Gao, D. Hatzinakos, "Feasibility study of photo- plethysmographic signals for biometric identification", 17th IEEE  International Conference on Digital Signal Processing (DSP), pp. 1-5,  2011.  
+Kavsaoğlu, A. Reşit, Kemal Polat, and M. Recep Bozkurt. "A novel  feature ranking algorithm for biometric recognition with PPG signals."  Computers in biology and medicine 49 (2014): 1-14.  
+Jindal, Vasu, et al. "An adaptive deep learning approach for PPG-based  identification." Engineering in Medicine and Biology Society (EMBC),  2016 IEEE 38th Annual International Conference of the. IEEE, 2016.            
+Zhang, Zhilin, Zhouyue Pi, and Benyuan Liu. "TROIKA: A general  framework  for  heart  rate  monitoring  using  wrist-type  photoplethysmographic signals during intensive physical exercise."  IEEE Transactions on Biomedical Engineering 62.2 (2015): 522-531.  
+Lalor, John P., Hao Wu, and Hong Yu. "CIFT: Crowd-Informed Fine- Tuning to Improve Machine Learning Ability."  
+Bengio, Yoshua. "Learning deep architectures for AI." Foundations and  trends® in Machine Learning 2.1 (2009): 1-127.  
+LeCun, Yann, et al. "Gradient-based learning applied to document  recognition." Proceedings of the IEEE 86.11 (1998): 2278-2324.  
+Hochreiter, Sepp, and Jürgen Schmidhuber. "Long short-term memory."  Neural computation 9.8 (1997): 1735-1780.  
+Klambauer, Günter, et al. "Self-Normalizing Neural Networks." arXiv  preprint arXiv:1706.02515 (2017).   
+Han, Song, Huizi Mao, and William J. Dally. "Deep compression:  Compressing deep neural networks with pruning, trained quantization  and huffman coding." arXiv preprint arXiv:1510.00149 (2015).  
+M. Panwar, J. Padmini, N. Venkatasubrahmanian, A. Acharyya, and D.  Biswas, "Modified Distributed Arithmetic Based Low Complexity CNN  Architecture Design Methodology", 23rd IEEE European Conference on  Circuit Theory and Design (ECCTD), Catania, Italy, September 4-6,  2017.

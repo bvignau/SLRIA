@@ -1,5 +1,7 @@
 from bibtexparser.bwriter import BibTexWriter
 from bibtexparser.bibdatabase import BibDatabase
+import jellyfish
+
 
 AUTHORS = 10
 TITLE = 40
@@ -136,8 +138,9 @@ def authorsComp(R1,R2):
 # all other 1 pts
 def RefCompare(R1:Reference, R2:Reference, lvl:int):
     score=0
-    if R1.title == R2.title and R1.title != "unknow title":
-        score+=TITLE
+    if R2.title != "unknow title" and R1.title != "unknow title":
+        if jellyfish.damerau_levenshtein_distance(R2.title,R1.title) < 5 :
+            score+=TITLE
     score+=authorsComp(R1,R2)
     attrR1=R1.__dict__
     attrR2=R2.__dict__

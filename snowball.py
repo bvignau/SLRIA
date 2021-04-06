@@ -3,6 +3,8 @@ from references import *
 from  pdfToBib import *
 from bibParser import ImportBib
 import re
+import jellyfish
+
 
 # This function extract the text from all pdf in the folder and subfolder given
 # Then it extract the references part. This is done by identifying the IEEE Style "[X] ref". This may not work with other citation style
@@ -88,4 +90,20 @@ def Gen_filtered_CSVs(L:list,slr_round:int,file_name,filter_words:list,NKwords:i
         filtered_csv.write("###;###;###;###;###;\n")
         for ref in filtered :
             filtered_csv.write(ref.CSV_Line())
-    
+
+def Delete_Old(old_csv:str,new_csv:str):
+    final=[]
+    with open(old_csv,"r") as old_file:
+        with open(new_csv,"r") as new_file:
+            old_ref=old_file.readlines()
+            new_ref=new_file.readlines()
+            for oref in old_ref :
+                o_title=oref.split(';')[0]
+                o_auth=o_title.split(' ')[-1]
+                o_title.replace(o_auth,'')
+                for nref in new_ref :
+                    parts=nref.split(';')
+                    n_auth = parts[1]
+                    n_title = parts[0]
+                    if jellyfish.damerau_levenshtein_distance(o_title,n_title) < 5 :
+                        final.append(nref)

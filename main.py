@@ -79,8 +79,13 @@ def main():
             # merge 1st round
             requests, COMPARISON, KWORDS, NKWORDS, ROUND, PAPERS_BY_REQUEST, DATABASES = ConfigParse(BASE_DIR, False)
             sorted_papers,merged_papers=MergeRequests(requests,PAPERS_BY_REQUEST,DATABASES,BASE_DIR)
+            titles_sorted=[t.replace("_"," ") in sorted_papers.keys()]
             StatsForRequests(sorted_papers,merged_papers,PAPERS_BY_REQUEST,requests,DATABASES,BASE_DIR)
             GenDirectoriesForPapers(merged_papers,sorted_papers,BASE_DIR,0)
+            with open("papers_r0.txt","w") as tit_files :
+                for t in titles_sorted :
+                    tit_files.writelines(t)
+
         if arg.command == "extract" :
             requests, COMPARISON, KWORDS, NKWORDS, ROUND, PAPERS_BY_REQUEST, DATABASES = ConfigParse(BASE_DIR, False)
             folder_path="./papers_round_"+str(ROUND)

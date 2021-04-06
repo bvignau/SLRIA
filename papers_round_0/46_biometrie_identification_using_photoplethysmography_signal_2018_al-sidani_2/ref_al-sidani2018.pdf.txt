@@ -1,0 +1,5 @@
+A. K. Jain, A. Ross, and S. Prabhakar "An introduction to biometric  recognition," IEEE transactions on circuits and systems for video  technology, vol. 14, pp. 4-20, January 2014.  
+S. Gaur, V.A.Shah, and M. Thakker, "Biometric recognition techniques:  a review," International journal of advanced research in electrical,  electronics and instrumentation engineering, vol. 1, pp.1-9, October  2012.  
+P. H. Charlton, T. Bonnici, L. Tarassenko, J. Alastruey, D. A. Clifton, R.  Beale, and P. J Watkinson, "Extraction of respiratory signals from the  electrocardiogram and photoplethysmogram: technical and physiological  determinants," Institute of Physics and Engineering in Medicine, pp.  669–690, March 2017.  
+K. Polat, M.Recep Bozkurt A. Reşit Kavsaoğlu, "A novel feature  ranking algorithm for biometric recognition with PPG signals,"  Computers in Biology and Medicine, pp. 1-14, March 2014.  
+J. Han, M. Kamber, J. Pei, Data Mining Concepts and Techniques, 3rd  ed.: Morgan Kaufmann, 2012.    ISBN: 978-1-5386-2742-6/18/$31.00 ©2018 IEEE 15 
