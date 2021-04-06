@@ -1,0 +1,3 @@
+title=Digital Cardiovascular Biomarker Responses to Transcutaneous Cervical Vagus Nerve Stimulation: State-Space Modeling, Prediction, and Simulation.
+year=2020
+author=Ah

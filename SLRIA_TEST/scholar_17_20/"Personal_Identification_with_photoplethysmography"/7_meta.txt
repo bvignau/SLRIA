@@ -1,0 +1,3 @@
+title=Automated myocardial infarction identification based on interbeat variability analysis of the photoplethysmographic data
+year=2020
+author=Chakraborty

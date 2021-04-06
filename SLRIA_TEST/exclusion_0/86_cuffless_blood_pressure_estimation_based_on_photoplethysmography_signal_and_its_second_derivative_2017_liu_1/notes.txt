@@ -1,0 +1,1 @@
+utilise 1er et 2nd dérivée du PPG pour estimer la pression sanguine. HS

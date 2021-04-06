@@ -1,0 +1,1 @@
+Utilise le PPG pour détecter des infections cardiaque (du myocarde) par variabvilité inter battement. HS

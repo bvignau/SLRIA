@@ -1,0 +1,3 @@
+title=PulseGAN: Learning to generate realistic pulse waveforms in remote photoplethysmography
+year=2021
+author=Song

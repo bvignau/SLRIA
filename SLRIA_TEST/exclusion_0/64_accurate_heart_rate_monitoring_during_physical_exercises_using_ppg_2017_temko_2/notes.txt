@@ -1,0 +1,1 @@
+utilise nouvels techniques pour déterminer plus finement le rythme cardiaque avec un PPG. HS

@@ -1,0 +1,1 @@
+Développe un nouvel algo avec NN + soustraction de spectre pour augmenter la qualité de la mesure du rythme cardiaque avec un PPG. HS

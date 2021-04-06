@@ -1,0 +1,3 @@
+title=Isostructural softening of vulcanized nanocomposites. 
+year=2020
+author=Baeza

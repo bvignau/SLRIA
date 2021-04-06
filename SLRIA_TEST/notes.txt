@@ -1,0 +1,19 @@
+Ne prends pas en compte les US paptents
+Supprime un papier si : 
+ * Utilise pas de PPG
+ * Identifie pas de patients
+ * création d'une BD sans l'exploiter
+ * Fonctionnement d'un PPG
+ * liste des application d'un PPG
+ * identifier des émotions avec un PPG
+ * identification multimodale (ex PPG + ECG)
+ identifier des actions
+ monitorer fonctions vitales
+
+Pour le snowabll prend pas:
+    *  BDD
+    * si uniquement URL 
+    * objet commercial
+    * nom d'une institution
+
+Ex: Identifie des problèmes cardiaques, identifie des activités (marche, vélo etc), identifie des émotions (coups de foudre).

@@ -1,0 +1,3 @@
+title=Continuous Stress Detection Using Wearable Sensors in Real Life: Algorithmic Programming Contest Case Study.
+year=2019
+author=Can

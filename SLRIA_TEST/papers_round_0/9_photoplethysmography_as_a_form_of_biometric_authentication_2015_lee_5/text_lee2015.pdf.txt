@@ -1,0 +1,216 @@
+ 
+ 
+I. INTRODUCTION 
+ 
+In the recent decade, proliferation of mobile devices has 
+driven demand for high-strength security of personal and 
+private information. While long alphanumeric passwords are 
+the ideal method for user logon, the time required to input 
+the characters greatly decreases the convenience of having 
+such security. This is especially the case in mobile systems 
+where an individual may switch the device on and off in a 
+short period of time. Pattern-based unlocking on a grid is a 
+more convenient alternative; however a third party looking 
+over the shoulder would have no problem observing and 
+memorizing the pattern. Ideally, an authentication system 
+should both maximize the security while minimizing 
+inconvenience. These two requirements lead us to the world 
+of biometrics. 
+Biometric authentication takes advantage of the unique 
+information that can be measured from our body. Because 
+this data is both unique to an individual and convenient to 
+measure, security researchers have been looking for ways to 
+integrate biometrics as a mainstream form of secure 
+authentication. 
+Fingerprints are the prevailing form of biometrics. 
+Unfortunately, due to the ease of lifting and copying a 
+fingerprint, all high-security fingerprint biometric systems 
+require supervised authentication. That is, a third party needs 
+to observe the authentication to ensure a false finger is not 
+used. In cases where stored information is less valuable, 
+individuals may find unsupervised fingerprint authentication 
+acceptable. 
+With information requiring even higher security, we must 
+investigate 
+alternative 
+forms 
+of 
+biometrics. 
+Electrocardiogram (ECG) signals generated from the heart 
+are showing signs of becoming a valid form of biometric 
+authentication [1]. There are two main limitations with ECG 
+biometrics. 
+Firstly, 
+additional 
+electronics 
+must 
+be 
+implemented into the device. This would require significant 
+modification of the internal hardware as well as the addition 
+of electrodes to the external chassis. Total implementation 
+will make a great impact on device design and cost. 
+Secondly, an ECG signal requires two hands to measure. If 
+food is in the right hand and the device is held in the left, 
+then ECG authentication cannot occur without awkward 
+hand placement. 
+An alternative biosignal which only requires one hand 
+would be the photoplethysmogram (PPG). A PPG sensor 
+measures the absorption of light through a finger as the heart 
+pulses. Current studies show that PPG signals are unique 
+among individuals; however the results are limited with 
+small samples sizes, poor performance, and/or little 
+investigation into PPG variability [2,3]. With such little 
+research available on PPG-based biometrics, we would like 
+to further determine its potential as a valid, accurate, and 
+secure biosignal for authentication. In addition, PPG sensors 
+are already included in many devices and used as a heart rate 
+monitor. Thus, no additional hardware modifications are 
+necessary. 
+ 
+II. MATERIALS AND METHODS 
+ 
+The PPG system used for this research is the Texas 
+Instruments AFE4490/4400 integrated analog front end for 
+pulse oximeters. The system is small and similar to hardware 
+that is implemented in mobile devices. A Nonin clip is 
+attached to the device and then connected to a human finger 
+for measurement. Raw data is recorded and exported as a 
+text file. 
+For processing, MATLAB is used to import the PPG 
+signal. To remove baseline drift and power line noise, a 6th 
+order Butterworth band-pass filter spanning 1-10Hz is 
+applied. The result is a smooth waveform which can then be 
+broken down pulse-by-pulse and combined to create a 
+representative template for the individual’s signal. 
+Photoplethysmography as a Form of Biometric 
+Authentication 
+ 
+Anthony Lee and Younghyun Kim 
+Samsung Electronics, Digital Media & Communications R&D Center, 
+Advanced Device Team, Healthcare & Sensing Lab 
+Maetan-dong 129, Yeongtong-gu, Suwon-si, Gyeonggi-do, South Korea 
+Email: ant.lee@samsung.com 
+ 
+This paper explores the feasibility of using signals acquired from a photoplethysmogram (PPG) sensor, typically used 
+in mobile devices for heart rate monitoring, as a valid input signal for biometric authentication systems. Signals were 
+acquired from 10 individuals, generating 708 independent datasets using the Texas Instruments AFE4490/4400 
+integrated analog front end for pulse oximeters. Results indicate successful identification of individuals with a false 
+acceptance rate of 4.2% and a false rejection rate of 3.7%. Because PPG signal morphology is dependent on the 
+physical state of an individual, biometric authentication cannot occur under stress or coercion which introduces a 
+deviation in heart rate. This technique has demonstrated to be a feasible and simpler replacement to upcoming 
+biometric advancements such as electrocardiogram-based authentication systems, but dependence on consistent 
+measuring conditions limits the capabilities in mobile systems. 
+ 
+978-1-4799-8203-5/15/$31.00 ©2015 IEEE
+ 
+ 
+The template is then used to extract physical features from 
+the waveform as shown in Figure 1. Twenty-two features in 
+total are computed, consisting of waveform angle, area, and 
+inflection point data. The data is then stored as the registered 
+user. This process is repeated for a secondary authorization 
+attempt, and the newly computed features are compared to 
+the stored features for determination of pass or fail. 
+ 
+Fig. 1. Feature extraction from PPG waveform 
+ 
+Comparison of features can be performed using methods 
+similar to ECG-based biometrics. Common techniques 
+include nearest neighbor classifiers, neural networks, and 
+support vector machines [4]. A feed-forward neural network 
+was chosen due to the ease of programming and learning 
+involved with small feature sets. 
+The experiment consisted of 708 independent data 
+combinations from PPG data taken from 10 subjects. For 
+neural network training, 531 of these data combinations 
+were reserved, leaving 177 available for performance testing. 
+After performance testing, PPG data was also tested for 
+variability during different physical conditions. 
+ 
+III. RESULTS AND LIMITATIONS 
+ 
+Depending on the samples being compared, the biometric 
+software will indicate “Accept” when it believes the user 
+matches the stored profile. Otherwise, it will output “Reject.” 
+Results are shown in the confusion matrix of Figure 2. The 
+data illustrates convergence of the neural network to a 
+generalized set of data with false acceptance rate of 4.2%, 
+false rejection rate of 3.7%, positive predictivity of 95.1%, 
+and negative predictivity of 96.8%.  
+Based on these results, we can conclude that PPG 
+biosignals contain uniquely identifiable information and 
+have successfully differentiated among 170 independent 
+measurements from ten individuals with only 7 false 
+classifications. The next step is to investigate stability of the 
+PPG biosignal itself. 
+Because the PPG waveform is determined by the flow of 
+blood, 
+physical 
+conditions 
+may 
+impact 
+the 
+signal 
+morphology. If significant changes are evident, then all 
+variables must be held constant for PPG-based biometrics to 
+be consistent. Figure 3 illustrates the impact of exercise on 
+the shape of the PPG waveform. A significant increase in the 
+amplitude of both the first peak and the dichrotic notch are 
+evident after a moderate elevation in heart rate. In addition, 
+arm position and skin temperature have shown to impact 
+results. 
+ 
+ 
+Expected Class 
+Reject 
+Accept
+Output Class 
+Reject 
+92 
+3 
+Accept 
+4 
+78 
+Fig. 2. Neural network performance for PPG identification 
+ 
+ 
+Fig. 3. Impact of exercise on PPG signal morphology 
+ 
+ 
+IV. CONCLUSION 
+ 
+In this study, biometric identification was successfully 
+performed using a standard photoplethysmogram found in 
+typical heart rate monitoring devices. Error rates of less than 
+5% indicate significance and potential viability as a 
+biometric candidate. Future work involves expanding the 
+dataset with increased sample size and environmental 
+conditions. PPG sensitivity to physical conditions means the 
+user must maintain stable conditions with respect to heart 
+rate, arm position, and skin temperature. This additional 
+requirement can be used as a means to prevent forced or 
+unaware authentication by a third party, as the measuring 
+environmental and physiological conditions will no longer 
+be maintained. 
+ 
+REFERENCES 
+ 
+[1] Biel, L. et al. ECG analysis: a new approach in human 
+identification. 
+IEEE 
+Transactions 
+on 
+Instrumentation 
+and 
+Measurement 50, 808-812 (2001). 
+[2] Kavsaoglu, A. et al. A novel feature ranking algorithm for 
+biometric recognition with PPG signals. Computers in Biology and 
+Medicine 49, 1-14 (2014). 
+[3] Bonissi, A. et al. A preliminary study on continuous 
+authentication methods for photoplethysmographic biometrics. 
+Proc. of the 2013 IEEE Workshop on Biometric Measurements and 
+Systems for Security and Medical Applications (2013). 
+[4] Odinaka, I. et al. ECG biometric recognition: a comparative 
+analysis. IEEE Transactions on Information Forensics and Security 
+7, 1812-1824 (2012). 
+ 

@@ -1,0 +1,1 @@
+Essaye d'identifier les émotions des gens en prenant en compte le comportement (GPS); la variabilité cardiaque et le bruit ambiant. HS

@@ -1,0 +1,791 @@
+A Preliminary Study on
+Continuous Authentication Methods for
+Photoplethysmographic Biometrics
+Angelo Bonissi, Ruggero Donida Labati, Luca Perico, Roberto Sassi, Fabio Scotti, Luca Sparagino
+Department of Computer Science
+Universit`a degli Studi di Milano
+Milano, 20122, Italy.
+{ruggero.donida, roberto.sassi, fabio.scotti}@unimi.it
+{angelo.bonissi, luca.perico2, luca.sparagino}@studenti.unimi.it
+Abstract—Recent studies in biometrics focus on one di-
+mensional physiological signals commonly acquired in medical
+applications, like electrocardiogram (ECG), electroencephalo-
+grams (EEG), phonocardiogram (PCG), and photoplethysmo-
+gram (PPG). In this context, an important application is in
+continuous authentication scenarios since physiological signals
+are frequently captured for long time periods in order to monitor
+the health status of the patients.
+With respect to other physiological signals, PPG data present
+some advantages since they can be captured using widely dif-
+fused, comfortable, and low-cost sensors.
+In this paper, we present a feasibility study on continuous
+authentication techniques based on PPG signals. A biometric
+recognition method based on a correlation approach is first
+presented. Then, the accuracy of this method is evaluated on
+different datasets describing signals of variable time duration.
+Finally, the performance of continuous enrollment strategies are
+investigated.
+The obtained results suggest that PPG signals present sufficient
+discriminability to be used in biometric applications that do not
+require very high accuracy. Moreover, the use of continuous
+enrollment strategies can improve the performance of continuous
+authentication systems.
+I. INTRODUCTION
+Biometrics is defined by the International Organization
+for Standardization (ISO) as “the automated recognition of
+individuals based on their behavioral and biological character-
+istics” [1]. Some examples of commonly used characteristics,
+called biometric traits, are fingerprint, iris, palmprint, DNA,
+voice, and gait.
+Recent studies in biometrics focus on the use of one-
+dimensional physiological signals in recognition applications
+[2]. In particular: the electrocardiogram (ECG) [3], electroen-
+cephalogram (EEG) [4], phonocardiogram (PCG) [5], and
+photoplethysmogram (PPG) [6–10].
+These physiological signals are commonly acquired and
+stored as part of the healthcare delivery process. In applicative
+contexts like hospitals and body sensor networks [2], the use
+of biometric systems based on physiological signals should
+therefore permit to perform recognitions based on existing sen-
+sors, without introducing additional costs. Another important
+characteristic of the one-dimensional physiological signals is
+that they can be used in continuous authentication systems
+[11–13] since they can be captured for long time periods
+without requiring any user’s cooperation. Other advantages
+of these signals are that they can be acquired from all the
+individuals and can be obtained only from living people [14].
+With respect to the other commonly used one-dimensional
+physiological signals, PPG data offer important advantages.
+The acquisition of PPG signals, in fact, is performed in a
+comfortable manner since the samples are captured using pulse
+oximeters [15], which are non-invasive devices for monitoring
+the hemoglobin saturation, and are usually attached to the
+earlobe or fingertip. Moreover, the sensor placement does not
+require the use of gels and the acquisition devices are widely
+diffused in medical applications. Other advantages are that
+pulse oximeters are usually less expensive and smaller in size
+with respect to the acquisition devices used for the ECG, EEG,
+and PCG signals. An example of PPG acquisition is shown in
+Fig. 1.
+In the literature, there are some preliminary studies on the
+use of the PPG as a biometric trait [6–10]. The performed
+analyses, however, are based on simple features and on small
+datasets.
+In this paper, we present a study on biometric recognition
+techniques based on PPG signals. In particular, we consider
+continuous authentication applications.
+In this context, we propose a novel recognition technique
+inspired to the ones used for the analysis of ECG signals.
+First, a preprocessing step is applied in order to enhance the
+distinctive characteristics of the PPG signal. The second step
+is the feature extraction and computes a template describing a
+defined number of distinctive heartbeats. Finally, the matching
+is performed by using a correlation-based algorithm.
+Experimental results prove that PPG signals present suf-
+ficient discriminability to be used in biometric recognition
+systems. Moreover, the analysis of signals related to long time
+periods suggests that PPG can effectively be used to perform
+continuous authentications if continuous enrollment strategies
+are adopted.
+The paper is structured as follows. Section II describes the
+© 2013 IEEE. Personal use of this material is permitted. Permission from IEEE must be obtained for all other uses, in any current or future 
+media, including reprinting/republishing this material for advertising or promotional purposes, creating new collective works, for resale or 
+redistribution to servers or lists, or reuse of any copyrighted component of this work in other works.
+DOI: 10.1109/BIOMS.2013.6656145
+(a)
+(b)
+0
+0.5
+1
+1.5
+2
+2.5
+3
+3.5
+4
+4.5
+5
+3.22
+3.24
+3.26
+3.28
+3.3
+3.32
+3.34
+3.36
+3.38
+3.4 x 10
+4
+Amplitude
+Time (s)
+Fig. 1.
+Acquisition of a photoplethysmogram (PPG) using a pulse oximeter
+attached to the fingertip: (a) acquisition procedure; (b) obtained signal.
+state of the art on the use of PPG signals in biometric systems.
+Section III presents the implemented recognition methods. The
+experimental results are detailed in Section IV. Finally, Section
+V presents conclusions and final remarks.
+II. RELATED WORKS
+In the literature, there are studies on biometric recognition
+methods based on different kinds of one-dimensional physio-
+logical systems [2]. Most of them evaluate characteristics of
+ECG [3] and EEG [4] signals. At the best of our knowledge,
+there are only preliminary studies on PCG [5] and PPG [6–10]
+signals.
+With respect to the other mentioned physiological signal, the
+use of PPG data has the advantage of requiring less expensive,
+smaller, and more comfortable acquisition sensors.
+In the context of biometric systems, PPG signals have been
+mainly studied in order to design liveness detection techniques
+[16,17].
+The studies on biometric recognition methods based on PPG
+signals have been performed by using small sample datasets
+and algorithms inspired to medical analysis techniques. The
+method presented in [6] computes the templates by using four
+features: the peak number, upward slope, downward slope,
+and time interval. The used matching function is based on the
+Euclidean distance between the templates. The same features
+are used in [9], but the matching technique is based on a fuzzy
+system. The study presented in [7] uses feature sets composed
+by the values of the local maximum, minimum, and inflection
+points of PPG pulses in order to evaluate if samples of genuine
+and impostor individuals present sufficient discriminability
+for being used in biometric recognition systems. The method
+described in [8] performs biometric recognitions by applying
+the linear discriminant analysis (LDA) technique and using
+nearest neighbor classifiers. Another study is presented in [10]
+and it proposes the use of PPG-based biometric systems in
+body area sensor networks and mobile healthcare systems. A
+study on acquisition sensors specifically designed for biomet-
+ric recognition is presented in [15].
+At the best of our knowledge, there are no studies on the
+use of PPG signals in continuous authentication systems and
+the only continuous authentication techniques based on one-
+dimensional physiological signals are described in [12,13].
+These studies are based on commercial biometric recognition
+systems. The method presented in [12] performs authentica-
+tions based on ECG signals every 35 heartbeats and the one
+detailed in [13] uses time intervals of 5 s.
+In the literature, there are also studies on different biometric
+traits that can be used in continuous authentication systems
+[11]. In particular, the method presented in [18] evaluates
+the face characteristics in scenarios in which the users are
+working in front to a computer. A similar scenario is con-
+sidered in [19], but the presented biometric technique is also
+based on less distinctive characteristics obtained analyzing soft
+biometric traits. The study described in [20] is also based on
+a multimodal biometric technique, but considers the face and
+fingerprint traits. Since samples of these traits can be captured
+at different time intervals, a holistic strategy is proposed to
+fuse the matching scores. A different data fusion strategy for
+continuous authentication systems is presented in [21], and is
+based on fuzzy systems.
+III. THE PROPOSED METHOD
+The proposed method permits to perform biometric recog-
+nitions based on PPG signals in a simple and fast manner.
+We have also implemented and evaluated more complex
+techniques, obtaining similar results in terms of accuracy, but
+increasing the needed computational time.
+Similarly to most of the biometric systems in the literature,
+the proposed method can be divided into the sequent steps:
+acquisition, signal preprocessing, feature extraction, matching.
+A. Acquisition
+The acquisition process is performed with a NONIN Xpod
+pulse oximeter [22], commonly used for medical diagnoses.
+In the context of continuous authentication systems, the PPG
+is continuously acquired and a sample is stored every t s. The
+considered samples have a fixed time duration of t s.
+Pulse oximeters, however, are sensitive to user’s movements
+since the acquisition device needs a continuous contact with
+the user’s skin. For this reason, it is necessary to define a
+strategy for discarding poor quality samples. In this work, we
+adopt a basic automatic procedure to discard samples with
+insufficient quality. The data generated by the used pulse
+oximeter include a binary signal representing the presence of
+possible acquisition errors at every time instance. If a sample
+presents at least an error state, it is considered as a failure
+to acquire (FTA). An example of a 20 s sample acquired
+during the user’s movement and the corresponding error states
+generated by the acquisition device are shown in Fig. 2. It
+is possible to observe that the portions of the signal near
+to the errors detected by the pulse oximeter present spikes
+and irregular shapes caused by the noise introduced by the
+displacement of the sensor from the finger surface.
+B. Signal preprocessing
+The proposed method does not use complex preprocessing
+algorithms.
+The only executed task consists in the signal’s baseline
+normalization, which is performed by applying a third order
+high-pass Butterworth filter with cutoff frequency fc [23].
+C. Feature extraction
+This step computes a template T composed by a variable
+number of distinctive heartbeats of the sample signal S. The
+maximum number of heartbeat signals composing a template
+T is equal to n.
+The first task consists in the signal segmentation, which
+permits to obtain a matrix H in which the points pertaining to
+every heartbeat signal are stored in a distinct row. The peaks
+are detected using a modified Pan-Tompkins algorithm. For a
+given peak instant j, the heartbeat signal i is computed as:
+H(i, 1 . . . t1 + t2) = S(j − t1 . . . i + t2),
+(1)
+where t1 and t2 are constant values empirically estimated on
+the considered dataset.
+The biometric template is finally obtained by applying an it-
+erative algorithm. For each iteration, the signal ¯S representing
+the mean heartbeat is computed as:
+¯S(j) =
+m
+�
+i=1
+(H(i, j)) /m,
+(2)
+where m is the number of heartbeats present in the matrix
+H.
+A vector C representing the maximum cross-correlation
+values between every heartbeat of H and the mean heartbeat
+¯S is computed. A fixed number n of heartbeats corresponding
+to the n maximum values of C are stored in the template
+matrix T . If the correlation value of a heartbeat is less than
+an empirically estimated threshold tc, the related signal is
+removed from the template T .
+In order to reduce the noise, this algorithm is repeated
+two times. The second iteration aims to delete possible noisy
+heartbeats and considers H = T . The number n is equal for
+every iteration.
+D. Matching
+This step computes a similarity score s between two
+templates TA and TB composed by nA and nB signals of
+hearbeats, respectively.
+A matrix M, composed by nAnB elements, is computed
+by calculating the maximum cross-correlation between every
+signal pertaining to TA and every signal pertaining to TB.
+0
+2
+4
+6
+8
+10
+12
+14
+16
+18
+20
+3
+3.05
+3.1
+3.15
+3.2
+3.25
+3.3
+3.35
+3.4
+3.45
+3.5 x 10
+4
+Time (s)
+Amplitude
+Fig. 2.
+Example of 20 s sample captured during user’s movements and
+considered as a failure to acquire (FTA). The red squares represent error
+states of the pulse oximeter. It is possible to observe the presence of spikes
+and noisy regions.
+An example of matrix M obtained from a genuine identity
+comparison of templates composed by two heartbeats is shown
+in Fig. 3.
+Finally, the matching score s can be obtained by applying
+different data fusion strategies to the similarity values of M.
+In this study, we have considered these simple techniques.
+• Algorithm A: s = mean(M).
+• Algorithm B: s = median(M).
+• Algorithm C: s = 75th percentile(M).
+• Algorithm D: s = 90th percentile(M).
+• Algorithm E: s = 95th percentile(M).
+• Algorithm F: s = max(M).
+IV. EXPERIMENTAL RESULTS
+In order to analyze the performance of the proposed method,
+we have first evaluated the recognition accuracy in different
+operative conditions and then analyzed the feasibility of a
+continuous authentication systems based on PPG signals.
+The used datasets have been captured in our laboratory. At
+the best of our knowledge, in fact, there are no public datasets
+of PPG signals with sufficient number of samples to properly
+evaluate a biometric systems.
+The parameters used for testing the recognition method are:
+fc = 0.1 Hz, n = 16, t1 = 0.12 s, t2 = 0.24, and minimum
+correlation threshold for the template computation is tc = 0.9.
+A. Tuning of the recognition algorithms
+In order to search the best configuration of the implemented
+recognition algorithms, we have first evaluated the accuracy of
+the biometric system on a dataset of short time signals captured
+in our laboratory.
+We have collected a set of 44 PPG signals from 44 individu-
+als by using a NONIN Xpod pulse oximeter [22] with a finger
+sensor. Every acquired signal has a duration of 2 minutes, a
+resolution of 16 bit, and a sampling frequency of 75 Hz.
+In order to evaluate the capability of the proposed recog-
+nition method of working with sample signals of different
+duration, three datasets have been created from the acquired
+(a)
+TA(1)
+TA(2)
+0
+0.02
+0.04
+0.06
+0.08
+0.1
+−4000
+−2000
+0
+2000
+4000
+6000
+8000
+Time (s)
+Amplitude
+0
+0.02
+0.04
+0.06
+0.08
+0.1
+−4000
+−2000
+0
+2000
+4000
+6000
+8000
+Time (s)
+Amplitude
+(b)
+TB(1)
+TB(2)
+0
+0.02
+0.04
+0.06
+0.08
+0.1
+−4000
+−2000
+0
+2000
+4000
+6000
+8000
+Time (s)
+Amplitude
+0
+0.02
+0.04
+0.06
+0.08
+0.1
+−4000
+−2000
+0
+2000
+4000
+6000
+8000
+Time (s)
+Amplitude
+(c)
+TB(1)
+TB(2)
+TA(1)
+0.994
+0.997
+TA(2)
+0.985
+0.990
+Fig. 3.
+Example of similarity matrix M obtained from a genuine identity
+comparison between the templates TA and TB, which are composed by two
+heartbeat signals (n = 2): (a) template TA; (a) template TB; similarity matrix
+M.
+TABLE I
+DATASETS CREATED FROM 2 MINUTES SIGNALS.
+Sample
+Number of
+Genuine
+Impostor
+Dataset
+duration t
+samples
+comparisons
+comparisons
+DB20
+20 s
+242
+1154
+57168
+DB20
+30 s
+158
+454
+24352
+DB40
+40 s
+116
+224
+13116
+set of signals. The characteristics of these datasets are depicted
+in Table I.
+We have evaluated the accuracy of the recognition method
+on the test datasets by using the implemented data fusion
+strategies. In all the performed evaluations, Algorithm F
+obtained the best accuracy. The DET curves obtained by
+Algorithm F on the considered datasets are shown in Fig. 4,
+while Table II reports the false match rate (FMR) and false
+non-match rate (FNMR) in different working points.
+From Fig. 4 and Table II, it is possible to observe that
+the discriminability of PPG signals in short time periods can
+be considered as satisfactory for many biometric applications.
+Moreover, the obtained results show that the best accuracy
+has been obtained on DB40, with an equal error rate (EER)
+of 5.29%. The accuracy increasing with respect to the other
+datasets should be due to the better capability of the proposed
+method of reducing the effects of the noise due to user’s
+movements. However, the smaller number of performed com-
+parisons can also influence the obtained performances.
+B. Preliminary test in continuous authentication scenarios
+We have then evaluated the accuracy of the biometric
+recognition method on a dataset composed by longer time
+signals.
+Similarly to the previous test, we have collected a set of
+0
+0.2
+0.4
+0.6
+0.8
+1
+0
+0.1
+0.2
+0.3
+0.4
+0.5
+0.6
+0.7
+0.8
+0.9
+1
+FMR
+FNMR
+ 
+ 
+DB_20
+DB_30
+DB_40
+Fig. 4.
+DET curves obtained by realized method by using Algorithm F on
+DB20, DB20, and DB40.
+TABLE II
+RESULTS OF THE REALIZED METHOD BY USING ALGORITHM F ON
+DIFFERENT DATASETS OF SHORT TIME SIGNALS.
+DET point
+DB20
+DB20
+DB40
+EER (%)
+10.06
+8.34
+5.29
+FMR (%) FNMR = 5%
+15.08
+11.89
+10.71
+FMR (%) FNMR = 10%
+9.36
+5.29
+2.68
+FMR (%) FNMR = 15%
+5.72
+2.20
+1.79
+FNMR (%) FMR = 5%
+15.10
+11.03
+5.00
+FNMR (%) FMR = 10%
+8.84
+5.57
+5.00
+FNMR (%) FMR = 15%
+6.86
+3.86
+3.34
+14 PPG signals from 14 individuals by using a NONIN Xpod
+pulse oximeter. The duration of each acquisition is 15 minutes.
+Considering the previously obtained results, the collected
+signals have then been divided into samples of 40 s, obtaining
+the dataset DB15m.
+The results obtained by the best configuration of the pro-
+posed method (Algorithm F) on DB15m are reported in Fig.
+5 and Table III. It is possible to observe that the obtained
+accuracy is inferior with respect the one achieved on DB40.
+The obtained EER, for example, is equal to 13.47%.
+The performance decreasing can be related to the time
+variability of the biometric trait with the used features.
+In order to evaluate this phenomena, we have analyzed the
+performance of the presented algorithms in an ideal continuous
+authentication scenario in which verifications are performed
+at fixed time intervals and the enrolled templates are updated
+after every verification. Differently from traditional procedures
+used for the accuracy evaluation of biometric recognition
+algorithms, which do not consider the time passed between
+biometric acquisitions [24], this test permits to analyze the
+stability and persistency of the used features during a defined
+time interval. In this test, we have not used samples considered
+as FTA since it only aims to evaluate the persistency of PPG
+0
+0.2
+0.4
+0.6
+0.8
+1
+0
+0.1
+0.2
+0.3
+0.4
+0.5
+0.6
+0.7
+0.8
+0.9
+1
+FMR
+FNMR
+ 
+ 
+Fig. 5.
+DET curve obtained on DB15m. It is possible to observe a
+performance decreasing with respect to the results obtained on DB40, which
+is due to a low durability of the biometric features.
+TABLE III
+RESULTS OF THE REALIZED METHOD BY USING ALGORITHM F ON DB15m.
+DET point
+DB15m
+EER (%)
+13.47
+FMR (%) FNMR = 5%
+32.06
+FMR (%) FNMR = 10%
+17.71
+FMR (%) FNMR = 15%
+10.30
+FNMR (%) FMR = 5%
+22.56
+FNMR (%) FMR = 10%
+16.07
+FNMR (%) FMR = 15%
+12.97
+signals.
+All the possible impostor identity comparisons have been
+computed. For each time instant j, we have computed the
+genuine matching score between the template T(i,j) and the
+template T(i,j−∆t) obtained at the time instant j − ∆t:
+G(i,j) = matching(T(i,j), T(i,j−∆t)).
+(3)
+The EER obtained with different values of ∆t are reported
+in Fig. 6 and Table IV. The error obtained in other working
+points is not reported since the accuracy evaluations consider
+only small numbers of genuine identity comparisons.
+From Fig. 6 and Table IV, it can be observed that the
+accuracy of the recognition method is strictly related to the
+time interval between the considered genuine comparisons
+∆t. The obtained EER values, in fact, decrease from 9% to
+14.5% in 320 s. The accuracy decreasing, anyway, is not linear
+since poor quality samples and physiological changes could
+influence the obtained results.
+The performed preliminary tests suggest that the used fea-
+tures have not sufficient durability for being used in traditional
+biometric recognition scenarios. PPG signals, anyway, should
+be used to perform continuous authentications by adopting
+continuous enrollment strategies.
+40
+80
+120
+160
+200
+240
+280
+320
+360
+400
+8
+9
+10
+11
+12
+13
+14
+15
+∆t (s)
+EER (%)
+Fig. 6.
+EER value in a continuous authentication system with continuous
+enrollment every ∆t s. The obtained accuracy decreases proportionally to the
+values of ∆t.
+TABLE IV
+EER VALUE IN A CONTINUOUS AUTHENTICATION SYSTEM WITH
+CONTINUOUS ENROLLMENT EVERY ∆t S.
+∆t
+Genuine
+Impostor
+EER
+(s)
+comparisons
+comparisons
+(%)
+40
+253
+73168
+9.00
+80
+239
+73168
+10.88
+120
+227
+73168
+10.85
+160
+220
+73168
+11.60
+200
+204
+73168
+12.74
+240
+195
+73168
+13.49
+280
+179
+73168
+13.76
+320
+167
+73168
+12.93
+360
+155
+73168
+14.50
+400
+145
+73168
+13.55
+This kind of systems, however, require particular attention
+in the design of privacy protection strategies since they can
+be more easily attached by spoofing techniques with respect
+to traditional biometric recognition methods [25].
+V. CONCLUSION
+This paper have presented a preliminary study on the use
+of photoplethysmogram (PPG) signals in biometric systems
+working in continuous authentication scenarios.
+The proposed biometric recognition method is based on a
+simple and fast correlation technique.
+The recognition accuracy has been tested on sets of samples
+with different time duration, with particular attention to the
+analysis of the relation between the system accuracy and the
+time passed between genuine acquisitions.
+The obtained results suggest that PPG signals have sufficient
+discriminability to be used in biometric recognition systems.
+However, the analyzed features present low durability and
+should therefore be used in continuous authentication systems
+based on continuous enrollment strategies.
+Further studies should regard the implementation of com-
+plete continuous authentication systems based on PPG signals.
+VI. ACKNOWLEDGEMENTS
+This work was supported in part by the Italian Ministry
+of Research within PRIN 2010-2011 project “GenData 2020”
+(2010RTFWBH).
+REFERENCES
+[1] International Organization for Standards, “ISO/IEC JTC1 SC37 Standing
+Document 2, version 8, Harmonized Biometric Vocabulary ,” August
+1997.
+[2] F. Miao, S.-D. Bao, and Y. Li, Physiological Signal Based Biometrics
+for Securing Body Sensor Network.
+InTech, 2012.
+[3] I. Odinaka, P.-H. Lai, A. Kaplan, J. O’Sullivan, E. Sirevaag, and
+J. Rohrbaugh, “Ecg biometric recognition: A comparative analysis,”
+IEEE Transactions on Information Forensics and Security, vol. 7, no. 6,
+pp. 1812–1824, 2012.
+[4] W. Khalifa, A. Salem, M. Roushdy, and K. Revett, “A survey of eeg
+based user authentication schemes,” in Proc. of the 8th Int. Conf. on
+Informatics and Systems (INFOS), 2012, pp. 55 – 60.
+[5] F. Beritelli and S. Serrano, “Biometric identification based on frequency
+analysis of cardiac sounds,” IEEE Transactions on Information Forensics
+and Security, vol. 2, no. 3, pp. 596 – 604, 2007.
+[6] Y. Y. Gu, Y. Zhang, and Y. Zhang, “A novel biometric approach in
+human verification by photoplethysmographic signals,” in Proc. of the
+4th IEEE Annual Int. Conf. of the Engineering in Medicine and Biology
+Society (EMBS), 2003, pp. 13 –14.
+[7] J. Yao, X. Sun, and Y. Wan, “A pilot study on using derivatives of
+photoplethysmographic signals as a biometric identifier,” in Proc. of the
+29th IEEE Annual Int. Conf.of the Engineering in Medicine and Biology
+Society (EMBS), 2007, pp. 4576 – 4579.
+[8] P. Spachos, J. Gao, and D. Hatzinakos, “Feasibility study of photo-
+plethysmographic signals for biometric identification,” in Proc. of the
+17th Int. Conf. on Digital Signal Processing (DSP), 2011, pp. 1 – 5.
+[9] Y. Y. Gu and Y. Zhang, “Photoplethysmographic authentication through
+fuzzy logic,” in Proc. of the IEEE EMBS Asian-Pacific Conf. on
+Biomedical Engineering, 2003, pp. 136 – 137.
+[10] S.-D. Bao, Y.-T. Zhang, and L.-F. Shen, “Physiological signal based
+entity authentication for body area sensor networks and mobile health-
+care systems,” in Proc. of the 27th IEEE-EMBS Annual Int.Conf. of the
+Engineering in Medicine and Biology Society, 2005, pp. 2455 – 2458.
+[11] I. Traore and A. Ahmed, Continuous Authentication Using Biometrics:
+Data, Models, and Metrics.
+IGI Global, 2011.
+[12] M. Guennoun, N. Abbad, J. Talom, M. Rahman, and K. El-Khatib,
+“Continuous authentication by electrocardiogram data,” in Proc. of the
+IEEE Toronto Int. Conf. on Science and Technology for Humanity (TIC-
+STH), 2009, pp. 40–42.
+[13] R. Matta, J. Lau, F. Agrafioti, and D. Hatzinakos, “Real-time continuous
+identification system using ecg signals,” in Proc. of the 24th Canadian
+Conference on Electrical and Computer Engineering (CCECE), 2011,
+pp. 1313 – 1316.
+[14] B. Biggio, Z. Akthar, G. Fumera, G. L. Marcialis, and F. Roli, “Security
+evaluation of biometric authentication systems under real spoofing
+attacks,” IET Biometrics, 2012.
+[15] Y. Wan, X. Sun, and J. Yao, “Design of a photoplethysmographic sensor
+for biometric identification,” in Proc. of the Int. Conf. on Control,
+Automation and Systems (ICCAS), 2007, pp. 1897–1900.
+[16] P. Reddy, A. Kumar, S. Rahman, and T. Mundra, “A new antispoofing
+approach for biometric devices,” IEEE Transactions on Biomedical
+Circuits and Systems, vol. 2, no. 4, pp. 328 –337, 2008.
+[17] P. Reddy, A. Kumar, S. Rahman, and T. Mundra, “A new method
+for fingerprint antispoofing using pulse oxiometry,” in Proc. of the
+First IEEE Int. Conf.on Biometrics: Theory, Applications, and Systems
+(BTAS), 2007, pp. 1 – 6.
+[18] K. Niinuma and A. K. Jain, “Continuous user authentication using
+temporal information,” vol. 7667, 2010.
+[19] K. Niinuma, U. Park, and A. Jain, “Soft biometric traits for continuous
+user authentication,” IEEE Transactions on Information Forensics and
+Security, vol. 5, no. 4, pp. 771 – 780, 2010.
+[20] T. Sim, S. Zhang, R. Janakiraman, and S. Kumar, “Continuous veri-
+fication using multimodal biometrics,” IEEE Transactions on Pattern
+Analysis and Machine Intelligence, vol. 29, no. 4, pp. 687 – 700, 2007.
+[21] A. Azzini, S. Marrara, R. Sassi, and F. Scotti, “A fuzzy approach to
+multimodal biometric continuous authentication,” Fuzzy Optimization
+and Decision Making, vol. 7, no. 3, pp. 243 – 256, September 2008.
+[22] NONIN Xpod External Pulse Oximetry, http://www.nonin.com.
+[23] J. Proakis and D. Manolakis, Digital signal processing.
+Pearson
+Prentice Hall, 2007.
+[24] M. Gamassi, M. Lazzaroni, M. Misino, V. Piuri, D. Sana, and F. Scotti,
+“Quality assessment of biometric systems: a comprehensive perspective
+based on accuracy and performance measurement,” IEEE Transactions
+on Instrumentation and Measurement, vol. 54, no. 4, pp. 1489 – 1496,
+August 2005.
+[25] B. Biggio, Z. Akhtar, G. Fumera, G. Marcialis, and F. Roli, “Security
+evaluation of biometric authentication systems under real spoofing
+attacks,” IET Biometrics, vol. 1, no. 1, pp. 11 – 24, 2012.

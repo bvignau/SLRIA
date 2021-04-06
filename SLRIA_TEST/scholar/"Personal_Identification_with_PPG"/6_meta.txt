@@ -1,0 +1,3 @@
+title=Perceiving emotions from bodily expressions and multisensory integration of emotion cues in schizophrenia
+year=2011
+author=Van den stock

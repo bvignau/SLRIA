@@ -1,0 +1,13 @@
+A K Jain, A Ross and S Prabhakar, “An Introduction to Biometric  Recognition”, IEEE Trans. On Circuit Sys.14(1):4-20  
+Andrews Samraj, Shoel Sayeed, Loo Chu Kiong and Nikos E  Mastorokis(2010),” Eliminating forgers based on intra trial varaiability  in online signature verification using handgloves and photometric  signals”,In : Journal of Information security,Vol.1,23-28  
+C.M. Lee & Y.T Zhang,“Reduction of motion artifacts from  photoplethysmographic recordings using a wavelet denoising approach,”  in Proc. IEEE EMBS Asian-Pacific Conf. on Biomed. Engg., pp. 194- 195, 20-22 Oct., 2003.  
+D Maltoni, D Maio, A K Jain and S Prabhakar , Handbook of Fingerprint  Recognition, Springer 2003  
+Jianchu yao, Xiodong Sun and Yongbo wan(2007),” A Pilot study on  using derivatives of photoplethysmographic signals as a biometric  identifier”, In : Journal of engineering in medicine and biology society.  
+John Allen, “Photoplethysmography and its application in clinical  physiological  measurement”,  IOP  Publishing,  Phyiol,  Meas,  28(2007)R1-R39.  
+J  Lai, P Yuen, G Feng, “Face Recognition using Holistic Fourier  Invariant Features”, Pattern Recognition, 34(1),pp95-109,2001  
+Ramaswamy  Palaniappan(2008), “Two-stage biometric authentication  method using thought acitivity Brain Waves”, In: Journal of Neural  Systems,Vol.18,No.1,pp59-66.   
+R.N Bracewell.” The Fourier transform and its applications”, 3rd  Edition,McGraw-Hill higher education,NY,2000.  
+T Y Wang, F Agrafioti, D Harzinakos, K N Plataniotis, “Analysis of  Human  Electrocardiogram(ECG)  for  Biometric  Recognition.”,  EURASIP Journal on Advances in Signal Processing, Volume Article  ID 14658,2008.  
+Waseem and Omer, “Microcontroller Design and Bluetooth signal  Transmission for the Non-Invasive Health Monitoring System”, In: EE  B416 Electrical engineering Biomedical capstones(2009), Paper 17,P- 29.  
+Watanabe, M., Endoh, T., Shiohara, M, and Sasaki, S., “Palm Vein  Authentication Technology and Its  Applications”, In Biometric  Consortium Conference, USA, 2005.  
+Y.Y Gu, Y.Zhang and Y.T Zhang (2003), “ A Novel biometric approach  in human identification by Photoplethysmographic Signals”,In : Journal  of information technology applications in biomedicine.  

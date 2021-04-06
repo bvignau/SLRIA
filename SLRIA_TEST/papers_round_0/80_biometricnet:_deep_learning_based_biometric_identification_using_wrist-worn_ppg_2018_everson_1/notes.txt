@@ -1,0 +1,1 @@
+Mise en place d'un framework d'identification de personnes avec PPG qui utilise plusieurs algo (CNN et LSTM) pour identifier les patiens.

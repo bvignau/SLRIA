@@ -1,0 +1,759 @@
+ 
+ 
+ 
+ 
+Abstract—Photoplethysmographic (PPG) signals are easy to 
+obtain with low cost, which enhances its potential to server as 
+biometric identification mechanism for various applications. 
+This paper examines two important issues in applying 
+derivatives of PPG signals as discriminants to identify and 
+verify subjects: consistency within an individual subject and 
+discriminability between different subjects.  The experimental 
+results demonstrate that, by employing statistical tools, 
+derivatives can precisely describe the features of an 
+individual’s PPG signal and be used as bio-measures for 
+identification purposes. 
+ 
+ Keywords—Attributes, 
+consistency, 
+discriminability, 
+derivatives, photoplethysmographic (PPG) signal.  
+I. INTRODUCTION 
+dentification / verification / authentication is critical for  
+security systems such as homeland security, airports, 
+immigration 
+checkpoints, 
+finance 
+and 
+healthcare 
+infrastructures.  Traditional identification mechanisms (e.g. 
+signatures and fingerprints) can barely meet these extensive 
+and growing security requirements.  Various biometric 
+measures 
+have 
+been 
+investigated 
+for 
+identification/ 
+verification purposes, including iris and retina [1-3], face 
+complexion [4, 5], lip movements [6], hand/finger geometry 
+[7, 8], and ECG [9, 10], among others.  These approaches 
+present different levels of accuracy, user friendliness, system 
+complexity, and cost, and consequently find applications in 
+diverse 
+scenarios. 
+ 
+Compared 
+to 
+these 
+biological 
+identification approaches, photoplethysmographic (PPG) 
+signals can be obtained non-invasively with minimal cost 
+from a variety of body locations [11].  PPG signals reflect 
+the pulsative action of arteries through the interaction 
+between 
+oxygenated-hemoglobin 
+and 
+photons. 
+The 
+feasibility of applying PPG signals as a biological 
+discriminant has been preliminarily studied [12, 13].  These 
+studies applied an approach to represent the pulses using 
+four quantities: the peak number M , upward slope 
+1k , 
+downward slope 
+2k , and the time interval from the bottom 
+to the peak 
+1t .  This approximation ignores higher-order 
+derivative information contained in the pulse and, therefore, 
+does not take full advantage of the potential of PPG signals 
+to improve identification accuracy and reliability.  Methods 
+employing signal features that can better describe periodic 
+pulses should be able to obtain better identification 
+performance in practical use.  
+This paper presents the preliminary study of using local 
+maximum/minimum points and inflection points of a PPG 
+waveform as a biometric identification mechanism.  
+Specifically, the scope of the paper is to address two 
+important factors that enable a signal as an effective 
+biometric discriminant:  statistical consistency of the used 
+attributes 
+within 
+individual 
+subjects 
+and 
+their 
+discriminability between different subjects.  After this 
+introduction, the METHODS section describes the process 
+of data collection, fitting, and statistical analysis, followed 
+by the RESULTS section where the efficacy of the proposed 
+measures are reported.  Potential impacts of this derivative 
+approach on other applications and future work are also 
+discussed.  
+II. METHODS 
+A. Mathematical Representation of PPG Pulses 
+A photoplethysmographic pulse can be modeled using a 
+variety of mathematical schemes represented by different 
+sets of parameters.  In this context, a set of parameters used 
+to represent PPG pulse curves is called attributes.  Figure 1 
+demonstrates a simple approach using two straight lines to 
+approximate a PPG pulse. Possible attributes for this 
+representation can be triples of different quantities such as 
+A Pilot Study on Using Derivatives of Photoplethysmographic 
+Signals as a Biometric Identifier 
+Jianchu Yao, Member, IEEE, Xiaodong Sun, and Yongbo Wan 
+I 
+ 
+Manuscript received April 16, 2007.  
+Jianchu Yao is with the Department of Engineering, East Carolina 
+University, Greenville, NC 27858 USA (phone: 252-737-1029; fax: 252-
+737-1041; e-mail: yaoj@ecu.edu).  
+Xiaodong Sun is with the Department of Technology Systems, East 
+Carolina 
+University, 
+Greenville, 
+NC 
+ 
+27858 
+USA 
+ 
+(e-mail: 
+sx1215@ecu.edu). 
+Yongbo Wan is with the Electrical Engineering Department, Shaanxi 
+University of Science and Technology, Weiyang District, Xi’an, Shaanxi 
+710021 China (e-mail: wanyongbo@sust.edu.cn). 
+Figure  1. A pulse modeled by two straight lines. 
+0
+20
+40
+60
+80 
+100 120 140
+160
+180
+0.066
+0.0665
+0.067
+0.0675
+0.068
+0.0685
+0.069
+0.0695
+0.07
+0.0705
+0.071
+Raw Samples 
+t1 
+k2 
+k1
+Samples
+Voltage (V) 
+Proceedings of the 29th Annual International
+Conference of the IEEE EMBS
+Cité Internationale, Lyon, France
+August 23-26, 2007.
+SaP1C1.9
+1-4244-0788-5/07/$20.00 ©2007 IEEE
+4576
+ 
+ 
+ 
+the slopes of the two straight lines 
+1k , 
+2
+k  and the time from 
+the bottom to the peak 
+1t .  Discriminant algorithms can 
+evaluate these attributes against certain criteria to identify 
+individual subjects.  An improved presentation was 
+discussed in [12, 13], where the number of peaks M has 
+been included to describe the pulse in a greater detail.  
+However, this description is still coarse: the higher-order 
+derivatives of the signals (which contain finer information 
+about the pulses that can potentially be used as 
+discriminants) 
+are 
+overlooked. 
+ 
+The 
+identification 
+performance of the PPG signal can be impaired by the 
+coarse approximation.  
+In this paper, we propose to use local maximum/minimum 
+points and inflection points of PPG pulses and the time 
+intervals between these points as attributes to discriminate 
+subjects.  The 1st- and 2nd-order derivatives of a pulse signal 
+fitted by a polynomial (shown in Figure 2) are first taken.  
+The maximum/minimum points of the pulse and the time 
+intervals between them can be found from the 1st-order 
+derivative (Figure 3); the inflection points and the time 
+intervals between them can be obtained from the 2nd–order 
+derivative (Figure 4).  The number of maximum/minimum 
+points and inflection points, along with the time interval 
+between these points, precisely describes the features of a 
+PPG pulse.  Therefore, we can use these attributes as 
+statistical discriminants to identify subjects from each other. 
+B. Data Acquisition 
+A simple pulse oximeter sensor (see Figure 5) was built to 
+collect PPG data.  This sensor uses an amplification circuit 
+adopted from [11] with the following modifications: 
+1. An optical probe consisting of an infrared LED with a 
+wavelength of 940 nm. 
+2. The sample rate was increased to 300 Hz in order to 
+maintain a more complete spectrum of information 
+contained in the acquired PPG pulses.  
+3. The system architecture was simplified by eliminating 
+the microcontroller used in the original design.  A 
+LabVIEW-DAQ card directly sampled and digitized 
+analog signals, which allow reliable data acquisition 
+and flexible real-time signal processing. 
+4. Improved amplification circuits to obtain good pulse 
+signals [14]. 
+Limited by time and funding, only three subjects were used 
+to collected data from.  Three groups of data from each 
+subject were collected, resulting in nine datasets for further 
+statistical analysis.  Each dataset represents around 70 
+seconds worthy of data (70~80 pulses). 
+In this pilot study, the subjects were required to sit without 
+movements 
+when 
+taking 
+measurements 
+to 
+prevent 
+artifact/noise factors from interfering with the physiological 
+pulsatile signals.  The data collected in LabVIEW were 
+saved into Excel spreadsheet files which can be accessed by 
+a MATLAB program for further processing.  
+C. Attributes Extraction  
+The MATLAB program employed nine steps (described 
+below) to extract the attributes from the PPG pulses that can 
+be used for statistical analysis.  
+Figure  2. A PPG pulse fitted by a 10th-order polynomial. 
+0
+20 
+40 
+60 
+80 
+100 
+120 
+140 
+160
+180
+0.066 
+0.0665 
+0.067 
+0.0675 
+0.068 
+0.0685 
+0.069 
+0.0695 
+0.07 
+0.0705 
+0.071 
+Fitted Pulse (10th-order polynomial)
+Samples
+Fitted Pulse
+0
+20
+40
+60
+80 
+100 
+120
+140
+160
+180
+-1
+-0.5
+0
+0.5
+1
+1.5
+2
+2.5
+3
+x 10
+-4
+Samples
+1st-order Derivative
+1st-order Derivative
+t1
+t2 
+Figure 3.  First-order derivative curve and time intervals 
+between maximum/minimum points. 
+0
+20
+40
+60
+80 
+100 
+120 
+140
+160
+180
+-2
+-1
+0
+1
+2
+3
+4
+5
+x 10
+-5
+Samples
+2nd-order Derivative
+2nd-order Derivative
+t4
+t6 
+t5 
+t7
+t8
+t3
+Figure 4. Second-order derivative and time intervals between 
+inflection points. 
+4577
+ 
+ 
+ 
+1. Filters the raw data with a Chebyshev low-pass filter to 
+remove 60 Hz noise from the power source and 
+ambient light;  
+2. Randomly picks up one complete pulse from a data set.  
+The pulse cycle starts and ends at two consecutive 
+valley points;  
+3. Fits the pulse curve with a polynomial (so that we can 
+take derivatives of the function); 
+4. Takes the 1st- and 2nd-order derivatives of the 
+polynomial; 
+5. Finds the number of maximum/minimum points (
+1
+N ) 
+and the number of inflection points (
+2
+N ) from the 1st- 
+and 2nd-order derivatives, respectively; 
+6. Finds 
+the 
+time 
+intervals 
+between 
+consecutive 
+maximum/minimum points (
+1
+~
+1
+Nt
+t
+) and  inflection 
+points (
+)
+(
+)
+1
+(
+2
+1
+1
+~
+N
+N
+N
+t
+t
++
++
+), including the time interval 
+from the start point to the first maximum and inflection 
+point; 
+7. Saves (a) the number of maximum/minimum points 
+(
+1
+N ), (b) the number of inflection points (
+2
+N ), and 
+(c) the time intervals (
+)
+(
+1
+2
+1
+~
+N
+N
+t
+t
++
+) as attributes; 
+8. Repeat steps 2 through 7 thirty times.  This extracts 
+attributes from 30 pulses for a subject.  No pulse was 
+selected more than once during this repetition. 
+9. Repeat step 8 three times.  This extracts attributes from 
+the three datasets collected for a subject.  
+The same process was applied to the three subjects.  Note 
+that in step 4, 
+1
+N and
+2
+N  might vary between subjects and 
+therefore, the total number of attributes (
+2
+2
+1
++
++ N
+N
+) for 
+different subjects might vary as well. 
+D. Statistic analysis 
+To this point we verified the consistency of the attributes 
+obtained previously within the same subject and analyzed 
+their discriminability between two different subjects.  Within 
+a subject, given that
+1
+N and
+2
+N  for a minority portion of 
+pulses may be different from that of the others; we first used 
+1
+N and
+2
+N  of the majority pulses as the number of time 
+intervals to be examined.  The correlations of the same 
+subject’s time intervals and that of two different subjects are 
+then obtained.  
+ 
+TABLE 1.  STATISTICAL FEATURES OF THE TIME INTERVALS. 
+ 
+T1 
+T2 
+T3 
+T4 
+T5 
+T6 
+Mean (s) 
+0.1575 
+0.4745 
+0.3934 
+0.0583 
+0.1755 
+0.1597 
+STD (s) 
+0.0087 
+0.0146 
+0.0081 
+0.0013 
+0.0041 
+0.0056 
+% 
+5.53 
+3.07 
+2.05 
+2.20 
+2.35 
+3.49 
+III. RESULTS 
+Figures 6 and 7 show the time intervals extracted from one 
+of the datasets of subject 1.  Since the majority of pulses 
+have two maximum/minimum points and four inflection 
+points, two and four time intervals were obtained, 
+respectively.  Results in Table 1 demonstrate that the same 
+subject’s time intervals, although vary in small ranges, are 
+statistically consistent.  
+Figure 5. PPG data collection setup. 
+Figure 7. Time intervals between inflection points. 
+0
+2
+4
+6
+8 
+10 
+12 
+14
+16
+18
+20
+0.05
+0.1
+0.15
+0.2
+0.25
+0.3
+0.35
+0.4
+0.45
+Time intervals between inflection points
+Pulse number 
+t3, t4, t5, t6, (s)
+t3
+t4
+t5
+t6
+Figure 6. Time intervals between maximum/minimum points. 
+0
+2
+4
+6
+8 
+10 
+12 
+14 
+16
+18
+20
+0.1
+0.15
+0.2
+0.25
+0.3
+0.35
+0.4
+0.45
+0.5Time intervals between maximum/minimum points
+Pulse number 
+t1,t2 (s)
+t1
+t2
+4578
+ 
+ 
+ 
+Figures 8 and 9 illustrate the correlations between the three 
+datasets for the same subject and two different subjects, 
+respectively.  These figures indicate that the correlation 
+within a subject is stronger than that between two subjects.  
+IV. DISCUSSION 
+With the consistency and correlation features the attributes 
+studied earlier, it is possible to apply these attributes as 
+biometric identification discriminants.  However, significant 
+work is still required based on this pilot study before this 
+method can be applied to real identification applications.  
+Specifically, the following issues deserve further discussion: 
+1. Using the attributes discussed here as discriminants, 
+find the best discriminant techniques (e.g. [10, 12]) 
+that can be used for decision making.  
+2. When performing identification, it is important to 
+assign appropriate weight to individual attributes. 
+Generally, attributes about higher-order derivatives are 
+more discriminative yet more sensitive to noises; 
+attributes about lower-derivatives are more robust but 
+not as sensitive.  It is desired to assign weights to each 
+attribute with these characteristics considered.   
+3. The signal acquired in this study was weak and noisy.  
+One subject’s data could barely be used for comparison 
+due to noise distortion.  We plan to improve the 
+hardware setup in the future (this work has been done 
+by the time of revision).  
+4. Other future work includes studying the attribute 
+consistency and discriminability under conditions that 
+the PPG signals are corrupted by motion artifacts and 
+other noises.  
+5. We will also validate this identification method using a 
+larger subject population.   
+6. The approach that uses derivative features of PPG 
+signals 
+might 
+be 
+applied 
+to 
+describe 
+other 
+physiological signals (ex. ECG).   
+ACKNOWLEDGMENT 
+The authors want to thank Dr. Paul Kauffmann for his 
+critical comments and editorial assistance. 
+REFERENCES 
+ 
+[1] 
+S. M. Elsherief, M. E. Allam, and M. W. Fakhr, "Biometric Personal 
+Identification Based on Iris Recognition," presented at the 2006 
+International Conference on Computer Engineering and Systems, 
+2006. 
+[2] 
+L. Ma, T. Tan, Y. Wang, and D. Zhang, "Personal identification based 
+on iris texture analysis," IEEE Transactions on Information 
+Technology in Biomedicine Pattern Analysis and Machine 
+Intelligence, vol. 25, pp. 1519 - 1533, 2003. 
+[3] 
+M. S. Markow, H. G. Rylander, III, and A. J. Welch, "Real-time 
+algorithm for retinal tracking," IEEE Transactions on Biomedical 
+Engineering, vol. 40, pp. 1269 - 1281, 1993. 
+[4] 
+L. H. Koh, S. Ranganath, M. W. Lee, and Y. V. Venkatesth, "An 
+integrated face detection and recognition system," presented at 
+International Conference on Image Analysis and Processing, 1999. 
+[5] 
+K. Peng, L. Chen, and S. Ruan, "A novel scheme of face verification 
+using active appearance models," presented at IEEE Conference on 
+Advanced Video and Signal Based Surveillance, 2005. 
+[6] 
+M. I. Faraj and J. Bigun, "Motion Features from Lip Movement for 
+Person Authentication," presented at 18th International Conference on 
+Pattern Recognition, 2006. 
+[7] 
+M. Faundez-Zanuy, "Biometric verification of humans by means of 
+hand geometry," presented at 39th Annual 2005 International 
+Carnahan Conference on Security Technology, 2005. 
+[8] 
+J. Doi and M. Yamanaka, "Biometric authentication using finger and 
+palmar creases," presented at 2004 IEEE Symposium on Virtual 
+Environments, Human-Computer Interfaces and Measurement 
+System. 
+[9] 
+S. A. Israel, W. T. Scruggs, W. J. Worek, and J. M. Irvine, "Fusing 
+Face and ECG for Personal Identification," presented at Proceedings 
+of the 32nd Applied Imagery Pattern Recognition Workshop (AIPR), 
+2003. 
+[10] S. Israela, J. M. Irvineb, A. Chengb, M. D.Wiederholdc, and B. 
+K.Wiederholdd, "ECG to identify individuals," Pattern Recognition, 
+vol. 38, pp. 133-142, 2005. 
+[11] J. Yao and S. Warren, "Design of a Plug-and-Play Pulse Oximeter," 
+presented at 2nd Joint EMBS-BMES Conf., Houston, TX, 2002. 
+[12] Y. Y. Gu, Y. Zhang, and Y. T. Zhang, "A Novel Biometric Approach 
+in Human Verification by Photoplethysmographic Signals," presented 
+at The 4th Annual IEEE Conf on Information Technology 
+Applications in Biomedicine, UK, 2003. 
+[13] Y. Y. Gu and Y. T. Zhang, "Photoplethysmographic authentication 
+through fuzzy logic," presented at IEEE EMBS Asian-Pacific 
+Conference on Biomedical Engineering, 2003. 
+[14] Y. Wan, X. Sun, and J. Yao, "Design of a Photoplethysmographic 
+Sensor for Biometric Identification," submitted to 2007 IEEE 
+International Conference on Controls, Automation and Systems, 
+Seoul, Korea, 2007. 
+Figure 9. Correlations between datasets for two different 
+subjects. 
+0
+100
+200
+0
+100
+200
+Dataset B3 
+0
+100
+200
+0
+100
+200
+300
+0
+100
+200
+0 
+100
+200
+300
+0
+200
+400
+0
+100
+200
+Dataset B2 
+0
+200
+400
+0
+100
+200
+300
+0
+200
+400
+0 
+100
+200
+300
+0
+200
+400
+0
+100
+200
+Dataset B1 
+Dataset A1
+0
+200
+400
+0
+100
+200
+300
+Dataset A2 
+0
+200
+400
+0 
+100
+200
+300
+Dataset A3
+Figure 8. Correlations between datasets for the same subject.
+0
+100
+200
+0
+100
+200
+300
+Dataset A3 
+0
+100
+200
+0 
+100
+200
+300
+0
+100
+200
+0 
+100
+200
+0
+200
+400
+0
+100
+200
+300
+Dataset A2 
+0
+200
+400
+0 
+100
+200
+300
+0
+200
+400
+0 
+100
+200
+0
+200
+400
+0
+100
+200
+300
+Dataset A1 
+Dataset A1 
+0
+200
+400
+0 
+100
+200
+300
+Dataset A2 
+0
+200
+400
+0 
+100
+200
+Dataset A3
+4579

@@ -1,0 +1,3 @@
+title=PPG derived heart rate estimation during intensive physical exercise
+year=2019
+author=Motin

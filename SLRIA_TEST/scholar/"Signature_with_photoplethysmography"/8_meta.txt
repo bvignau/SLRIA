@@ -1,0 +1,3 @@
+title=Face detection method based on photoplethysmography
+year=2013
+author=Gibert

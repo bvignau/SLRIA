@@ -1,0 +1,3 @@
+title=The GYF domain.
+year=2006
+author=Kofler

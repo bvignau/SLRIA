@@ -1,0 +1,3 @@
+title=Camera-based photoplethysmography in critical care patients
+year=2016
+author=Rasche

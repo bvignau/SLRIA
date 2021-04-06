@@ -1,0 +1,1 @@
+Combine caméra PPG et thermique pour monitorer des fonctions cardio vasculaire. Objectif détecter le stress. HS

@@ -1,0 +1,3 @@
+title=Robust respiration detection from remote photoplethysmography
+year=2016
+author=Van Gastel

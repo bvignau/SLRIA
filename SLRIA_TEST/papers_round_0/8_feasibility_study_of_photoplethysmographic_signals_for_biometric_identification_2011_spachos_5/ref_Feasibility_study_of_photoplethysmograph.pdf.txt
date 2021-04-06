@@ -1,0 +1,8 @@
+R. Brunelli and T. Poggio, “Face recognition: features versus templates,” Pattern Analysis and Machine Intel- ligence, IEEE Transactions on, vol. 15, no. 10, pp. 1042 –1052, Oct. 1993. 
+Ashok Samal and Prasana A. Iyengar, “Automatic recognition and analysis of human faces and facial ex- pressions: a survey,” Pattern Recogn., vol. 25, pp. 65– 77, January 1992. 
+Michael Negin, Thomas A. Chmielewski, Marcos Sal- ganicoff, Theodore A. Camus, Ulf M. Cahn von Seelen, P. L. Venetianer, and Guanghua G. Zhang, “An iris bio- metric system for public and personal use,” Computer, vol. 33, pp. 70–75, 2000. 
+L. Biel, O. Pettersson, L. Philipson, and P. Wide, “Ecg analysis: a new approach in human identification,” in Instrumentation and Measurement Technology Confer- ence, 1999. IMTC/99. Proceedings of the 16th IEEE, 1999. 
+A. Roggan, M. Friebel, K. Doerschel, A. Hahn, and G. J. Mueller, “Optical properties of circulating human blood in the wavelength range 400-2500 nm,” Journal of Biomedical Optics, vol. 4, pp. 36–46, Jan. 1999. 
+Y.Y. Gu, Y. Zhang, and Y.T. Zhang, “A novel bio- metric approach in human verification by photoplethys- mographic signals,” in Information Technology Appli- cations in Biomedicine, 2003. 4th International IEEE EMBS Special Topic Conference on, 2003, pp. 13 – 14. 
+Y.Y. Gu and Y.T. Zhang, “Photoplethysmographic au- thentication through fuzzy logic,” in Biomedical En- gineering, 2003. IEEE EMBS Asian-Pacific Conference on, 2003, pp. 136 – 137. 
+Jianchu Yao, Xiaodong Sun, and Yongbo Wan, “A pi- lot study on using derivatives of photoplethysmographic signals as a biometric identifier,” in Engineering in Medicine and Biology Society, 2007. EMBS 2007. 29th Annual International Conference of the IEEE, 2007, pp. 4576 –4579. 

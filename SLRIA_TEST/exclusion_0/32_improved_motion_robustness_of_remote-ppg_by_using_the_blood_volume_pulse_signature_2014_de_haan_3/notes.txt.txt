@@ -1,0 +1,1 @@
+D2tection du rythme cardiaque avec des caméras PPG dans une salle de sport. HS

@@ -1,0 +1,3 @@
+title=Motion robust PPG-imaging through color channel mapping
+year=2016
+author=Moço

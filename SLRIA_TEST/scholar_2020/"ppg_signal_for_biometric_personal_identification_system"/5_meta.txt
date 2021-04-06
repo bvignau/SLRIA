@@ -1,0 +1,3 @@
+title=A multimodal biometric identification system based on ECG and PPG signals
+year=2020
+author=Yaacoubi

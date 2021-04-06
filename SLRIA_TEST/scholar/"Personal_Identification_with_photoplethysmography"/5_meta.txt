@@ -1,0 +1,3 @@
+title=Photoplethysmography and its application in clinical physiological measurement
+year=2007
+author=Allen

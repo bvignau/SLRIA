@@ -1,4 +1,2 @@
-*.pdf
-SLRIA_*
 .vscode/
 __pycache__/

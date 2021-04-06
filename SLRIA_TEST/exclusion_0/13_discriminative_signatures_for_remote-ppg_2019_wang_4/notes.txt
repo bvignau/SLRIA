@@ -1,0 +1,1 @@
+développe un algo pour reconnaitre les pulsations de coeurs avec un PPG à distance ? et surtout dans le proche infra rouge

@@ -1,0 +1,38 @@
+Y.Y. Gu, Y. Zhang, Y.T. Zhang, A novel biometric approach in human verification by photoplethysmographic signals, in: 4th International IEEE EMBS Special Topic Conference on Information Technology Applications in Biomedicine, 24– 26 April 2003, pp. 13–14. 
+R. Brunelli, T. Poggio, Face recognition: features versus templates, Pattern Anal. Mach. Intell. IEEE Trans. 15 (October (10)) (1993) 1042–1052. 
+A. Samal, P.A. Iyengar, Automatic recognition and analysis of human faces and facial expressions: a survey, Pattern Recognition 25 (1992) 65–67. 
+D. Dumn, Using a multi-layer perceptron neural for human voice identifica- tion, in: Proceedings of the 4th International Conference on Signal Processing, Applications and Technology, Newton, MA, USA, 1993. 
+M. Negin, T.A. Chmielewski, M. Salganicoff, U.M von Seelen, P.L. Venetainer, G. G. Zhang, An iris biometric system for public and personal use, Computer 33 (2) (2000) 70–75. 
+Kyong Seok Paik, Chin Hyan Chung, Jin Ok Kim, Dae Jun Hwang, On a lip print recognition by the pattern kernels with multiresolution architecture, in: Proceedings of International Conference on Image Processing, vol. 2, 2001, pp. 246–249. 
+ChewYean Yam, M.S. Nixon, J.N. Carter, Performance analysis on new biometric gait motion model, in: Proceedings of the 5th IEEE Southwest Symposium on Image Analysis and Interpretation, 2002, pp. 31–34. 
+R.B. Paranjape, J. Mahovsky, L. Benedicenti, Z. Koles', The electroencephalo- gram as a biometric, in: Canadian Conference on Electrical and Computer Engineering, vol. 2, 2001, pp. 1363–1366. 
+L. Biel, O. Pettersson, L. Philipson, P. Wide, ECG analysis: a new approach in human identification, IEEE Trans. Instrum. Meas. 50 (3) (2001) 808–812. 
+L. Biel, O. Pettersson, L. Philipson, P. Wide, ECG analysis: a new approach in human identification, in: IMTC/99, Proceedings of the 16th IEEE Instrumenta- tion and Measurement Technology Conference, vol. 1, 1999, pp. 557–561. 
+T.W. Shen, W.J. Tompkins, Y.H. Hu, One-lead ECG for identity verification, in: 2nd Joint Conference of the IEEE Engineering in Medicine and Biology Society and the Biomedical Engineering Society, Huston, 2002. 
+J. Bailey, M. Fecteau, N.L. Pendleton, Wireless Pulse Oximeter (Bachelor Degree Thesis), Worcester Polytechnic Institute, April 24, 2008. 
+Advanced Prime Materials Korea 〈http://www.apmkr.com/〉 (accessed July, 2013). 
+Jianchu Yao, Xiaodong Sun, Yongbo Wan, A pilot study on using derivatives of photoplethysmographic signals as a biometric identifier, in: 29th Annual International Conference of the IEEE Engineering in Medicine and Biology Society, 2007 (EMBS 2007), 22–26 August 2007, pp. 4576–4579. 
+P. Spachos, Jiexin Gao, D. Hatzinakos, Feasibility study of photoplethysmo- graphic signals for biometric identification, in: 2011 17th International Con- ference on Digital Signal Processing (DSP), 6–8 July 2011, pp. 1–5. 
+Chen Wei, Lei Sheng, Guo Lihua, Chen Yuquan, Pan Min, Study on conditioning and feature extraction algorithm of photoplethysmography signal for physio- logical parameters detection, in: 2011 4th International Congress on Image and Signal Processing (CISP), vol. 4, 15–17 October 2011, pp. 2194–2197. 
+Y.Y. Gu, Y.T. Zhang, Photoplethysmographic authentication through fuzzy logic, in: IEEE EMBS Asian-Pacific Conference on Biomedical Engineering, 20–22 October 2003, pp. 136–137. 
+Yongbo Wan, Xiaodong Sun, Jianchu Yao, Design of a photoplethysmographic sensor for biometric identification, in: International Conference on Control, Automation and Systems, 2007 (ICCAS’07), 17–20 October 2007, pp. 1897– 1900. 
+M. Singh, S. Gupta, “Correlation studies of PPG finger pulse profiles for Biometric system”, Int. J. Inf. Technol. Knowl. Manage. 5 (January–June (1)) (2012) 1–3. 
+K.K. Venkatasubramanian, A. Banerjee, S. Gupta, Plethysmogram-based secure inter-sensor communication in body area networks, in: IEEE Military Commu- nications Conference, 2008 (MILCOM 2008), 16–19 November 2008, pp. 1–7. 
+K. Humphreys, C. Markham, T. Ward, A CMOS camera-based system for clinical photoplethysmographic applications, Proc. SPIE 5823 (2005) 88–95. 
+P. Shi, S. Hu, Y. Zhu, J. Zheng, V. Azorin-Peris, A. Echiadis, Development of a remote photoplenthysmographic technique for human biometrics, in: Pro- ceedings of the SPIE BiOS, Photonics West, San Jose, USA, vol. 7169-41, 2009. 
+U. Rubins, R. Erts, V. Nikiforovs, The blood perfusion mapping in the human skin by photoplethysmography imaging, in: MEDICON 2010, IFMBE Proceed- ings, vol. 29, 2010, pp. 304–306. 
+L. Rutuja, D. Nivedita, Applications of finger photoplethysmography, Int. J. Eng. Res. Appl. 2 (1) (2012) 877–880. 
+M.R. Ram, K.V. Madhav, E.H. Krishna, N.R. Komalla, K.A. Reddy, A novel approach for motion artifact reduction in PPG signals based on AS-LMS adaptive filter, IEEE Trans. Instrum. Meas. 61 (5) (2012) 1445–1457. 
+L. Chungkeun, S.S. Hang, P. Jongchul, L. Myoungho, The optimal attachment position for a fingertip photoplethysmographic sensor with low DC, IEEE Sens. J. 12 (May (5)) (2012) 1253–1254. 
+R.C. Gonzalez, R.E. Woods, Digital İmage Processing, Prentice-Hall, 2008. 
+M. Elgendi, On the analysis of fingertip photoplethysmogram signals, Curr. Cardiol. Rev. 8 (1) (2012) 14–25. 
+SR Alty, N Angarita-Jaimes, SC Millasseau, PJ. Chowienczyk, Predicting arterial stiffness from the digital volume pulse waveform, IEEE Trans. Biomed. Eng. 54 (12) (2007) 2268–2275. 
+K TN Takazawa, M Fujita, O Matsuoka, T Saiki, M Aikawa, S Tamura, C. Ibukiyama, Assessment of vasocative agents and vascular aging by the second derivative of photoplethysmogram waveform, Hypertension 32 (1998) 365–370. 
+I Imanaga, H Hara, S Koyanagi, K. Tanaka, Correlation between wave compo- nents of the second derivative of plethysmogram and arterial distensibility, Jpn. Heart J. 39 (1998) 775–784. 
+Y Aiba, S Ohshiba, S Horiguchi, I Morioka, K Miyashit, I Kiyota, et al., Peripheral hemodynamics evaluated by acceleration plethysmography in workers exposed to lead, Ind. Health 37 (1999) 3–8. 
+N. Nousou, S. Urase, Y. Maniwa, K. Fujimura, Y. Fukui, Classification of acceleration plethysmogram using self-organizing map, in: International Symposium on Intelligent Signal Processing and Communications, 2006 (ISPACS ’06), 2006, pp. 681–684. 
+T Otsuka, T Kawada, M Katsumata, C. Ibuki, Utility of second derivative of the finger photoplethysmogram for the estimation of the risk of coronary heart disease in the general population, Circ. J. 70 (2006) 304–310. 
+H.J. Baek, J.S. Kim, Y.S. Kim, H.B. Lee, K.S. Park, Second derivative of photo- plethysmography for estimating vascular aging, in: The 6th International Special Topic Conference on Information Technology Applications in Biome- dicine, 2007, pp. 70–72. 
+W.M. Jubadi, S.F.A. Mohd Sahak, Heartbeat monitoring alert via SMS, in: IEEE Symposium on Industrial Electronics & Applications, 2009. 
+E Gil1, M Orini1, R Bail´on, J Vergara, L Mainardi, P. Laguna, Photoplethysmo- graphy pulse rate variability as a surrogate measurement of heart rate variability during non-stationary conditions, Physiol. Meas. 31 (9) (2010) 127–1290. 
+L. Wang, E. Pickwell-MacPherson, Y.P. Liang, Y.T. Zhang, Noninvasive cardiac output estimation using a novel photoplethysmogram index, in: Annual International Conference of the IEEE Engineering in Medicine and Biology Society, 2009. A. Reşit Kavsaoğlu et al. / Computers in Biology and Medicine 49 (2014) 1–14 14 

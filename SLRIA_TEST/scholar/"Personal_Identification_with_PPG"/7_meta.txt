@@ -1,0 +1,3 @@
+title=SVM-based classification method to identify alcohol consumption using ECG and PPG monitoring
+year=2018
+author=Wang

@@ -1,0 +1,25 @@
+O’Gorman, L. Comparing passwords, tokens, and biometrics for user authentication. Proc. IEEE 2003, 91, 2021–2040. 
+Jin, A.T.B.; Ling, D.N.C.; Goh, A. Biohashing: Two factor authentication featuring fingerprint data and tokenised random number. Pattern Recognit. 2004, 37, 2245–2255. 
+Jain, A.K.; Ross, A.; Pankanti, S. Biometrics: A tool for information security. IEEE Trans. Inf. Forensics Secur. 2006, 1, 125–143. 
+Ratha, N.K.; Connell, J.H.; Bolle, R.M. Enhancing security and privacy in biometrics-based authentication systems. IBM Syst. J. 2001, 40, 614–634. 
+Jain, A.K.; Pankanti, S.; Prabhakar, S.; Hong, L.; Ross, A. Biometrics: A grand challenge. In Proceedings of the 17th IEEE International Conference on Pattern Recognition ICPR, Cambridge, UK, 23–26 August 2004; Volume 2, pp. 935–942. 
+Tuyls, P.; Akkermans, A.H.; Kevenaar, T.A.; Schrijen, G.J.; Bazen, A.M.; Veldhuis, R.N. Practical biometric authentication with template protection. In Audio- and Video-Based Biometric Person Authentication, Proceedings of the 5th International Conference on Audio- and Video-Based Biometric Person Authentication, Rye Brook, NY, USA, 20–22 July 2005; Kanade, T., Jain, A., Ratha, N.K., Eds.; Springer: Berlin/Heidelberg, Germany, 2005; pp. 436–446. 
+Pankanti, S.; Bolle, R.M.; Jain, A. Biometrics: The future of identification Computer 2000, 33, 46–49. 
+Jain, A.K.; Ross, A.; Prabhakar, S. An introduction to biometric recognition. IEEE Trans. Circuits Syst. Video Technol. 2004, 14, 4–20. 
+Odinaka, I.; Lai, P.H.; Kaplan, A.D.; O’Sullivan, J.A.; Sirevaag, E.J.; Rohrbaugh, J.W. ECG biometric recognition: A comparative analysis. IEEE Trans. Inf. Forensics Secur. 2012, 7, 1812–1824. 
+Phillips, P.J.; Martin, A.; Wilson, C.L.; Przybocki, M. An introduction evaluating biometric systems. Computer 2000, 33, 56–63. 
+Louis, W.; Komeili, M.; Hatzinakos, D. Continuous authentication using one-dimensional multi-resolution local binary patterns (1DMRLBP) in ECG biometrics. IEEE Trans. Inf. Forensics Secur. 2016, 11, 2818–2832. 
+Peter, S.; Pratap Reddy, B.; Momtaz, F.; Givargis, T. Design of secure ECG-based biometric authentication in body area sensor networks. Sensors 2016, 16, 570. 
+Jekova, I.; Krasteva, V.; Schmid, R. Human identification by cross-correlation and pattern matching of personalized heartbeat: Influence of ECG leads and reference database size. Sensors 2018, 18, 372. 
+Pinto, J.R.; Cardoso, J.S.; Lourenço, A.; Carreiras, C. Towards a continuous biometric system based on ECG signals acquired on the steering wheel. Sensors 2017, 17, 2228. 
+Tan, R.; Perkowski, M. Toward improving electrocardiogram (ECG) biometric verification using mobile sensors: A two-stage classifier approach. Sensors 2017, 17, 410. 
+Venugopalan, S.; Juefei-Xu, F.; Cowley, B.; Savvides, M. Electromyograph and keystroke dynamics for spoof-resistant biometric authentication. In Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition Workshops, Boston, MA, USA, 7–12 June 2015; pp. 109–118. 
+Paranjape, R.; Mahovsky, J.; Benedicenti, L.; Koles, Z. The electroencephalogram as a biometric. In Proceedings of the IEEE Canadian Conference on Electrical and Computer Engineering, Toronto, ON, Canada, 13–16 May 2001; Volume 2, pp. 1363–1366.
+Wu, Q.; Zeng, Y.; Zhang, C.; Tong, L.; Yan, B. An EEG-based person authentication system with open-set capability combining eye blinking signals. Sensors 2018, 18, 335. 
+Elgendi, M. On the analysis of fingertip photoplethysmogram signals. Curr. Cardiol. Rev. 2012, 8, 14–25. 
+Spachos, P.; Gao, J.; Hatzinakos, D. Feasibility study of photoplethysmographic signals for biometric identification. In Proceedings of the IEEE 17th International Conference on Digital Signal Processing (DSP), Corfu, Greece, 6–8 July 2011; pp. 1–5. 
+Bonissi, A.; Labati, R.D.; Perico, L.; Sassi, R.; Scotti, F.; Sparagino, L. A preliminary study on continuous authentication methods for photoplethysmographic biometrics. In Proceedings of the IEEE Workshop on Biometric Measurements and Systems for Security and Medical Applications (BIOMS), Naples, Italy, 9 September 2013; pp. 28–33. 
+Karimian, N.; Tehranipoor, M.; Forte, D. Non-fiducial ppg-based authentication for healthcare application. In Proceedings of the IEEE EMBS International Conference on Biomedical & Health Informatics (BHI), Orlando, FL, USA, 16–19 February 2017; pp. 429–432. 
+Yadav, U.; Abbas, S.N.; Hatzinakos, D. Evaluation of PPG biometrics for authentication in different states. In Proceedings of the IEEE 11th IAPR/IEEE International Conference on Biometrics, Gold Coast, Queensland, Australia, 20–23 February 2018. 
+Nitzan, M.; Babchenko, A.; Khanokh, B.; Landau, D. The variability of the photoplethysmographic signal—A potential method for the evaluation of the autonomic nervous system. Physiol. Meas. 1998, 19, 93. 
+Richards, J.C.; Bertram, S. Anxiety sensitivity, state and trait anxiety, and perception of change in sympathetic nervous system arousal. J. Anxiety Disord. 2000, 14, 413–427. 

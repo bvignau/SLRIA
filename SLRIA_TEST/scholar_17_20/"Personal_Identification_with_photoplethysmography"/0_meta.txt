@@ -1,0 +1,3 @@
+title=Detecting fake finger-vein data using remote photoplethysmography
+year=2019
+author=Bok

@@ -1,0 +1,3 @@
+title=Performance limits of ICA-based heart rate identification techniques in imaging photoplethysmography. 
+year=2015
+author=Mannapperuma
