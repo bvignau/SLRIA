@@ -1,0 +1,3 @@
+title=Spectral matrix decomposition-based motion artifacts removal in multi-channel PPG sensor signals
+year=2016
+author=Xiong

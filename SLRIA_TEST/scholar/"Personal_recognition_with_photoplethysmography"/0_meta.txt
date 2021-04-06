@@ -1,0 +1,3 @@
+title=Pulse transit time by R-wave-gated infrared photoplethysmography: review of the literature and personal experience
+year=2004
+author=Naschitz

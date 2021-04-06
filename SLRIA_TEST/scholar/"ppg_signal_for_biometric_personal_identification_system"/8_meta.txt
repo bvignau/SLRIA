@@ -1,0 +1,3 @@
+title=miBEAT based continuous and robust biometric identification system for on-the-go applications
+year=2017
+author=Yathav

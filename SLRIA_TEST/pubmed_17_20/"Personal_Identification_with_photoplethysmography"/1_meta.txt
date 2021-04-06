@@ -1,0 +1,3 @@
+title=Identification of blood pressure reflecting personalized traits using bilateral photoplethysmography. 
+year=2020
+author=Shin

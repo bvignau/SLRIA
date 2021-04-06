@@ -1,0 +1,1 @@
+Extension d'un papier qui utilisait le PPG pour détecter les mouvement fin des doigts. Ici appliqué à la reconaissance du language des signes. HS

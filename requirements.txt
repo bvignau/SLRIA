@@ -1,3 +1,4 @@
 bibtexparser
 PyMuPDF
+jellyfish
 #anystyle-cli (ruby app for parsing ref to install)

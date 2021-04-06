@@ -1,0 +1,3 @@
+title=Heart rate estimation from wrist-worn photoplethysmography: A review
+year=2019
+author=Biswas

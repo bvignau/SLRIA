@@ -1,0 +1,3 @@
+title=Heart rate tracking in photoplethysmography signals affected by motion artifacts: a review
+year=2021
+author=Ismail

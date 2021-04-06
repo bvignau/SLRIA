@@ -1,0 +1,1 @@
+Propose une méthode pour améliorer la détection du rythme cardiaque avec des caméras PPG. Méthode spécifique pour les peaux sombres, qui présentent habituellement moins de performances. HS

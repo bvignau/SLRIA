@@ -1,0 +1,1 @@
+Utilise le PPG pour reconnaitre des activités comme le squats et steps. HS

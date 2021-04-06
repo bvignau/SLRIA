@@ -1,0 +1,3 @@
+title=Purification and structural characterization of a filamentous, mucin-like proteophosphoglycan secreted by Leishmania parasites.
+year=1996
+author=Ilg

@@ -1,0 +1,3 @@
+title=Biometric Recognition System Based on Photoplethysmography Signals Recorded During Squat Movement and Rest
+year=2020
+author=Aydemir

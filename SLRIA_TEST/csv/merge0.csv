@@ -1,0 +1,140 @@
+paper ref;appearance
+cornet: deep learning framework for ppg-based heart rate estimation and biometric identification in ambulant environment 2019 biswas;12
+a novel feature ranking algorithm for biometric recognition with ppg signals 2014 kavasaoglu;8
+detecting fake finger-vein data using remote photoplethysmography 2019 bok;7
+human recognition from photoplethysmography (ppg) based on non-fiducial features 2017 karimian;6
+a low-complexity compressed sensing reconstruction method for heart signal biometric recognition 2019 xiao;6
+identification of cerebral artery stenosis using bilateral photoplethysmography.  2018 kang;6
+recognition of impulse of love at first sight based on photoplethysmography signal 2020 lu;5
+feasibility study of photoplethysmographic signals for biometric identification 2011 spachos;5
+photoplethysmography as a form of biometric authentication 2015 lee;5
+an automated algorithm to extract time plane features from the ppg signal and its derivatives for personal health monitoring application 2019 chakraborty;4
+wearable bio-signal (ppg)-based personal authentication method using random forest and period setting considering the feature of ppg signals 2019 lee;4
+actippg: using deep neural networks for activity recognition from wrist-worn photoplethysmography (ppg) sensors 2019 boukhechba;4
+discriminative signatures for remote-ppg 2019 wang;4
+amplitude-selective filtering for remote-ppg 2017 wang;4
+single-element remote-ppg 2018 wang;4
+impact of makeup on remote-ppg monitoring 2020 wang;4
+a pilot study on using derivatives of photoplethysmographic signals as a biometric identifier 2007 yao;4
+a novel biometric approach in human verification by photoplethysmographic signals 2003 gu;4
+data-driven assessment of cardiovascular ageing through multisite photoplethysmography and electrocardiography.  2019 chiarelli;4
+measurement and identification of mental workload during simulated computer tasks with multimodal methods and machine learning.  2020 ding;4
+identification of blood pressure reflecting personalized traits using bilateral photoplethysmography.  2020 shin;4
+instant stress: detection of perceived mental stress through smartphone photoplethysmography and thermal imaging.  2019 cho;4
+embodied emotion recognition based on life-logging 2019 cho;4
+quantification of vascular function changes under different emotion states: a pilot study 2017 xia;4
+utility of photoplethysmography for heart rate estimation among inpatients.  2018 koshy;4
+the study of ppg and apg signals for biometric recognition 2018 sidek;3
+evaluation of the time stability and uniqueness in ppg-based biometric system 2020 hwang;3
+heart rate estimation from wrist-worn photoplethysmography: a review 2019 biswas;3
+biometrical identification on the basis of photoplethysmogram for automated medical systems 2019 io;3
+photoplethysmography biometric recognition model based on sparse softmax vector and k-nearest neighbor 2020 yang;3
+biometric recognition system based on photoplethysmography signals recorded during squat movement and rest 2020 aydemir;3
+improved motion robustness of remote-ppg by using the blood volume pulse signature 2014 de haan;3
+enhancement in the design of biometric identification system based on photoplethysmography data 2013 salanke;3
+multiparameter respiratory rate estimation from the photoplethysmogram 2013 karlen;3
+photoplethysmographic waveform in hyperbaric environment.  2019 pelaez coca;3
+evaluation of pulse oximeter derived photoplethysmographic signals for obstructive sleep apnea diagnosis.  2017 li;3
+non-contact quantification of jugular venous pulse waveforms from skin displacements.  2018 tang ej;3
+personal identification via heartbeat signal 2018 horng;2
+automatic identification of s1 and s2 heart sounds using simultaneous pcg and ppg recordings 2018 babu;2
+making sense of glucose metrics in diabetes: linkage between postprandial glucose (ppg), time in range (tir) & hemoglobin a1c (a1c) 2020 martens;2
+svm-based classification method to identify alcohol consumption using ecg and ppg monitoring 2018 wang;2
+fast emotion recognition based on single pulse ppg signal with convolutional neural network 2019 lee;2
+wearable emotion recognition system based on gsr and ppg signals 2017 udovicic;2
+ppg-based finger-level gesture recognition leveraging wearables 2018 zhao;2
+dataset from ppg wireless sensor for activity monitoring 2020 biagetti;2
+biometrie identification using photoplethysmography signal 2018 al-sidani;2
+photoplethysmogram based biometric identification incorporating different age and gender group 2018 azam;2
+improving photoplethysmographic measurements under motion artifacts using artificial neural network for personal healthcare 2018 roy;2
+a new, short-recorded photoplethysmogram dataset for blood pressure monitoring in china 2018 liang;2
+an overview of remote photoplethysmography methods for vital sign monitoring 2020 sinhal;2
+cardiovascular assessment by imaging photoplethysmography–a review 2018 zaunseder;2
+current progress of photoplethysmography and spo 2 for health monitoring 2019 tamura;2
+hypertension assessment using photoplethysmography: a risk stratification approach 2019 liang;2
+unsupervised skin tissue segmentation for remote photoplethysmography 2019 bobbia;2
+mibeat based continuous and robust biometric identification system for on-the-go applications 2017 yathav;2
+evaluation of ppg biometrics for authentication in different states 2018 yadav;2
+pattern analysis towards human verification using photoplethysmograph signals 2020 khan;2
+biometric authentication using photoplethysmography signals 2016 sarkar;2
+acceleration plethysmogram based biometric identification 2015 jaafar;2
+pulse transit time by r-wave-gated infrared photoplethysmography: review of the literature and personal experience 2004 naschitz;2
+photoplethysmography and its application in clinical physiological measurement 2007 allen;2
+an adaptive deep learning approach for ppg-based identification.  2016 jindal;2
+identification of atrial fibrillation by quantitative analyses of fingertip photoplethysmogram.  2017 tang;2
+accurate heart rate monitoring during physical exercises using ppg 2017 temko;2
+identification of hemodynamically unstable arrhythmias using subcutaneous photoplethysmography.  2010 turcott;2
+performance limits of ica-based heart rate identification techniques in imaging photoplethysmography 2014 mannapperuma;2
+long distance vital signs monitoring with person identification for smart home solutions 2018 szankin;2
+emotion recognition based on multiple physiological signals.  2020 chen;2
+filtering parameters selection method and peaks extraction for ecg and ppg signals 2019 bastos;1
+a robust ppg onset and systolic peak detection algorithm based on hilbert transform 2020 chakraborty;1
+accurate detection of dicrotic notch from ppg signal for telemonitoring applications 2018 chakraborty;1
+towards low-cost sign language gesture recognition leveraging wearables 2019 zhao;1
+ppg derived heart rate estimation during intensive physical exercise 2019 motin;1
+modified rgb cameras for infrared remote-ppg 2020 wang;1
+233 u/236 u signature allows to distinguish environmental emissions of civil nuclear industry from weapons fallout 2020 hain;1
+blood pressure estimation from ppg signals using convolutional neural networks and siamese network 2020 schlesinger;1
+diverse r-ppg: camera-based heart rate estimation for diverse subject skin-tones and scenes 2020 chari;1
+ppg motion artifact reduction using neural network and spline interpolation 2020 ghosal;1
+cross-domain adaptation for biometric identification using photoplethysmogram 2020 lee;1
+biometricnet: deep learning based biometric identification using wrist-worn ppg 2018 everson;1
+comparison between k-nearest neighbor and support vector machine algorithms for ppg biometric identification 2019 al-sidani;1
+heart rate tracking in photoplethysmography signals affected by motion artifacts: a review 2021 ismail;1
+photoplethysmography-based in-ear sensor system for identification of increased stress arousal in everyday life 2017 lueken;1
+heart rate monitoring during physical exercise from photoplethysmography using neural network 2018 zhu;1
+automated myocardial infarction identification based on interbeat variability analysis of the photoplethysmographic data 2020 chakraborty;1
+cuffless blood pressure estimation based on photoplethysmography signal and its second derivative 2017 liu;1
+multi-channel remote photoplethysmography correspondence feature for 3d mask face presentation attack detection 2021 liu;1
+a new method for activity monitoring using photoplethysmography signals recorded by wireless sensor 2020 aydemir;1
+pulsegan: learning to generate realistic pulse waveforms in remote photoplethysmography 2021 song;1
+determination of hypertension disease using chirp z-transform and statistical features of optimal band-pass filtered short-time photoplethysmography signals 2020 aydemir;1
+remote spectral measurements of the blood volume pulse with applications for imaging photoplethysmography 2018 blackford;1
+hrv performance analysis in photoplethysmography and electrocardiography 2020 bhowmick;1
+robust algorithm for remote photoplethysmography in realistic conditions 2020 artemyev;1
+non-contact, simple neonatal monitoring by photoplethysmography 2018 cobos-torres;1
+a deep neural network-based pain classifier using a photoplethysmography signal 2019 lim;1
+biosignal–based multimodal biometric system 2017 ko;1
+a nonfiducial ppg-based subject authentication approach using the statistical features of dwt-based filtered signals 2020 alotaiby;1
+auth 'n'scan: opportunistic photoplethysmography in mobile fingerprint authentication 2018 hashizume;1
+biometric authentication using the ppg: a long-term feasibility study 2018 sancho;1
+a method for automatic identification of reliable heart rates calculated from ecg and ppg waveforms 2006 yu;1
+perceiving emotions from bodily expressions and multisensory integration of emotion cues in schizophrenia 2011 van den stock;1
+spectral matrix decomposition-based motion artifacts removal in multi-channel ppg sensor signals 2016 xiong;1
+a novel personalized motion and noise artifact (mna) detection method for smartphone photoplethysmograph (ppg) signals 2018 tabei;1
+algorithmic principles of remote ppg 2016 wang;1
+motion robust ppg-imaging through color channel mapping 2016 moço;1
+motion robust remote-ppg in infrared 2015 van gastel;1
+hydrocarbon circulation and colonial signature in pachycondyla villosa 2004 lucas;1
+eliminating forgers based on intra trial variability in online signature verification using handglove and photometric signals 2010 samraj;1
+design of a photoplethysmographic sensor for biometric identification 2007 wan;1
+photoplethysmography-based heart rate monitoring in physical activities via joint sparse spectrum reconstruction 2015 zhang;1
+simultaneous monitoring of ballistocardiogram and photoplethysmogram using a camera 2016 shao;1
+troika: a general framework for heart rate monitoring using wrist-type photoplethysmographic signals during intensive physical exercise 2014 zhang;1
+feature extraction for biometric recognition with photoplethysmography signals 2013 kavsaoglu;1
+a novel algorithm for remote photoplethysmography: spatial subspace rotation 2015 wang;1
+camera-based photoplethysmography in critical care patients 2016 rasche;1
+robust respiration detection from remote photoplethysmography 2016 van gastel;1
+photoplethysmography revisited: from contact to noncontact, from point to imaging 2015 sun;1
+face detection method based on photoplethysmography 2013 gibert;1
+photoplethysmogram signal based biometric recognition using linear discriminant classifier 2016 chakraborty;1
+a preliminary study on continuous authentication methods for photoplethysmographic biometrics 2013 bonissi;1
+short- and long-term effects of wholegrain oat intake on weight management and glucolipid metabolism in overweight type-2 diabetics: a randomized control trial.  2016 li;1
+extraction of heart rate variability from smartphone photoplethysmograms.  2015 peng;1
+isostructural softening of vulcanized nanocomposites.  2020 baeza;1
+the gyf domain 2006 kofler;1
+purification and structural characterization of a filamentous, mucin-like proteophosphoglycan secreted by leishmania parasites 1996 ilg;1
+pi3kδ inhibition reshapes follicular lymphoma-immune microenvironment cross talk and unleashes the activity of venetoclax.  2020 serrat;1
+living-skin classification via remote-ppg.  2017 wang;1
+photoplethysmographic waveform in hyperbaric environment 2019 pelaez;1
+skin-interfaced biosensors for advanced wireless physiological monitoring in neonatal and pediatric intensive-care units.  2020 hu;1
+digital cardiovascular biomarker responses to transcutaneous cervical vagus nerve stimulation: state-space modeling, prediction, and simulation 2020 ah;1
+non-invasive monitoring of blood glucose using optical methods for skin spectroscopy-opportunities and recent advances.  2019 delbeck;1
+em-wave biosensors: a review of rf, microwave, mm-wave and optical sensing.  2019 mehrota;1
+making sense of glucose metrics in diabetes: linkage between postprandial glucose (ppg), time in range (tir) & hemoglobin a1c (a1c).  2020 shin;1
+an algorithm for real-time pulse waveform segmentation and artifact detection in photoplethysmograms 2017 fischer;1
+levenberg-marquardt neural network algorithm for degree of arteriovenous fistula stenosis classification using a dual optical photoplethysmography sensor.  2018 du;1
+continuous stress detection using wearable sensors in real life: algorithmic programming contest case study 2019 can;1
+
+total papers;total duplicate;final papers
+540;404;136

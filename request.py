@@ -1,4 +1,5 @@
 import os
+import jellyfish
 
 def pmkdir(path:str):
     try :
@@ -18,22 +19,36 @@ def GenDirs(requests:list,papers_by_request:int,databases:list,BASE_DIR):
                     meta_file.writelines(p)
 
 
+def compareRequest(r1,r2):
+    dist =jellyfish.damerau_levenshtein_distance(r1,r2)
+    if dist > 5 :
+        return False
+    else :
+        return True
+
+
 def MergeRequests(requests:list,papers_by_request:int,databases:list,BASE_DIR):
     merged_papers={} # dict {paper:appeareance}
     for d in databases :
         for r in requests :
             for i in range(papers_by_request):
                 base_path=BASE_DIR+"/"+d+"/"+r+"/"
-                with open(base_path+str(i)+"_meta.txt") as meta_file :
-                    meta_data=meta_file.readlines()
-                    title=meta_data[0].split("=")[1].split("\n")[0]
-                    year=meta_data[1].split("=")[1].split("\n")[0]
-                    author=meta_data[2].split("=")[1].split("\n")[0]
-                    ref=title.replace(" ","_").lower()+"_"+year+"_"+author.replace(" ","_").lower()
-                    if ref in merged_papers.keys() :
-                        merged_papers[ref]+=1
-                    else :
-                        merged_papers[ref]=1
+                try : 
+                    with open(base_path+str(i)+"_meta.txt") as meta_file :
+                        meta_data=meta_file.readlines()
+                        title=meta_data[0].split("=")[1].split("\n")[0].strip(".")
+                        year=meta_data[1].split("=")[1].split("\n")[0]
+                        author=meta_data[2].split("=")[1].split("\n")[0]
+                        ref=title.replace(" ","_").lower()+"_"+year+"_"+author.replace(" ","_").lower()
+                        find=False
+                        for rmerged in merged_papers.keys():
+                            if compareRequest(rmerged,ref) :
+                                merged_papers[rmerged]+=1
+                                find=True
+                        if find == False:
+                            merged_papers[ref]=1
+                except IOError :
+                    print("dossier "+base_path+str(i)+"_meta.txt manquant")
     sorted_papers= sorted(merged_papers,key=merged_papers.get, reverse=True)
     return sorted_papers,merged_papers
 

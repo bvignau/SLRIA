@@ -1,0 +1,3 @@
+title=Acceleration plethysmogram based biometric identification
+year=2015
+author=Jaafar

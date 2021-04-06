@@ -1,0 +1,1 @@
+Propose de modifier une caméra RGB PPG pour la rendre efficace dans le proche infra rouge. HS

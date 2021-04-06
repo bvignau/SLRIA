@@ -1,0 +1,1 @@
+Effectue de l'identification de personnes avec PPG + soft Max + KNN

@@ -1,0 +1,3 @@
+title=Determination of hypertension disease using chirp z-transform and statistical features of optimal band-pass filtered short-time photoplethysmography signals
+year=2020
+author=Aydemir

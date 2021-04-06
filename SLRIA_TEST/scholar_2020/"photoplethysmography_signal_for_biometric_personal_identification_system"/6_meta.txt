@@ -1,0 +1,3 @@
+title=Detection of Presentation Attacks in Face Recognition Systems with Non-contact Photoplethysmography
+year=2020
+author=Gundogar

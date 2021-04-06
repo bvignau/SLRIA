@@ -1,0 +1,3 @@
+title=Filtering Parameters Selection Method and Peaks Extraction for ECG and PPG Signals
+year=2019
+author=Bastos

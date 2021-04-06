@@ -1,0 +1,1 @@
+utilise caméra + PPG pour détecter la peau.

@@ -1,0 +1,3 @@
+title=An Algorithm for Real-Time Pulse Waveform Segmentation and Artifact Detection in Photoplethysmograms.
+year=2017
+author=Fischer

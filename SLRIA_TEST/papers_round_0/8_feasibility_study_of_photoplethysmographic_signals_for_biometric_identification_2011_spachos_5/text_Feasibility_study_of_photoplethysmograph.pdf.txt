@@ -1,0 +1,508 @@
+See	discussions,	stats,	and	author	profiles	for	this	publication	at:	https://www.researchgate.net/publication/252038750
+Feasibility	study	of	photoplethysmographic
+signals	for	biometric	identification
+Article	·	July	2011
+DOI:	10.1109/ICDSP.2011.6004938
+CITATIONS
+10
+READS
+422
+3	authors:
+P.	Spachos
+University	of	Guelph
+43	PUBLICATIONS			131	CITATIONS			
+SEE	PROFILE
+Jiexin	Gao
+University	of	Toronto
+7	PUBLICATIONS			45	CITATIONS			
+SEE	PROFILE
+Dimitrios	Hatzinakos
+University	of	Toronto
+275	PUBLICATIONS			6,386	CITATIONS			
+SEE	PROFILE
+All	content	following	this	page	was	uploaded	by	P.	Spachos	on	09	July	2014.
+The	user	has	requested	enhancement	of	the	downloaded	file.	All	in-text	references	underlined	in	blue	are	added	to	the	original	document
+and	are	linked	to	publications	on	ResearchGate,	letting	you	access	and	read	them	immediately.
+FEASIBILITY STUDY OF PHOTOPLETHYSMOGRAPHIC SIGNALS FOR BIOMETRIC
+IDENTIFICATION
+Petros Spachos, Jiexin Gao and Dimitrios Hatzinakos
+The Edward S. Rogers Sr. Department of Electrical and Computer Engineering,
+University of Toronto,
+10 King’s College Road, Toronto, ON, Canada, M5S 3G4
+{petros,agao,dimitris}@comm.utoronto.ca
+ABSTRACT
+The utilization of photoplethysmographic (PPG) signals for
+biometric identification represents a novel approach in the
+area of secure authentication. PPG signals can be easily ob-
+tained with low cost and have great potential to serve as bio-
+metric identification mechanism. This paper explores the fea-
+sibility, along with the relevant signal processing methods, of
+using PPG signals of an individual as a biometric trait. PPG
+signals from two biometric datasets are examined. PPG sig-
+nals were obtained from the fingertips of 29 healthy subjects.
+The experimental results demonstrate that PPG signals can
+be used as bio-measures for identification purposes given that
+PPG signals are collected under controlled environment and
+with accurate sensors.
+Index Terms— Biometrics, Photoplethysmography, Iden-
+tification
+1. INTRODUCTION
+In the modern automated world, access to a reliable authen-
+tication system becomes essential and crucial.
+Traditional
+authentication methods are based on the user’s knowledge,
+such as personal identification number (PIN) and passwords,
+or something belonging to someone, such as smart cards and
+cardkey. These methods can hardly meet the reliability re-
+quirements of an automated authentication system because
+identification cards can be lost or misplaced and passwords
+may be forgotten.
+Compared to traditional methods, biometrics can provide
+enhanced security and convenience. As biometric recognition
+systems are increasingly deployed for many security applica-
+tions, biometrics and its applications have attracted consider-
+able interests. Recently, biometrics has emerged as one of the
+most reliable technologies for future human identification and
+verification.
+Various biometric measures have been investigated for au-
+thentication purposes, including face complexion [1, 2], iris
+recognition [3] and ECG [4]. These approaches present dif-
+ferent level of system complexity, cost and accuracy.
+In this paper, we examine the use of photoplethysmo-
+graphic (PPG) signals for human identification. Compared
+to other biometric approaches , PPG technique has distinct
+advantages including low development cost, easy to use with-
+out any complicated procedure and conveniently accessible
+to various sites of human body, such as finger, ear lobe,wrist
+or arm. Moreover, PPG signals provide a noninvasive and
+accurate methodology to obtain valuable physiological infor-
+mation such as blood oxygen saturation, heart rate, and blood
+flow [5].
+The feasibility of applying PPG signals as a biological
+discriminant has been preliminary studied [6, 7]. These stud-
+ies applied an approach to represent the pulse using four
+quantities: the peak number, the upward slope, the downward
+slope, and the time interval from the bottom to the peak.
+However, this approach ignores higher-order derivative in-
+formation contained in the pulse and therefore, doesn’t take
+full advantage of the pulse to improve identification accuracy
+and reliability. In [8] the 1st- and 2nd- order derivatives of
+a pulse signal are examined. The specific aim of this work
+is to investigate the feasibility of PPG signals as a biometric
+identifier in an automated way.
+The rest of this paper is organized as follows: In Section 2
+the methodology that was followed is described. Experimen-
+tal results are presented in Section 3 followed by the discus-
+sion in Section 4. Conclusion is in Section 5.
+2. METHODOLOGY
+In this section, the methodology and the procedure that was
+followed are described. For each dataset (which will be dis-
+cussed in detail in Section 3), the first half was used for train-
+ing, where signals were pre-processed and Linear Discrim-
+inant Analysis was applied to yield a set of LDA weights.
+The rest of dataset was used for testing, where signals were
+pre-processed and projected to LDA space following by clas-
+sification with a nearest neighbor classifier.
+978-1-4577-0274-7/11/$26.00 ©2011 IEEE                                                                                 DSP2011
+0.8
+0.9
+1
+1.1
+1.2
+x 10
+4
+1400
+1600
+1800
+2000
+2200
+2400
+2600
+2800
+3000
+3200
+3400
+Sample Index
+Amplitude
+PPG
+max
+min
+Fig. 1. PPG signal with the maximum and minimum values.
+0
+50
+100
+150
+200
+-600
+-400
+-200
+0
+200
+400
+600
+800
+Sample Index
+Amplitude
+Fig. 2. PPG segment before scaling.
+0
+50
+100
+150
+200
+-1
+-0.5
+0
+0.5
+1
+1.5
+Sample Index
+Amplitude
+Fig. 3. PPG segment after normalization.
+0
+50
+100
+150
+200
+-1
+-0.5
+0
+0.5
+1
+1.5
+Sample Index
+Amplitude
+Fig. 4. PPG segment after scaling.
+2.1. Pre-processing
+PPG pre-processing consists of the following steps:
+Step 1:Peak detection
+To avoid being affected by high frequency noise and im-
+perfection of the signal, instead of using the zero crossing
+of the first order derivative, we employ here the method pro-
+posed and implemented by E. Billauer [9]. A point is con-
+sidered a maximum peak if it has the local maximal value,
+and is preceded (to the left) by another peak with their ampli-
+tude difference larger than a preset threshold. The threshold is
+manually set to be half of the average peak to peak amplitude
+in the dataset. Figure 1 shows the result.
+Step 2:Segmentation
+After determining the maximum and minimum points
+through peak detection, we define one PPG cycle as shown in
+Figure 2.
+Step 3:Normalization
+According to our observation from all subjects’ PPG
+recording, PPG amplitude can change a lot even in a short
+period of time. Since it’s the PPG morphology that’s most
+related to one’s identity, amplitude is normalized with respect
+to the current cycle’s maximum. Figure 3 shows a PPG signal
+after normalization.
+Step 4:Time Domain Scaling
+Since the duration of a PPG cycle is related to one’s heart
+rate and can potentially increase intra-subject variability, the
+duration is scaled to 200 samples to compensate for this fac-
+tor. Figure 4 shows a PPG segment after scaling.
+2.2. Linear Discriminant Analysis
+Linear Discriminant Analysis(LDA) was employed as feature
+extraction tool. Linear Discriminant Analysis is a widely used
+and efficient supervised learning method for dimensionality
+reduction and feature extraction. Given a training set 𝒵 =
+{𝒵𝑖}𝑈
+𝑖=1, containing U classes with each class 𝒵𝑖 = {z𝑖𝑗}𝑈𝑖
+𝑗=1
+containing a number of windows zij a set of K feature basis
+0
+0.1
+0.2
+0.3
+0.4
+0.5
+0
+0.1
+0.2
+0.3
+0.4
+0.5
+0.6
+0.7
+0.8
+0.9
+1
+Threshold
+Error Rate
+FAR
+FRR
+Fig. 5. Experimental Results for OpenSignal dataset.
+0
+0.1
+0.2
+0.3
+0.4
+0.5
+0
+0.1
+0.2
+0.3
+0.4
+0.5
+0.6
+0.7
+0.8
+0.9
+1
+Threshold
+Error Rate
+FAR
+FRR
+Fig. 6. Experimental Results for BioSec dataset.
+vectors {𝜓𝑚}𝐾
+𝑚=1 is estimated by maximizing Fisher’s ratio.
+This ratio is defined as the between-class to within class scat-
+ter matrix. The maximization is equivalent to the solution of
+the following eigenvalue problem:
+𝜓 = arg max
+𝜓
+∣𝜓𝑇 S𝑏𝜓∣
+∣𝜓𝑇 S𝑤𝜓∣
+(1)
+where 𝜓 = [𝜓1, ..., 𝜓K], and Sb and Sw are the between
+and within class scatter matrices respectively defined as:
+S𝑏 = 1
+𝑁
+𝑈
+∑
+𝑖=1
+𝑈𝑖(z𝑖 − z)(z𝑖 − z)𝑇
+(2)
+S𝑤 = 1
+𝑁
+𝑈
+∑
+𝑖=1
+𝑈𝑖
+∑
+𝑗=1
+(z𝑖𝑗 − z𝑖)(z𝑖𝑗 − z𝑖)𝑇
+(3)
+where z𝑖 =
+1
+𝑈𝑖
+∑𝑈𝑖
+𝑗=1 z𝑖𝑗 is the mean of class 𝒵𝑖 and N is
+the total number of training windows and 𝑁 = ∑𝑈
+𝑖=1 𝑈𝑖.
+Linear Discriminant Analysis finds 𝜓 as the K most sig-
+nificant eigenvectors of (S𝑊 )−1S𝑏 that correspond to the first
+K largest eigenvalues.
+Having obtained the basis vectors,
+any test input window z is subjected to the linear projection
+y = 𝜓𝑇 z.
+2.3. Classification
+After processing, for each subject in the dataset, the first half
+of the recording was used to perform LDA training (training
+set), while the second half was used for testing (testing set).
+During testing, every five consecutive PPG segments are to
+be projected into LDA space and compared with all the tem-
+plates in galleries. Nearest neighbor and majority voting was
+applied to determine if there is a match for the input signal.
+Moreover, a threshold is applied to accept or reject the input
+as the identified subject.
+3. EXPERIMENTAL RESULTS
+In order to evaluate the performance of the proposed ap-
+proach, PPG signals from two datasets were used. Experi-
+ments were carried out with identical procedure and parame-
+ter settings.
+∙ OpenSignal PPG Dataset: OpenSignal is a coopera-
+tive repository of physiologic signals [10]. The dataset
+we used, is composed of 14 healthy volunteers. Each
+subject was instrumented with a finger blood volume
+pulse (BVP) sensor on the 4th finger of the left hand.
+bvpPLUX system [11] was used.
+∙ BioSec PPG Dataset: BioSec is the Biometrics Secu-
+rity Laboratory at the University of Toronto. [12]. The
+dataset we used, is composed of 15 healthy volunteers.
+Each subject was instrumented with a finger blood vol-
+ume pulse sensor on the 2nd finger of the left hand.
+NONIN pulse oximeter [13] was used.
+Figure 5 and Figure 6 shows false acceptance rate and
+false rejection rate versus threshold for OpenSignal and
+BioSec dataset, respectively. Results for OpenSignal dataset
+are better than that of Biosec dataset, as the FAR and FRR
+reach 0.5% when the threshold is set properly. On the other
+hand, for Biosec dataset, an Equal Error Rate of 25% is
+achievable, and the threshold can be set differently to get
+lower FRR with an increasing in FAR, which is applicable in
+low security systems or multi-modal biometric systems.
+4. DISCUSSION
+Although identical algorithm and parameters were used for
+simulation in both datasets, there is a significant difference
+in the performance. In order to examine the inter-class and
+intra-class variance, all PPG segments in the testing set are
+-0.15
+-0.1
+-0.05
+0
+0.05
+0.1
+-0.08
+-0.06
+-0.04
+-0.02
+0
+0.02
+0.04
+0.06
+0.08
+0.1
+subject_1
+subject_2
+subject_3
+subject_4
+subject_5
+subject_6
+subject_7
+Fig. 7. Data cluster for OpenSignal dataset
+-0.1
+-0.05
+0
+0.05
+0.1
+0.15
+-0.08
+-0.06
+-0.04
+-0.02
+0
+0.02
+0.04
+0.06
+0.08
+0.1
+subject_1
+subject_2
+subject_3
+subject_4
+subject_5
+subject_6
+subject_7
+Fig. 8. Data cluster for BioSec dataset
+3.7
+3.75
+3.8
+3.85
+x 10
+4
+1500
+2000
+2500
+OpenSignals
+3000
+3200
+3400
+3600
+3800
+4000
+4200
+4400
+4600
+3
+3.2
+3.4
+3.6
+3.8x 10
+4
+BioSec
+Fig. 9. Comparison of sample signals from both datasets
+projected to LDA space which reduce the dimensionality to
+14 for OpenSignal dataset and 15 for BioSec dataset. Further-
+more, in order to visualize in two dimensional plot, Principle
+Component Analysis (PCA) was applied to each testing set
+and the first two coefficients were used to plot the correspond-
+ing data point in a two dimensional space. Data clusters for
+OpenSignal dataset and BioSec dataset are shown in Figure
+7 and Figure 8, respectively. To make a clear demonstration,
+only 7 subjects are shown on the plots, with 10 sample data
+points randomly drawn from the testing set for each subject.
+As shown on the cluster plots, samples from BioSec
+dataset exhibits less intra-class similarity and inter-class vari-
+ance, which made the classification task difficult. We also
+observed this difference in time domain, where signals from
+Biosec dataset are relatively unstable in signal morphology,
+as shown in Figure 9.
+Possible sources of the difference
+may come from the device, sensor and recording conditions.
+Moreover, according to the experimental results with the sub-
+jects from the two datasets, it is better to obtain PPG signals
+in a controlled environment. In the case that PPG signals are
+not stable, they should be combined with another biometric
+signal. For instance, ECG could be recorded simultaneously
+with PPG and provide multi-modal biometric identification
+system.
+5. CONCLUSION
+This paper examines the feasibility of PPG signals for bio-
+metric identification mechanisms. Experiments point out that
+these signals are vulnerable since the equipment that is used
+and the recording environment are crucial, and have great
+impact on the biometric authentication system performance.
+However, it is possible to identify a person by information
+extracted from PPG signals given that signals were collected
+under controlled environment and with accurate sensors.
+6. ACKNOWLEDGMENT
+This work was supported in part by a Natural Sciences and
+Engineering Research Council of Canada (NSERC) Strategic
+Project Grant entitled Biometrics User-Centric Secure Net-
+works (BUSNet).
+7. REFERENCES
+[1] R. Brunelli and T. Poggio, “Face recognition: features
+versus templates,” Pattern Analysis and Machine Intel-
+ligence, IEEE Transactions on, vol. 15, no. 10, pp. 1042
+–1052, Oct. 1993.
+[2] Ashok Samal and Prasana A. Iyengar,
+“Automatic
+recognition and analysis of human faces and facial ex-
+pressions: a survey,” Pattern Recogn., vol. 25, pp. 65–
+77, January 1992.
+[3] Michael Negin, Thomas A. Chmielewski, Marcos Sal-
+ganicoff, Theodore A. Camus, Ulf M. Cahn von Seelen,
+P. L. Venetianer, and Guanghua G. Zhang, “An iris bio-
+metric system for public and personal use,” Computer,
+vol. 33, pp. 70–75, 2000.
+[4] L. Biel, O. Pettersson, L. Philipson, and P. Wide, “Ecg
+analysis: a new approach in human identification,” in
+Instrumentation and Measurement Technology Confer-
+ence, 1999. IMTC/99. Proceedings of the 16th IEEE,
+1999.
+[5] A. Roggan, M. Friebel, K. Doerschel, A. Hahn, and
+G. J. Mueller, “Optical properties of circulating human
+blood in the wavelength range 400-2500 nm,” Journal
+of Biomedical Optics, vol. 4, pp. 36–46, Jan. 1999.
+[6] Y.Y. Gu, Y. Zhang, and Y.T. Zhang,
+“A novel bio-
+metric approach in human verification by photoplethys-
+mographic signals,” in Information Technology Appli-
+cations in Biomedicine, 2003. 4th International IEEE
+EMBS Special Topic Conference on, 2003, pp. 13 – 14.
+[7] Y.Y. Gu and Y.T. Zhang, “Photoplethysmographic au-
+thentication through fuzzy logic,”
+in Biomedical En-
+gineering, 2003. IEEE EMBS Asian-Pacific Conference
+on, 2003, pp. 136 – 137.
+[8] Jianchu Yao, Xiaodong Sun, and Yongbo Wan, “A pi-
+lot study on using derivatives of photoplethysmographic
+signals as a biometric identifier,”
+in Engineering in
+Medicine and Biology Society, 2007. EMBS 2007. 29th
+Annual International Conference of the IEEE, 2007, pp.
+4576 –4579.
+[9] peakdet:
+Peak
+detection
+using
+MATLAB,
+“http://www.billauer.co.il/peakdet.html,” .
+[10] Open Signals Database, “http://www.opensignals.net,” .
+[11] PLUX Wireless Biosignals, “http://www.plux.info,” .
+[12] Biometric Security Laboratory, University of Toronto,
+“http://www.comm.utoronto.ca/ biometrics,” .
+[13] Nonin Medical , “http://www.nonin.com/pulseoximetry,”
+.
+View publication stats
+View publication stats

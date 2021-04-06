@@ -1,0 +1,1 @@
+Utilise les caméra PPG pour passer outre l'attaque des masques en reconaissance faciale. HS

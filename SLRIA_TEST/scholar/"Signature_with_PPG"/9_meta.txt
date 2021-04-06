@@ -1,0 +1,3 @@
+title=Eliminating forgers based on intra trial variability in online signature verification using handglove and photometric signals
+year=2010
+author=Samraj

@@ -1,0 +1,3 @@
+title=Blood pressure estimation from ppg signals using convolutional neural networks and siamese network
+year=2020
+author=Schlesinger

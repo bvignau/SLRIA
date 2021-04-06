@@ -1,0 +1,3 @@
+title=Research on identification algorithm based on ppg signal and improved convolutional neural network
+year=2020
+author=Wan

@@ -1,0 +1,1 @@
+utilise ECG et PPG pour déterminer l'age des veines (manque d'elasticité)

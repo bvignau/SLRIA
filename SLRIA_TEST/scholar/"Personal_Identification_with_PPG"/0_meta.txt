@@ -1,0 +1,3 @@
+title=CorNET: Deep learning framwork for PPG-based heart rate estimation and biometric identification in ambulant environment
+year=2019
+author=Biswas

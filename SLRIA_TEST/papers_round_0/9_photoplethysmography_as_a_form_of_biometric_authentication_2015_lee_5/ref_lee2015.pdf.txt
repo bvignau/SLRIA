@@ -1,0 +1,4 @@
+Biel, L. et al. ECG analysis: a new approach in human  identification.  IEEE  Transactions  on  Instrumentation  and  Measurement 50, 808-812 (2001).  
+Kavsaoglu, A. et al. A novel feature ranking algorithm for  biometric recognition with PPG signals. Computers in Biology and  Medicine 49, 1-14 (2014).  
+Bonissi, A. et al. A preliminary study on continuous  authentication methods for photoplethysmographic biometrics.  Proc. of the 2013 IEEE Workshop on Biometric Measurements and  Systems for Security and Medical Applications (2013).  
+Odinaka, I. et al. ECG biometric recognition: a comparative  analysis. IEEE Transactions on Information Forensics and Security  7, 1812-1824 (2012).    

@@ -1,0 +1,14 @@
+S. M. Elsherief, M. E. Allam, and M. W. Fakhr, "Biometric Personal  Identification Based on Iris Recognition," presented at the 2006  International Conference on Computer Engineering and Systems,  2006.  
+L. Ma, T. Tan, Y. Wang, and D. Zhang, "Personal identification based  on iris texture analysis," IEEE Transactions on Information  Technology in Biomedicine Pattern Analysis and Machine  Intelligence, vol. 25, pp. 1519 - 1533, 2003.  
+M. S. Markow, H. G. Rylander, III, and A. J. Welch, "Real-time  algorithm for retinal tracking," IEEE Transactions on Biomedical  Engineering, vol. 40, pp. 1269 - 1281, 1993.  
+L. H. Koh, S. Ranganath, M. W. Lee, and Y. V. Venkatesth, "An  integrated face detection and recognition system," presented at  International Conference on Image Analysis and Processing, 1999.  
+K. Peng, L. Chen, and S. Ruan, "A novel scheme of face verification  using active appearance models," presented at IEEE Conference on  Advanced Video and Signal Based Surveillance, 2005.  
+M. I. Faraj and J. Bigun, "Motion Features from Lip Movement for  Person Authentication," presented at 18th International Conference on  Pattern Recognition, 2006.  
+M. Faundez-Zanuy, "Biometric verification of humans by means of  hand geometry," presented at 39th Annual 2005 International  Carnahan Conference on Security Technology, 2005.  
+J. Doi and M. Yamanaka, "Biometric authentication using finger and  palmar creases," presented at 2004 IEEE Symposium on Virtual  Environments, Human-Computer Interfaces and Measurement  System.  
+S. A. Israel, W. T. Scruggs, W. J. Worek, and J. M. Irvine, "Fusing  Face and ECG for Personal Identification," presented at Proceedings  of the 32nd Applied Imagery Pattern Recognition Workshop (AIPR),  2003.  
+S. Israela, J. M. Irvineb, A. Chengb, M. D.Wiederholdc, and B.  K.Wiederholdd, "ECG to identify individuals," Pattern Recognition,  vol. 38, pp. 133-142, 2005.  
+J. Yao and S. Warren, "Design of a Plug-and-Play Pulse Oximeter,"  presented at 2nd Joint EMBS-BMES Conf., Houston, TX, 2002.  
+Y. Y. Gu, Y. Zhang, and Y. T. Zhang, "A Novel Biometric Approach  in Human Verification by Photoplethysmographic Signals," presented  at The 4th Annual IEEE Conf on Information Technology  Applications in Biomedicine, UK, 2003.  
+Y. Y. Gu and Y. T. Zhang, "Photoplethysmographic authentication  through fuzzy logic," presented at IEEE EMBS Asian-Pacific  Conference on Biomedical Engineering, 2003.  
+Y. Wan, X. Sun, and J. Yao, "Design of a Photoplethysmographic  Sensor for Biometric Identification," submitted to 2007 IEEE  International Conference on Controls, Automation and Systems,  Seoul, Korea, 2007.

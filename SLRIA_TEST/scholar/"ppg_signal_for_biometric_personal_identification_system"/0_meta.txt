@@ -1,0 +1,3 @@
+title=A novel feature ranking algorithm for biometric recognition with PPG signals
+year=2014
+author=Kavsaoglu

@@ -1,0 +1,1 @@
+Utilise une techno PPG pour extraire des données biométriques depuis une vidéo. Ici ils évaluent les limitent de la détection du rythme cardiaque avec la réduction de la qualité de la vidéo. HS

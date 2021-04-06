@@ -1,0 +1,1 @@
+propose un CNN probabiliste pour aider à supprimer du bruit de PPG de basse qualité comme ceux des smartphones. HS

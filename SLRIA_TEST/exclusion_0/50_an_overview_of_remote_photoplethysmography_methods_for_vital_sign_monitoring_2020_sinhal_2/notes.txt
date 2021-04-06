@@ -1,0 +1,1 @@
+utilise un mélange de caméra et de PPG pour monitorer des fonctions vitales. HS
