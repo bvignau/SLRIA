@@ -1,0 +1,2 @@
+12 sujets 2PPG par patients
+Compare les signaux sur les deux PPG pour faire de l'identification de sensors. HS

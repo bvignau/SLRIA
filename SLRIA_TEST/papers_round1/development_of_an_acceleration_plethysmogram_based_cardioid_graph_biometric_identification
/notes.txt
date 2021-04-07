@@ -1,1 +1,7 @@
-TODO
+10 patients de la DB MIMIC II, 125Hz, 10s par patients
+Etudie l'APG = dérivée 2nd du PPG
+Butterworth sur l'APG pour supprimer hautes fréquences 2nd ordre => passe bas mais aps freq ?
+Segmentation en cycles uniques
+Crée une cardioid à partir de l'APG ??
+Utilise le centre de la cardioide et les points extrême comme features
+Utilise MLP et Naives Bayes pour classifier. 95% de réussite. Pas d'explication sur les sets de test et de validation.

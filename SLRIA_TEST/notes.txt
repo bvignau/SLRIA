@@ -15,5 +15,6 @@ Pour le snowabll prend pas:
     * si uniquement URL 
     * objet commercial
     * nom d'une institution
+    * si un papier et son extension, garde que l'extension
 
 Ex: Identifie des problèmes cardiaques, identifie des activités (marche, vélo etc), identifie des émotions (coups de foudre).
