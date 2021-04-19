@@ -1,0 +1,1 @@
+Utilise une BD open acess pour essayer divers algos. Récupères des features fiducials (amplitude, point particulier etc) et non fiducials (décomposition en vaguelette). Réduisent le nombre de features avec KS-Test (supprimer les features trop corrélées) et Kernel PCA. Test ensuite SVM; KNN et SOM Correct mais manque la ségementation pour entrainement. 

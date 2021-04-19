@@ -1,0 +1,7 @@
+Utilises PPG + KPCA + supervised learning pour feature extractions + classification
+37 Hz
+9 patients => 4 signaux 60s relax et 4 signaux 60 stress
+Utilise le même signal pour l'entrainement et le test. 
+Segmentation et détection du pic
+Classification par distance de Mahalanobis
+Pas vraiment de classification, compare la distance entre les signaux. Pas ouf

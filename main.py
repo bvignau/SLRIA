@@ -106,8 +106,8 @@ def main():
             SnowballDumpReferences(folder_path,ROUND)
             #########
             references_lists=CreateRefLists("bib_round_"+str(ROUND),ROUND)
-            if ROUND > 0 :
-                references_lists.append(GetReferencesFromPreviousRound(ROUND))
+            # if ROUND > 0 :
+            #     references_lists.append(GetReferencesFromPreviousRound(ROUND))
             # merge references
             merged_ref=Round_Merge_All_List(references_lists,level=COMPARISON)
             # generate new bib

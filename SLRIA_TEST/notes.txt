@@ -18,3 +18,5 @@ Pour le snowabll prend pas:
     * si un papier et son extension, garde que l'extension
 
 Ex: Identifie des problèmes cardiaques, identifie des activités (marche, vélo etc), identifie des émotions (coups de foudre).
+
+Round 1 + 108 ref => 90 => 6 => 0

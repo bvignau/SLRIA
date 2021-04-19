@@ -1,0 +1,378 @@
+An Enhanced Intrinsic Biometric
+in Identifying People
+by Photopleythsmography Signal
+N. S. Girish Rao Salanke, N. Maheswari and Andrews Samraj
+Abstract In the area of secure authentication, the fusion of Photopleythsmography
+(PPG) signals for biometric identification is a novel technique. Researchers sug-
+gested the use of PPG along with other biometric components for augmenting the
+biometric robustness. PPG signals have great potential to serve as biometric
+identification appliance and can be easily obtained with low cost. Use of PPG
+signals for personnel identification is very appropriate during field operations in day
+or night. While building a large scale identification system the feature selection
+from PPG is a critical activity. To have the identification system more accurate, the
+set of features that deemed to be the most effective attributes are extracted in order
+to build robust identification system. Applying Kernel Principal Component anal-
+ysis (KPCA) an efficient supervised learning method for dimensionality reduction
+and feature extraction in this experiment results in precise classification.
+Keywords PPG signal � Authentication � Kernel principal component analysis
+(KPCA) � Mahalanobis distance
+N. S. Girish Rao Salanke (&)
+Research Scholar, School of Computing Science and Engineering,
+VIT University, Chennai, India
+e-mail: girishraosalanke@gmail.com
+N. Maheswari
+School of Computing Science and Engineering,
+VIT University, Chennai, India
+e-mail: maheswari.n@vit.ac.in
+A. Samraj
+Advance Science and Technology Research Center, Salem, India
+e-mail: andrewsmalacca@gmail.com
+Mohan S. and S. S. Kumar (eds.), Proceedings of the Fourth International Conference
+on Signal and Image Processing 2012 (ICSIP 2012), Lecture Notes in Electrical
+Engineering 221, DOI: 10.1007/978-81-322-0997-3_27, � Springer India 2013
+291
+1 Introduction
+In search of robust biometrics that is not compromised, researchers started to try
+with unseen internal organs rather than conventional outer organs with all their
+varying dimension and activity. They seems to be more reliable types of bio-
+metrics in human authentication and identification systems than the simple ones
+used in applications like personnel security, hospital, finance, digital rights etc.
+conventional biometric system [1] using behavioral and physiological character-
+istics to allow recognition of an individual, like face recognition [2], fingerprint
+[3], iris and retinal patterns [4] and voice [5] are becoming very popular. The
+common weakness of conventional biometric system is their vulnerability and the
+possibility to falsity of their features. In 1977, Forsen listed the possible features of
+a human body that could be used for biometrics were ECG [6] and EEG [7]. The
+basic approach is to extract the signals from the user during the enrollment phase,
+the extracted signals from the user then attempts to log in, the particulars are
+computed, which determines the decision outcome. This is really no different than
+any other behavioral biometric, the novelty here is the data that are acquired. In
+order to acquire biological signal data, specialized hardware is required. Especially
+the EEG and ECG acquisition hardware is complex and tedious processes is
+involved. In this paper, we examine the use of Photoplethysmograph (PPG) sig-
+nals, which is acquired using a very simple hardware interface for human iden-
+tification [8]. PPG has distinct advantages including low development cost, easy to
+use without any complicated procedure and conveniently accessible to various
+sites of human body, such as finger, wrist or arm. Moreover, PPG signals provide a
+noninvasive and accurate methodology to obtain valuable physiological informa-
+tion such as blood oxygen saturation, heart rate and blood flow.
+The blood in human body is being pumped from the heart to all parts in the
+body by blood vessels called arteries. Blood pressure is the force of blood pushing
+against the walls of the arteries. Each time the heart beats it pumps out a con-
+siderable volume of blood to the arteries. Systolic pressure which is the highest
+blood pressure occurs when heart is in pumping motion. Diastolic pressure is
+lowest blood pressure when heart is in resting [9]. Since blood pressure are an
+indirect measurement of heart beats and the blood pressure tend to change
+according to time and emotion. For instance, blood pressure will rise when a
+subject is awaken and excited. The unit for measurement of blood pressure is in
+mmHg and the notation will be systolic followed by diastolic pressure.
+The Photoplethysmograph (PPG) signals reflect the change in blood volume
+caused by blood vessel expansion and contraction, which can be detected by
+photodiode if external light is illuminated into tissue. This method is based on the
+idea that if an externally applied pressure in the cuff is equal to the arterial pressure
+instantaneously, the arterial walls will be unloaded (zero transmural pressure) and
+the arteries will not change in size. In this condition, the blood volume will not
+change.
+292
+N. S. Girish Rao Salanke et al.
+Digital Photoplethysmographic sensor used to read a PPG signal has an infrared
+emitter and photodiode detector. The intensity of light from infrared emitter which
+reaches the photodiode detector in either reflection or transmission will be mea-
+sured to determine the blood volume changes. The Photoplethysmographic sensor
+will be placed below the tip of the finger and pressure will be applied on the
+proximal phalanx. Since the cuff is wrapped on the proximal phalanx of the finger
+rather than arm, it makes less discomfort for prolonged used. The blood volume
+changes on the finger will be notified by the sensor and transmitted to the system
+by wired or bluetooth transmitter. There will be a timer attached on the device to
+time the cuff pressure applied time and transmitter so that it is semi-continuous
+measurement. This is because to decrease the energy consumption of Bluetooth
+transmission and to avoid discomfort of the wearer’s finger due to continuous
+pressure applied.
+The idea of the blood pressure sensor is much like the Photoplethysmograph
+Fingernail Sensor for measurement offinger force which is mentioned by Stephen A.
+Mascaro and H. Harry Asada [10]. The finger force is measuring colouration of
+fingernail by using reflectance Photoplethysmography. The Fig. 1 shows the
+fingernail sensor used in this research.
+2 Related Work
+A brief survey of the related work in the area of identification using PPG signals is
+presented in this section. Earlier work by Y. Y Gu et al. [11, 12] on biometrics
+with PPG signals used to represent the pulse using four quantities; the peak
+number, the upward slope, the downward slope and the time interval from the
+bottom to peak. Jianchu Yao et al. [13] examines two important issues in applying
+derivatives of PPG signals as discriminants to identify and verify subjects.
+Andrews Samraj et al. [8] demonstrated the intra trial variability factor which
+enhanced the signature verification system that uses PPG Signal as one of its
+combination. Singular value decomposition (SVD) was used as a dimension
+reduction tool. In this paper, we propose a technique for human identification by
+applying kernel principal component analysis for dimension reduction.
+Fig. 1 Finger nail sensor to
+measure PPG signal
+An Enhanced Intrinsic Biometric in Identifying People
+293
+3 Methodology
+The methodology of this experiment is carried out in four stages as follows
+(i) Experimental Setup
+(ii) Preprocessing
+(iii) Feature Extraction
+(iv) Classification
+3.1 Experimental Setup
+The PPG signals were recorded using a Pulse Oximetry module (from Dolphin
+Medical, Inc) that was connected to a computer using a data acquisition software
+and captured with a sampling frequency of 37 Hz [14]. The main purpose of
+sampling the signal at this particular frequency is to highlight that even at this
+lowest frequency we were able to capture the signal. Sampling at a higher fre-
+quency is very fine and accurate and may be considered later on further progress.
+Four led’s of Plethysmogram were fixed on each subject while recording the data.
+A total of 9 healthy subjects participated in this study. All the 9 subjects selected
+were our co- scholars at VIT University and the average age of the subjects is 34.
+Two PPG recordings (relaxed and stressed) were obtained from each individual
+with duration of 60 s. Total of 8 signals were recorded for each subject, 4 in
+relaxed sate and remaining 4 in the stressed state. Before recorded the stressed
+PPG signal the subjects were made to go up and down the staircase for a couple of
+times in order to increase their level of stress. There was about 30 min gap
+between the time of recording the relaxed and the stressed PPG signal. Figures 2, 3
+shows PPG signal recorded during the relaxed and the stressed state. The aim for
+recording the relaxed and the stressed state signal is to detect whether there is
+significant fluctuation in the PPG signal features of a person in both the states. The
+relaxed PPG signals of all subjects shows identical waveforms but stressed PPG
+signals shows unidentical waveforms due to motion artifact. The same signal was
+used for training and the testing purpose. Both the recordings were taken sepa-
+rately, once when the subject was very much relaxed and the other time when he
+was stressed.
+3.2 Preprocessing
+The Preprocessing of the PPG signal consists of Peak detection, Segmentation and
+finally Scaling. In peak detection, we find the maximum peak of the recorded PPG
+294
+N. S. Girish Rao Salanke et al.
+signal. A point is considered a maximum peak if it has the local maximal value and
+is preceded by another peak with their amplitude difference larger than a preset
+threshold. In Segmentation we define one PPG cycle with the help of the maxi-
+mum and minimum points obtained through peak detection. In Scaling since one
+PPG cycle is nothing but a heart rate, and generally heart rate can potentially
+increase intra-subject variability, the time duration is scaled to 100 samples.
+3.3 Feature Extraction
+Kernel Principal Component Analysis (KPCA) is used as dimension reduction
+technique which is used for feature extraction. Kernel PCA is the reformulation of
+traditional linear PCA in a high-dimensional space that is constructed using a
+kernel function. In recent years, the reformulation of linear techniques using the
+‘kernel trick’ has led to the proposal of successful techniques such as kernel ridge
+regression and Support Vector Machines. Kernel PCA computes the principal
+eigenvectors of the kernel matrix, rather than those of the covariance matrix. The
+Fig. 2 Relaxed PPG
+Waveform sampled at 39 Hz
+Fig. 3 Stressed PPG
+Waveform sampled at 37 Hz
+An Enhanced Intrinsic Biometric in Identifying People
+295
+reformulation of PCA in kernel space is straightforward, since a kernel matrix is
+similar to the in product of the data points in the high-dimensional space that is
+constructed using the kernel function. The application of PCA in the kernel space
+provides Kernel PCA the property of constructing nonlinear mappings. Kernel
+PCA computes the kernel matrix K of the datapoints xi. The entries in the kernel
+matrix are defined by
+kij ¼ j xi;xj
+�
+�
+ð1Þ
+where j is a kernel function, which may be any function that gives rise to a
+positive-semi definite kernel K. Subsequently, the kernel matrix K is double-
+centered using the following modification of the entries
+kij ¼ � 1
+2 ðkij � 1
+n
+X
+l
+kil � 1
+n
+X
+l
+kjl þ 1
+n2
+X
+lm
+klmÞ
+ð2Þ
+The centering operation corresponds to subtracting the mean of the features in
+traditional PCA. It subtracts the mean of the data in the feature space defined by
+the kernel function j. As a result, the data in the features space defined by the
+kernel function will have zero-mean. Subsequently, the principal eigenvectors vi,
+of the centered kernel matrix are computed. The eigenvectors of the covariance
+matrix ai (in the feature space constructed by j) can now be computed, since they
+are related to the eigenvectors of the kernel matrix vi and eigenvalue ki through
+ai ¼
+1ffiffiffiffiki
+p
+vi
+ð3Þ
+In order to obtain the low-dimensional data representation, the data is projected
+onto the eigenvectors of the covariance matrix ai. The result of the projection (i.e.,
+the low-dimensional data representation Y) is given by
+yi ¼
+X
+n
+j¼1
+a jð Þ
+1 j xi;xj
+�
+�
+; . . .;
+X
+n
+j¼1
+aðjÞ
+d j xi;xj
+�
+�
+(
+)
+ð4Þ
+where ai
+(j) indicates the jth value in the vector, a1 and j is the linear kernel function
+that was also used in the computation of the kernel matrix.
+3.4 Classification
+Mahalanobis distance based classifier is used to identify the individuals. The use of
+the Mahalanobis metric removes several of the limitations of the Euclidean metric
+like automatically accounts for the scaling of the coordinate axes, corrects for
+correlation between the different features and provides curved as well as linear
+decision boundaries. The value of r in the given below equation
+296
+N. S. Girish Rao Salanke et al.
+r2 ¼ x � mx
+ð
+ÞIC�I
+x
+x � mx
+ð
+Þ
+ð5Þ
+is called the Mahalanobis distance from the feature vector x to the mean vector
+mx, where Cx is the covariance matrix for x. It can be shown that the surfaces on
+which r is constant are ellipsoids that are centered about the mean mx. In the
+special case where the features are uncorrelated and the variances in all directions
+are the same, these surfaces are spheres, and the Mahalanobis distance becomes
+equivalent to the Euclidean distance.
+We first generate a matching score by the selected feature compared with the
+stored template. For each PPG Cycle, the mahalabonis distance is calculated and is
+compared with the set of samples stored in the system is computed. The template
+resulting in the smallest distance is considered to be the match.
+4 Results and Discussion
+The difference in the Mahalanobis distance between the relaxed and the stressed
+state (Intra Subject Variation) for each subject is calculated. We observe that the
+mahalanobis distance of the relaxed state is less when compared to the stressed
+state. The table given below shows the distance for each subject for the maximum
+value obtained out of 30 samples extracted during the relaxed and the stressed state
+(Table 1).
+We observed that the Intra Variation of all the subjects is very less and the
+average Inter Variation is 20.52. Figure 4 shows the Intra Subject Variation in
+Mahalanobis distance for one particular subject across 10 different samples. The
+Inter subject variation (calculated from the average values between the relaxed and
+the stressed state), the difference between the mahalanobis distance across different
+subjects is shown in Figs. 5, 6 reveals the wide gap between the Intra trial vari-
+ability, this factor can be used as a novel method of identifying people using
+Photoplethysmographic signal.
+Table 1 The intra subject variation in terms of Mahalanobis distance
+Mahalanobis distance
+Subjects
+Relaxed state
+Stressed state
+Intra variation
+1
+98.30
+114.50
+16.20
+2
+594.70
+606.70
+12.00
+3
+1119.20
+1136.10
+16.90
+4
+2116.80
+2132.40
+15.60
+5
+1009.10
+1029.50
+20.40
+6
+3110.60
+3142.30
+31.70
+7
+5099.20
+5124.90
+25.70
+8
+7130.20
+7157.80
+27.60
+9
+8094.10
+8112.70
+18.60
+An Enhanced Intrinsic Biometric in Identifying People
+297
+Fig. 5 Inter subject variation
+in terms of Mahalanobis
+distance
+Fig. 4 Intra subject variation
+in terms of Mahalanobis
+distance
+Fig. 6 Mahalanobis distance
+between a Genuine and Fake
+subject
+298
+N. S. Girish Rao Salanke et al.
+5 Conclusion
+We have presented a novel approach in this paper with the possibility of using
+Photoplethysmographic signal in the human identification. We observe that the
+stressed PPG signal from all the subjects shows distinct waveform when compared
+to their relaxed state that results in the difference in the mahalonobis distance,
+which can be used for the verification purpose. The most salient feature in using
+the Photoplethysmographic signal as a biometric is that it cannot be easily copied
+or simulated, as compared to other biometrics such as fingerprint, face or even
+voice.
+References
+1. Jain AK, Ross A, Prabhakar S (2004) An introduction to biometric recognition. IEEE Trans
+Circ Syst 14(1):4–20
+2. Samal A, Iyengar P (1992) Automatic recognition and analysis of human faces and facial
+expressions: a survey, pattern recognition. In: Pattern recognition, 25(1):65–77
+3. Samraj A, Islam MR, Sayeed MS (2008) A secured fingerprint authentication system. J Appl
+Sci 8:2939–2948
+4. Boles W (1977) A security system based on human iris identification using wavelet
+transform. In: Proceedings of the 1st international conference knowledge-based intelligent
+electron systems
+5. Dumm D (1993) Using a multilayer pereptron neural for human voice identification. In:
+Proceedings
+of
+the
+4th
+international conference
+signal processing
+and
+application
+technologies
+6. Palaniappan R, Krishnan SM (2004) Identifying individuals using ECG beats. In: proceedings
+at international conference on signal processing and communications
+7. Poulas M (2002) Person identification from the EEG using nonlinear signal classification. In:
+Methods of information in medicine 41:64–75
+8. Samraj A, Sayeed S, Kiong LC, Mastorokis NE (2010) Eliminating forgers based on intra
+trial variability in online signature verification using handglove and photometric signals. J Inf
+Secur 1:23–28
+9. Allen J (2007) Photoplethysmography and its application in clinical physiological
+measurement, IOP publishing. Physiol Meas 28(3):1–39
+10. Mascaro SA, Asada HH (2001) Photoplethysmograph fingernail sensors for measuring finger
+forces without haptic obstruction, IEEE transactions on. Robot Autom 17(5):698–708
+11. Gu YY, Zhang Y, Zhang YT (2003) A novel biometric approach in human identification by
+Photoplethysmographic signals. In: J Inf Technol Appl Biomed
+12. Gu YY, Zhang YT (2003) Photoplethysmographic authentication through fuzzy logic. In: J
+Biomed Eng
+13. Yao J, Sun X, Wan Y (2007) A pilot study on using derivatives of Photoplethysmographic
+signals as a biometric identifier. In: J Eng Med Biol Soc
+14. Waseem O (2009) Microcontroller design and bluetooth signal transmission for the non-
+invasive health monitoring system. In: EE B416 Electrical Engineering Biomedical
+Capstones 17–29
+An Enhanced Intrinsic Biometric in Identifying People
+299

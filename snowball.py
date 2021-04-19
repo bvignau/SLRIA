@@ -47,7 +47,8 @@ def GetReferencesFromPreviousRound(ROUND:int):
     files=os.listdir("bib_round_"+str(ROUND-1))
     for f in files :
         if ".bib" in f :
-            previous.append(ImportBib("bib_round_"+str(ROUND-1)+"/"+f,slr_round=ROUND))
+            for ref in ImportBib("bib_round_"+str(ROUND-1)+"/"+f,slr_round=ROUND) :
+                previous.append(ref)
     return previous
 
 def Round_Merge_All_List(references_lists:list,level:int):

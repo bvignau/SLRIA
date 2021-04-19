@@ -1,0 +1,20 @@
+A. V. Challoner and C. A. Ramsay, “A photoelectric plethys- mograph for the measurement of cutaneous blood flow,” Phys Med Biol., vol. 19(3), pp. 317–28, 1974 May. 
+Y. Y. Gu, Y. Zhang, and Y. T. Zhang, “A novel biometric ap- proach in human verification by photoplethysmographic sig- nals,” in 4th International IEEE EMBS Special Topic Confer- ence on Information Technology Applications in Biomedicine, 2003., April 2003, pp. 13–14. 
+P. Spachos, J. Gao, and D. Hatzinakos, “Feasibility study of photoplethysmographic signals for biometric identification,” in 2011 17th International Conference on Digital Signal Process- ing (DSP), July 2011, pp. 1–5. 
+A. R. Kavsao˘glu, K. Polat, and M. R. Bozkurt, “A novel feature ranking algorithm for biometric recognition with ppg signals,” Computers in Biology and Medicine, vol. 49, no. Supplement C, pp. 1 – 14, 2014. 
+S. A. Israel et al., “Ecg to identify individuals,” Pattern Recog- nition, vol. 38, no. 1, pp. 133 – 142, 2005. 
+H. P. da Silva, A. Fred, A. Lourenc¸o, and A. K. Jain, “Finger ecg signal for user authentication: Usability and performance,” in 2013 IEEE Sixth International Conference on Biometrics: Theory, Applications and Systems (BTAS), Sept 2013, pp. 1–8. 
+Elif Derya ¨Ubeyli, Dean Cvetkovic, and Irena Cosic, “Analysis of human ppg, ecg and eeg signals by eigenvector methods,” Digital Signal Processing, vol. 20, no. 3, pp. 956 – 963, 2010. 
+T. Choudhary and M. S. Manikandan, “Robust photople- thysmographic (ppg) based biometric authentication for wire- less body area networks and m-health applications,” in 2016 Twenty Second National Conference on Communication (NCC), March 2016, pp. 1–6. 
+V. Jindal, J. Birjandtalab, M. B. Pouyan, and M. Nourani, “An adaptive deep learning approach for ppg-based identification,” in 2016 38th Annual International Conference of the IEEE En- gineering in Medicine and Biology Society (EMBC), Aug 2016, pp. 6401–6404. 
+Q. V. Le, “Building high-level features using large scale unsu- pervised learning,” in Acoustics, Speech and Signal Processing (ICASSP), 2013 IEEE International Conference on, May 2013, pp. 8595–8598. 
+C. Segura et al., “Automatic speech feature learning for con- tinuous prediction of customer satisfaction in contact center phone calls,” in Advances in Speech and Language Tech- nologies for Iberian Languages, Cham, 2016, pp. 255–265, Springer International Publishing. 
+Y. Gong and C. Poellabauer, “How do deep convolutional neu- ral networks learn from raw audio waveforms?,” 2018. 
+Z. Zhang, Z. Pi, and B. Liu, “Troika: A general framework for heart rate monitoring using wrist-type photoplethysmographic signals during intensive physical exercise,” IEEE Transactions on Biomedical Engineering, vol. 62, no. 2, pp. 522–531, Feb 2015. 
+J. Murphy and Y. Gitman, “ PulseSensor Open Hardware ,” http://pulsesensor.com/, 2017, 
+Y. LeCun and Y. Bengio, “Convolutional networks for images, speech, and time series,” The handbook of brain theory and neural networks, vol. 3361, no. 10, 1995. 
+A. Krizhevsky, I. Sutskever, and G. E. Hinton, “Imagenet clas- sification with deep convolutional neural networks,” in Ad- vances in neural information processing systems, 2012, pp. 1097–1105. 
+G. Cort`es, J. Luque, J. Fabregat, and J. Esteban, “ Pul- seID Keras code for development and testing purposes,” https://guillemcortes@bitbucket.org/guillemcortes/pulseid- eusipco, 2018. 
+F. Chollet et al., “Keras,” https://github.com/fchollet/keras, 2015. 
+M. Abadi et al., “TensorFlow: Large-scale machine learning on heterogeneous systems,” 2015, Software available from ten- sorflow.org. 
+V. Sze, Y. Chen, T. Yang, and J. S. Emer, “Efficient processing of deep neural networks: A tutorial and survey,” Proceedings of the IEEE, vol. 105, no. 12, pp. 2295–2329, 2017. 2018 26th European Signal Processing Conference (EUSIPCO) ISBN 978-90-827970-1-5 © EURASIP 2018 547 
