@@ -1,0 +1,5 @@
+Recoltes ECG, EMG et PPG sur des patients et compare la possibilité d'identification.
+PPG => Index droit, 10Hz, filtre passe bande 0.5 - 5hz.
+Pour chaque patient, mesure l'interval pic à pic et s'en sert comme base d'identification + cross corelation ? 
+30 patients
+98% avec  PPG

@@ -1,0 +1,3 @@
+title=Fast emotion recognition based on single pulse PPG signal with convolutional neural network
+year=2019
+author=Lee

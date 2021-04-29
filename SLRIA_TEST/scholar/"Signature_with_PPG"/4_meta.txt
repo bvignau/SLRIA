@@ -1,0 +1,3 @@
+title=Algorithmic principles of remote PPG
+year=2016
+author=Wang

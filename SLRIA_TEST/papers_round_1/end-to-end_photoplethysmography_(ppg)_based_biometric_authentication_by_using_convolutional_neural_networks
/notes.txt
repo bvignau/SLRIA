@@ -1,0 +1,3 @@
+Utilise CNN pour ID avec PPG. 2 DB : Troika et PulseID. 78.2% et 83.2% AUC.
+Utilise une partition de personnes enregistrées et imposteurs. Ne dit pas combient pour l'entrainement. Mais utilise pour la phase de validation, des sujets non utilisé en phase d'apprentissage.
+TODO : analyser correctement les données de train et validation

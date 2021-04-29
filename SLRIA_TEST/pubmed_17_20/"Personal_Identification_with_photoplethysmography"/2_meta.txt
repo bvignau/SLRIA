@@ -1,0 +1,3 @@
+title=Long Distance Vital Signs Monitoring with Person Identification for Smart Home Solutions. 
+year=2018
+author=Szankin

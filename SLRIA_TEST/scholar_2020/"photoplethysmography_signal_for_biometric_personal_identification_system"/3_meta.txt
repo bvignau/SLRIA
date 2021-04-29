@@ -1,0 +1,3 @@
+title=Improved Liveness Detection in Dorsal Hand Vein Videos using Photoplethysmography
+year=2020
+author=Schuiki

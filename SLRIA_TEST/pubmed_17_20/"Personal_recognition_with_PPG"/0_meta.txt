@@ -1,0 +1,3 @@
+title=Evaluation of pulse oximeter derived photoplethysmographic signals for obstructive sleep apnea diagnosis
+year=2017
+author=Li

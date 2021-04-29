@@ -1,0 +1,3 @@
+title=Photoplethysmography-based in-ear sensor system for identification of increased stress arousal in everyday life
+year=2017
+author=Lueken

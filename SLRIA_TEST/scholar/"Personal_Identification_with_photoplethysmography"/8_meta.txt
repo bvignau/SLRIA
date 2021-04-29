@@ -1,0 +1,3 @@
+title=Photoplethysmography-based heart rate monitoring in physical activities via joint sparse spectrum reconstruction
+year=2015
+author=Zhang

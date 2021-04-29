@@ -1,0 +1,3 @@
+title=Quantification of vascular function changes under different emotion states: A pilot study.
+year=2017
+author=Xia

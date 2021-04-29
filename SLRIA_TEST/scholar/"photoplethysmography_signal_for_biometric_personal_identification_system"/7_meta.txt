@@ -1,0 +1,3 @@
+title=Human recognition from photoplethysmography (ppg) based on non-fiducial features
+year=2017
+author=Karimian

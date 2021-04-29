@@ -1,0 +1,3 @@
+title=Extraction of heart rate variability from smartphone photoplethysmograms. 
+year=2015
+author=Peng

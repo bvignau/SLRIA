@@ -1,0 +1,3 @@
+title=A method for automatic identification of reliable heart rates calculated from ECG and PPG waveforms
+year=2006
+author=Yu

@@ -1,0 +1,3 @@
+title=Non-invasive monitoring of blood glucose using optical methods for skin spectroscopy-opportunities and recent advances. 
+year=2019
+author=Delbeck

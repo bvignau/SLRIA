@@ -1,0 +1,3 @@
+title=Discriminative Signatures for Remote-PPG. 
+year=2020
+author=Wang

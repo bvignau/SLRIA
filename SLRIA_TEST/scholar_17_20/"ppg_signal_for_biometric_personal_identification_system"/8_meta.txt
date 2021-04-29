@@ -1,0 +1,3 @@
+title=Pattern Analysis Towards Human Verification using Photoplethysmograph Signals
+year=2020
+author=Khan

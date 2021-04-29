@@ -1,0 +1,3 @@
+title=Accurate Heart Rate Monitoring During Physical Exercises Using PPG.
+year=2017
+author=Temko
