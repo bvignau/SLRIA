@@ -1,3 +1,0 @@
-title=A Nonfiducial PPG-Based Subject Authentication Approach Using the Statistical Features of DWT-Based Filtered Signals
-year=2020
-author=Alotaibly

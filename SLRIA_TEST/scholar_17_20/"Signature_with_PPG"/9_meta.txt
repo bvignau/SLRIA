@@ -1,3 +1,0 @@
-title=PPG motion artifact reduction using neural network and spline interpolation
-year=2020
-author=Ghosal

@@ -1,3 +1,0 @@
-title=A novel biometric approach in human verification by photoplethysmographic signals
-year=2003
-author=Gu

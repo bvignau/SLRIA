@@ -1,3 +1,0 @@
-title=Accurate detection of dicrotic notch from PPG signal for telemonitoring applications
-year=2018
-author=Chakraborty

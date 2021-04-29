@@ -1,9 +1,0 @@
-Propose une méthode pour identifier des personnes avec PPG. Soit disant résistant au bruit
-Pour supprimer le bruit : utilise Gaussian Derivative Filter (GDF) => créer un signal Gaussien et convolue avec le PPG
-* segmentation avec detection du pic de la systole
-* Normalisation de la période et alignement des pics
-* création d'un signal moyen comme signature / template d'identifiant
-* Identification en comparaison le plus proche. Test plusieurs métriques : NCC; PRD et WDIST
-MIT BIH database : 250Hz; 30 sujets; dont 6 imposteurs
-Entrainement : signal de 20s pour chaque patients; pour la phase de test créé 567 segments de 10s pour chaque sujets
-PAs vraiment d'apprentissage, juste enrollement et comparaison.

@@ -1,3 +1,0 @@
-title=Identification of Atrial Fibrillation by Quantitative Analyses of Fingertip Photoplethysmogram
-year=2017
-author=Tang

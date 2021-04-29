@@ -1,6 +1,0 @@
-Random forest
-DCT = feature extract => 4-20Hz range
-test DT, KNN Random Forest
-93%, 98%, 99%
-Segmentation
-42 patients, 300Hz, 8min data. Segmentation en 100 prériodes

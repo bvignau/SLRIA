@@ -1,3 +1,0 @@
-title=A New Method for Activity Monitoring Using Photoplethysmography Signals Recorded by Wireless Sensor
-year=2020
-author=Aydemir

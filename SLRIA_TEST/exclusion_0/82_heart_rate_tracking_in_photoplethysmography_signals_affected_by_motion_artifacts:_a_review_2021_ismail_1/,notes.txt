@@ -1,1 +1,0 @@
-Etat de l'art des technique pour détecter le bon rythme cardiaque avec un PPG. HS

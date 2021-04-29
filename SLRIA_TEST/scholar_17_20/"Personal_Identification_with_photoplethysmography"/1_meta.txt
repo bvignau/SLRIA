@@ -1,3 +1,0 @@
-title=Improving photoplethysmographic measurements under motion artifacts using artificial neural network for personal healthcare
-year=2018
-author=Roy

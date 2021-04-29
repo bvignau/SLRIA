@@ -1,3 +1,0 @@
-title=PPG-based finger-level gesture recognition leveraging wearables
-year=2018
-author=Zhao

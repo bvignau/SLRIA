@@ -1,3 +1,0 @@
-title=An adaptive deep learning approach for PPG-based identification. 
-year=2016
-author=Jindal

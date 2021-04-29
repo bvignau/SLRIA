@@ -1,3 +1,0 @@
-title=Motion robust remote-PPG in infrared
-year=2015
-author=Van gastel

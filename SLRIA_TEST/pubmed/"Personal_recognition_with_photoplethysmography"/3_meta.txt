@@ -1,3 +1,0 @@
-title=Emotion Recognition Based on Multiple Physiological Signals. 
-year=2020
-author=Chen

@@ -1,3 +1,0 @@
-title=Embodied Emotion Recognition Based on Life-Logging.
-year=2019
-author=Cho

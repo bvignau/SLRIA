@@ -1,3 +1,0 @@
-title=Enhancement in the design of biometric identification system based on photoplethysmography data
-year=2013
-author=Salanke

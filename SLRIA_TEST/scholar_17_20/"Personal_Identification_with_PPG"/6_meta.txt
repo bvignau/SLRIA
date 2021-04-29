@@ -1,3 +1,0 @@
-title=Making sense of glucose metrics in diabetes: linkage between postprandial glucose (PPG), time in range (TIR) & hemoglobin A1c (A1C)
-year=2020
-author=Martens

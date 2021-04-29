@@ -1,3 +1,0 @@
-title=Simultaneous monitoring of ballistocardiogram and photoplethysmogram using a camera
-year=2016
-author=Shao

@@ -1,3 +1,0 @@
-title=Biometrie identification using photoplethysmography signal
-year=2018
-author=Al-sidani

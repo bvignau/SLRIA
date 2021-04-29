@@ -1,3 +1,0 @@
-title=Transcending conventional biometry frontiers: Diffusive Dynamics PPG Biometry
-year=2020
-author=Pedro-carracedo

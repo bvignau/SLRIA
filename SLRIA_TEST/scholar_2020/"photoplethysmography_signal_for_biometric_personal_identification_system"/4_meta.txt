@@ -1,3 +1,0 @@
-title=Seeing Red: PPG Biometrics Using Smartphone Cameras
-year=2020
-author=Lovisotto

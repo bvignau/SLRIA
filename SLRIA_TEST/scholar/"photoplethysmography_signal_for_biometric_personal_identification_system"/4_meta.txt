@@ -1,3 +1,0 @@
-title=Biometric authentication using photoplethysmography signals
-year=2016
-author=Sarkar

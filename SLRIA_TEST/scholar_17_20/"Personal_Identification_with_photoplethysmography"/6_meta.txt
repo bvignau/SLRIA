@@ -1,3 +1,0 @@
-title=Heart rate monitoring during physical exercise from photoplethysmography using neural network
-year=2018
-author=Zhu

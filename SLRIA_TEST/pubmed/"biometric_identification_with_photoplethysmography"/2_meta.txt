@@ -1,3 +1,0 @@
-title=Living-Skin Classification via Remote-PPG. 
-year=2017
-author=Wang

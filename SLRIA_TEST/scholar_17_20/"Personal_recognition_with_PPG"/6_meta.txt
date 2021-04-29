@@ -1,3 +1,0 @@
-title=ActiPPG: using deep neural networks for activity recognition from wrist-worn photoplethysmography (PPG) sensors
-year=2019
-author=Boukhechba

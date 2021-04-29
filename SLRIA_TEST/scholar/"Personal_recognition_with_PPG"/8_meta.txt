@@ -1,3 +1,0 @@
-title=Dataset from PPG wireless sensor for activity monitoring
-year=2020
-author=Biagetti

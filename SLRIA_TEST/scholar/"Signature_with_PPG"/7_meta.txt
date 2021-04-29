@@ -1,3 +1,0 @@
-title=Impact of makeup on remote-ppg monitoring
-year=2020
-author=Wang

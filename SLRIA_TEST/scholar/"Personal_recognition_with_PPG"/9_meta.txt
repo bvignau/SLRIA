@@ -1,3 +1,0 @@
-title=A Novel personalized motion and noise artifact (MNA) detection method for smartphone photoplethysmograph (PPG) signals
-year=2018
-author=Tabei

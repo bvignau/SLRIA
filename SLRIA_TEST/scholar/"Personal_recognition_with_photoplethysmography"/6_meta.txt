@@ -1,3 +1,0 @@
-title=TROIKA: A general framework for heart rate monitoring using wrist-type photoplethysmographic signals during intensive physical exercise
-year=2014
-author=Zhang

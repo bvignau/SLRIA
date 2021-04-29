@@ -1,3 +1,0 @@
-title=Photoplethysmography Biometric Recognition Model Based on Sparse Softmax Vector and k-Nearest Neighbor
-year=2020
-author=Yang

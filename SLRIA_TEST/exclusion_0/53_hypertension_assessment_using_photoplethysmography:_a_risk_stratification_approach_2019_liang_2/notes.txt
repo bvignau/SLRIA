@@ -1,1 +1,0 @@
-Essaye de trouver la pression de la systole avec PPG pour détecter les problèmes d'hypertension

@@ -1,3 +1,0 @@
-title=Identification of Cerebral Artery Stenosis Using Bilateral Photoplethysmography. 
-year=2018
-author=Kang

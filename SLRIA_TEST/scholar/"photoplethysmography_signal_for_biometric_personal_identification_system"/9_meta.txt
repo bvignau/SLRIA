@@ -1,3 +1,0 @@
-title=A preliminary study on continuous authentication methods for photoplethysmographic biometrics
-year=2013
-author=Bonissi

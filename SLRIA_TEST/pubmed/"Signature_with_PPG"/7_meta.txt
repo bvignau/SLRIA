@@ -1,3 +1,0 @@
-title=Identification of hemodynamically unstable arrhythmias using subcutaneous photoplethysmography. 
-year=2010
-author=Turcott

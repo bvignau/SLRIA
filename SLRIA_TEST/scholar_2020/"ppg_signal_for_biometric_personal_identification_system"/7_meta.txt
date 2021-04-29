@@ -1,3 +1,0 @@
-title=ECG biometric: Spoofing and countermeasures
-year=2020
-author=Karimian

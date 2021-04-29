@@ -1,3 +1,0 @@
-title=A pilot study on using derivatives of photoplethysmographic signals as a biometric identifier
-year=2007
-author=Yao

@@ -1,3 +1,0 @@
-title=Feasibility study of photoplethysmographic signals for biometric identification
-year=2011
-author=Spachos
