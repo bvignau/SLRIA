@@ -1,3 +1,0 @@
-title=Feature extraction for biometric recognition with photoplethysmography signals
-year=2013
-author=Kavsaoglu

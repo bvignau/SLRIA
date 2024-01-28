@@ -1,3 +1,0 @@
-title=REPLACE_ME
-year=REPLACE_ME
-author=REPLACE_ME

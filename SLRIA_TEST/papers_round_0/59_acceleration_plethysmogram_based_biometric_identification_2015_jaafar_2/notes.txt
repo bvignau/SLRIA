@@ -1,1 +1,0 @@
-Essaye de faire de la reconnaissance de personne avec la dérivée seconde d'un PPG (appelé APG)

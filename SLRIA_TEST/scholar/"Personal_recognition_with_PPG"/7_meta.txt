@@ -1,3 +1,0 @@
-title=The study of ppg and apg signals for biometric recognition
-year=2018
-author=Sidek

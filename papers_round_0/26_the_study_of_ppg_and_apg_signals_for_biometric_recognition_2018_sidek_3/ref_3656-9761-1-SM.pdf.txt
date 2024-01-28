@@ -1,6 +1,0 @@
-Identity Theft, “Identity Theft Victim Statistics”, Accessed on 27th  March 2016, http://www.identitytheft.info/victims.aspx.  
-Gu, Y. Y.; Zhang Y:, Zhang, Y. T.; “A Novel Biometric Approach in  Human Verification by Photoplethysmographic Signals”, 4th Annual  IEEE Conference on Information Technology Applications, pp 1-2 ,  2003.  
-Jaafar, N. A. L.; Sidek K. A.; Mohd Azam, S. N. A.; “Acceleration  Plethysmogram Based Biometric Identification “, International  Conference on BioSignal Analysis, Processing and Systems  (ICBAPS), pp 16-21, 26- 28 May 2015.  
-Embedded Lab, “Easy Pulse Sensor Overview”, Accessed on 3rd  October 2016, http://embedded-lab.com/.  
-Dawkins, P.; “Second Derivative for Parametric Equations”, Accessed  on  28th  March  2016,  http://tutorial.math.lamar.edu/Classes/CalcII/ParaTangent.aspx.  
-Elgendi, M.; Fletcher, R..; Norton, I.; Brearley, B.; Abbott, D.; Lovell,  N. H.; Schuurmans, D.; “On Time Domain Analysis of  Photoplethysmogram Signals for Monitoring Heat Stress”, IEEE  Sensors, 1-4 Nov. 2015.         

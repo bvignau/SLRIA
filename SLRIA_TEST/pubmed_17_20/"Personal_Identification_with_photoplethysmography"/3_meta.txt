@@ -1,3 +1,0 @@
-title=Measurement and identification of mental workload during simulated computer tasks with multimodal methods and machine learning. 
-year=2020
-author=Ding

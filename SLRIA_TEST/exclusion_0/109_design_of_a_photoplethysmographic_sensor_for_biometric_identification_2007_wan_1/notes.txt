@@ -1,1 +1,0 @@
-Création d'un capteur PPG pour biometric auth. Discussion autour de l'ajout d'un composant analogique. HS

@@ -1,1 +1,0 @@
-utilise KNN pour identifier 7 patients durant plusierus phase 'assis, sqat etc. PBLM impossible de trouver le papier

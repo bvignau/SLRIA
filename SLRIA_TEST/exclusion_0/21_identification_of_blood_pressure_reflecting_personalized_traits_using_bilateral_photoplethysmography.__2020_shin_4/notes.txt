@@ -1,1 +1,0 @@
-Cherche à mesurer la pression sanguine avec des PPG. HS

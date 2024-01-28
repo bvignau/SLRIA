@@ -1,1 +1,0 @@
-montre qu'il n'est pas possible de forger une signature PPG. HS

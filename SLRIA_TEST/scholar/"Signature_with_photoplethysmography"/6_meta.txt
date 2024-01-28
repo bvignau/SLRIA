@@ -1,3 +1,0 @@
-title=Photoplethysmography revisited: from contact to noncontact, from point to imaging
-year=2015
-author=Sun

@@ -1,1 +1,0 @@
-utilise des caméras PPG + SVM pour détecter les attaques de "fausse veines". Hors sujet

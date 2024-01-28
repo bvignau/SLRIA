@@ -1,1 +1,0 @@
-Créer un algo pour mesurer la qualité d'un siganl PPG et ECG puis compare l'algo avec des humains. HS

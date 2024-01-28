@@ -1,3 +1,0 @@
-title=Photoplethysmographic Waveform in Hyperbaric Environment. 
-year=2019
-author=Pelaez coca

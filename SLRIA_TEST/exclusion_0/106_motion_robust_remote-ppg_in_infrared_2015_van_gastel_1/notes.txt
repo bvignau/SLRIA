@@ -1,1 +1,0 @@
-Mise en place d'un systèmes avec 2 R PPG pour être plus robutes aux mouvements. HS

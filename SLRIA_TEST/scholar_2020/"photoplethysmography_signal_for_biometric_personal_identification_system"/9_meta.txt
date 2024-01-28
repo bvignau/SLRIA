@@ -1,3 +1,0 @@
-title=Biometric identification and authentication based on a new method of a pulse wave contour forming
-year=2020
-author=Fateev

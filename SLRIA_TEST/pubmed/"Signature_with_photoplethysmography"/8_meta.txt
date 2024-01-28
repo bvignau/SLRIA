@@ -1,3 +1,0 @@
-title=Improved motion robustness of remote-PPG by using the blood volume pulse signature. 
-year=2014
-author=Haan

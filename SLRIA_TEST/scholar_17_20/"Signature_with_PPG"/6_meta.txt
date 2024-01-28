@@ -1,3 +1,0 @@
-title=233 U/236 U signature allows to distinguish environmental emissions of civil nuclear industry from weapons fallout
-year=2020
-author=Hain

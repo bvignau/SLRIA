@@ -1,3 +1,0 @@
-title=Data-driven assessment of cardiovascular ageing through multisite photoplethysmography and electrocardiography.
-year=2019
-author=Chiarelli

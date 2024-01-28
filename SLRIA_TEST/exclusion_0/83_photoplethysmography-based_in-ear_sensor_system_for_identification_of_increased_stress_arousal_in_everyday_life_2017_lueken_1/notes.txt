@@ -1,1 +1,0 @@
-Présente un système avec PPG, température et accéléromètre, à mettre dans les oreilles pour détecter le stress.

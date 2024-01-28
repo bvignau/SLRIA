@@ -1,3 +1,0 @@
-title=Unsupervised skin tissue segmentation for remote photoplethysmography
-year=2019
-author=Bobbia

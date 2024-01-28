@@ -1,1 +1,0 @@
-Propose une nouvelle méthode pour détecter correctement le rythme cardiaque avec un PPG durant un effort intense. Challenge car beaucoup de bruit sur le signal. HS

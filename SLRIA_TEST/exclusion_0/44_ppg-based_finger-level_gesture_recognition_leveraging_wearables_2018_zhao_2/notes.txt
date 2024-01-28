@@ -1,1 +1,0 @@
-Reconnaissance des mouvement fins des doigts avec PPG, pour créer de nouvelles IHM, pouvant comprendre le language des signes par ex

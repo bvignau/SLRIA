@@ -1,5 +1,0 @@
-Utilise la logique Fuzzy pour essayer d'identifier des gens avec PPG (2003)
-17 patients, 4 features, 94% accuracy
-Passe bas et passe haut (freq ?)
-Fiducials features
-Met en place une fonctions gaussienne sur chaque paramètre pour chaque patients. LA conserve en BDD, puis pour l'auth, compare la nouvelle avec celle enregistrée.

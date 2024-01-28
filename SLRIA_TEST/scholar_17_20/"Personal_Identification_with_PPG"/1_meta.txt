@@ -1,3 +1,0 @@
-title=Personal Identification via Heartbeat Signal
-year=2018
-author=Horng

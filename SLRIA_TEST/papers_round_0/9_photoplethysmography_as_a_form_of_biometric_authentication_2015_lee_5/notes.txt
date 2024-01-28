@@ -1,1 +1,0 @@
-Etude préliminaire sur l'utilisation de PPG dans un pulse oxymeter comme source d'identificaiton de patients (10 patients)

@@ -1,3 +1,0 @@
-title=A Low-Complexity Compressed Sensing Reconstruction Method for Heart Signal Biometric Recognition. 
-year=2019
-author=Xiao

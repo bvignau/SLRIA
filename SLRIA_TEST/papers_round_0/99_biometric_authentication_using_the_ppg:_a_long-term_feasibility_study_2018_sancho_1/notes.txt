@@ -1,1 +1,0 @@
-Etudie la faisabilité d'utiliser le PPG comme méthode d'auth sur du long terme.

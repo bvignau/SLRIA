@@ -1,1 +1,0 @@
-nouvel algo pour segmenter les pulsations cardiaque sur un PPG. HS

@@ -1,3 +1,0 @@
-title=Diverse R-PPG: Camera-Based Heart Rate Estimation for Diverse Subject Skin-Tones and Scenes
-year=2020
-author=Chari

@@ -1,3 +1,0 @@
-title=Amplitude-selective filtering for remote-PPG
-year=2017
-author=Wang

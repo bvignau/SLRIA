@@ -1,7 +1,0 @@
-Jain A.K, A Ross. S. Prabhakar. An Introduction to Biometric Recognition-IEEE Transactions on circuits and systems for video Technology, 14(1), 2004, 4–20.
-Phua K, Chen J, Dat TH, Shue L (2008) Heart sound as a biometric. Pattern Recognit 41:906–919.
-R. Hoekema, G. J. H. Uijen, and A. van Oosterom, “Geometrical aspects of the interindividual variability of multilead ECG recordings,” IEEE Transactions on Biomedical Engineering, vol.48, no. 5, pp. 551–559, 2001.
-B. P. Simon and C. Eswaran, “An ECG classifier designed using modified decision based neural networks,” Computers and Biomedical Research, vol. 30, no. 4, pp. 257–272, 1997.
-Agrafioti F (2008) Robust subject recognition using the Electrocardiogram. University of Toronto, Toronto, Canada.
-G. Wuebbeler, et al., “Human verification by heart beat signals,” Working Group 8.42, Physikalisch-Technische Bundesanstalt (PTB), Berlin, Germany, 2004, http://www.berlin.ptb.de/8/84/842/BIOMETRIE/842biometriee.html.
-“A novel feature ranking algorithm for biometric recognition with PPG signals”. Comput BiolMed. 2014 Jun; 49: 1–14. doi:10.1016/j.compbiomed.2014.03.005. Epub 2014 Mar 18Reşit Kavsaoğlu A1, Polat K2, Recep Bozkurt M1.

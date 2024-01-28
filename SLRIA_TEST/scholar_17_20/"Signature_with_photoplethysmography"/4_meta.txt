@@ -1,3 +1,0 @@
-title=HRV Performance Analysis in Photoplethysmography and Electrocardiography
-year=2020
-author=Bhowmick

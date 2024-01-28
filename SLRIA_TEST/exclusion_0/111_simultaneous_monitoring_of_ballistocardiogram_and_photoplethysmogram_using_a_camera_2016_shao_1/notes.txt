@@ -1,1 +1,0 @@
-Présente une nouvelle méthode pour mesurer BCG et PPG avec une seule caméra. HS

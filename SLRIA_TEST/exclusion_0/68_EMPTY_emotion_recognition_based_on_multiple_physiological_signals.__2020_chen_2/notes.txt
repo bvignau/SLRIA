@@ -1,1 +1,0 @@
-utilise combinaison multiples signaux : PPG + skin conductivité + respiration etc HS

@@ -1,3 +1,0 @@
-title=Multi-Channel Remote Photoplethysmography Correspondence Feature for 3D Mask Face Presentation Attack Detection
-year=2021
-author=Liu

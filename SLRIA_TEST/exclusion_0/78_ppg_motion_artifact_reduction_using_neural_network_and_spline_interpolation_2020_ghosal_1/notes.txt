@@ -1,1 +1,0 @@
-Alggo de réduction du bruit sur PPG pour mieux identifier le pic to pic. utilise Feed Forward NN. HS

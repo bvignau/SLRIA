@@ -1,3 +1,0 @@
-title=A Smart Biometric Identity Management Framework for Personalised IoT and Cloud Computing-Based Healthcare Services
-year=2021
-author=Farid

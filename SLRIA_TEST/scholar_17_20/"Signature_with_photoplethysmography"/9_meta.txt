@@ -1,3 +1,0 @@
-title=A deep neural network-based pain classifier using a photoplethysmography signal
-year=2019
-author=Lim

@@ -1,1 +1,0 @@
-RDL sur les techniques possibles pour détecter correctement le rythme cardiaque avec un PPG en tenant comptes des interférences. bien mais HS

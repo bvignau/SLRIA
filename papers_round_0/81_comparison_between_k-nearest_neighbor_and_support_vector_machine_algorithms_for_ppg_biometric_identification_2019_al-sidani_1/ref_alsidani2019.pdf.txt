@@ -1,6 +1,0 @@
-J. Han, M. Kamber, J. Pei, Data Mining Concepts and Techniques, 3rd  ed.: Morgan Kaufmann, 2012.  
-A. Al Sidani, B. Ibrahim, A. Cherry, M. Hajj-Hasssan, "Biometric  Identification Using Photoplethysmography Signal," The Third  International Conference on Electrical and Biomedical Engineering,  Clean Energy and Green Computing, pp. 12-15, 2018.  
-S. Huang, N. Cai, P. P. Pacheco, S. Narandes, Y. Wang, and W. Xu,  “Applications of Support Vector Machine (SVM) Learning in Cancer  Genomics,” Pubmed Central, pp. 41-51, Jan-Feb 2018.  
-J. P. Mueller, L. Massaron, Deep Learning For Dummies, John Wiley &  Sons, May 2019.  
-P. H. Charlton, T. Bonnici, L. Tarassenko, J. Alastruey, D. A. Clifton, R.  Beale, and P. J Watkinson, "Extraction of respiratory signals from the  electrocardiogram and photoplethysmogram: technical and physiological  determinants," Institute of Physics and Engineering in Medicine, pp.  669–690, March 2017.  
-K. Polat, M.Recep Bozkurt A. Reşit Kavsaoğlu, "A novel feature  ranking algorithm for biometric recognition with PPG signals,"  Computers in Biology and Medicine, pp. 1-14, March 2014.    2019 Fifth International Conference on Advances in Biomedical Engineering (ICABME) 

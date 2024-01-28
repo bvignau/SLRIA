@@ -1,1 +1,0 @@
-Enregistre PCG et PPG pour identifier les équivalences entre les deux signaux. HS

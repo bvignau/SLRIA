@@ -1,3 +1,0 @@
-title=A novel algorithm for remote photoplethysmography: Spatial subspace rotation
-year=2015
-author=Wang

@@ -1,3 +1,0 @@
-title=EM-Wave Biosensors: A Review of RF, Microwave, mm-Wave and Optical Sensing. 
-year=2019
-author=Mehrota

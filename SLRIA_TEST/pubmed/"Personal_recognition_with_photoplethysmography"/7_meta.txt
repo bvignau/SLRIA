@@ -1,3 +1,0 @@
-title=Instant Stress: Detection of Perceived Mental Stress Through Smartphone Photoplethysmography and Thermal Imaging.
-year=2019
-author=Cho

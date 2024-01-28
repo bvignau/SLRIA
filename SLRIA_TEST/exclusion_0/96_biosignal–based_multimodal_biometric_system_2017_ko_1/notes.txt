@@ -1,2 +1,0 @@
-développe un système pour mesure 3-L ECG et 1 PPG pour identifier des patients.
-Mélange ECG et PPG HS

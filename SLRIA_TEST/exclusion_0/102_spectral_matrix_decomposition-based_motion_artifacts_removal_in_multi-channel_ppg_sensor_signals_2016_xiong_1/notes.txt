@@ -1,1 +1,0 @@
-Mise en place d'une matrice de décomposition spectrale afin d'estimer correctement le rythme cardiaque au cours d'activité sportives. 

@@ -1,1 +1,0 @@
-Utilise le PPG et Deep Belief Network pour mesurer / détecter la douleur d'un patient après une chirurgie. HS

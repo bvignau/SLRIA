@@ -1,3 +1,0 @@
-title=Design of a photoplethysmographic sensor for biometric identification
-year=2007
-author=Wan

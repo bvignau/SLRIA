@@ -1,1 +1,0 @@
-Etude pour présenter des méthodes de mesures des paramètres HRV (Heart Rate Variability) avec un PPG. HS

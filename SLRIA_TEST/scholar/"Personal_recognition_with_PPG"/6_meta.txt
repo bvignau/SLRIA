@@ -1,3 +1,0 @@
-title=An automated algorithm to extract time plane features from the PPG signal and its derivatives for personal health monitoring application
-year=2019
-author=Chakraborty

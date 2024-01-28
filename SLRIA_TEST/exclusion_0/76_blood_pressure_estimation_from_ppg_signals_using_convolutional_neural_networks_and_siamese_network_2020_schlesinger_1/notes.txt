@@ -1,1 +1,0 @@
-Propose deux technique pour mesurer la pression sanguine de manière non invasive. Les techniques sont basé sur le PPG et CNN. HS

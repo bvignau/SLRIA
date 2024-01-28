@@ -1,3 +1,0 @@
-title=Evaluation of the Time Stability and Uniqueness in PPG-Based Biometric System
-year=2020
-author=Hwang

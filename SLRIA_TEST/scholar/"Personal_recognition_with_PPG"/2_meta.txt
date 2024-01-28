@@ -1,3 +1,0 @@
-title=Wearable emotion recognition system based on GSR and PPG signals
-year=2017
-author=Udovicic

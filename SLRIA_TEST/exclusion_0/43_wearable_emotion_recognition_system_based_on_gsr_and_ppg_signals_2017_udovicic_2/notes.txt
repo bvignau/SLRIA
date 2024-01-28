@@ -1,1 +1,0 @@
-Essaye d'utiliser des "wearables" avec PPG et GSR pour mesurer les émotions des gens. HS

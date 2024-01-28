@@ -1,1 +1,0 @@
-utilise PPG et plusieurs algo de ML pour identifier des personnes

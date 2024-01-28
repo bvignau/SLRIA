@@ -1,3 +1,0 @@
-title=Biometrical identification on the basis of photoplethysmogram for automated medical systems
-year=2019
-author=IO

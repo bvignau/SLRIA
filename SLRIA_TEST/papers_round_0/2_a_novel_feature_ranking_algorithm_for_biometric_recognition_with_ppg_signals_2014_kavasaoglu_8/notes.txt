@@ -1,1 +1,0 @@
-Extraction de 40 features de PPG pour identifier des personnes avec un algo de feature ranking

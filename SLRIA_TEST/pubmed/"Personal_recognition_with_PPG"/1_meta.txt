@@ -1,3 +1,0 @@
-title=Multiparameter respiratory rate estimation from the photoplethysmogram.
-year=2013
-author=Karlen

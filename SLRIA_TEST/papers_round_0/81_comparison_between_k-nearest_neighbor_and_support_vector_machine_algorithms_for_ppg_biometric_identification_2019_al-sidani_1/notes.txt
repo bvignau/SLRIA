@@ -1,1 +1,0 @@
-Etude pour montrer la possibilité d'identifier des personnes avec un PPG. Test et compare KNN avec SVM.

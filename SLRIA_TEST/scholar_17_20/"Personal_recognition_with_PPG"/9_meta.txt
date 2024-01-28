@@ -1,3 +1,0 @@
-title=Towards Low-cost Sign Language Gesture Recognition Leveraging Wearables
-year=2019
-author=Zhao

@@ -1,3 +1,0 @@
-title=A new, short-recorded photoplethysmogram dataset for blood pressure monitoring in China
-year=2018
-author=Liang

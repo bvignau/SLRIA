@@ -1,1 +1,0 @@
-KNN + PPG pour système d'identificaiton biométrique

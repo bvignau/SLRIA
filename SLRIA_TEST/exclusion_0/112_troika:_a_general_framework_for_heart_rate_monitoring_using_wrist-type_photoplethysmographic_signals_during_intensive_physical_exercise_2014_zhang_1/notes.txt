@@ -1,1 +1,0 @@
-Création d'un framework extrêmement résistant au bruit pour la détection du rythme cardiaque avec PPG. HS
