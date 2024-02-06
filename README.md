@@ -3,6 +3,7 @@ Systematic Literrature Review assisted with IA
 
 # Install
 
+Before installing the project, it is recomended to create or use a virtual env using venv or conda virtual environment.
 run the following commands : 
 
 ```bash
@@ -19,8 +20,19 @@ If you want to install it globally and have a cli you can use the following comm
 sudo mkdir /usr/bin/slria
 sudo cp *.py /usr/bin/slria/
 sudo cp empty.conf /usr/bin/slria
-echo 'alias slria="python /usr/bin/slria/main.py"' >> ~/.zshrc
+echo 'alias slria="python3 /usr/bin/slria/main.py"' >> ~/.zshrc
 ```
+
+To use with Docker
+
+```bash
+sudo docker build -t "slria" .
+mkdir TUTO_DOCKER_SLRIA
+sudo docker run -dit --name slria-tuto -v ./TUTO_DOCKER_SLRIA/:/home/ slria
+sudo docker exec -it slria-tuto /bin/bash
+```
+
+Once in the docker cd in /home then you can start to use the slria command line.
 
 # HOW TO USE
 

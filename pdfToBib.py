@@ -25,7 +25,7 @@ def ExtractTextFromPDF(filename,path):
         with fitz.open(path+filename) as doc:
             text = ""
             for page in doc:
-                text += page.getText()
+                text += page.get_text()
         with open(path+"/text_"+filename+".txt", 'w', encoding='utf-8') as of:
             of.write(text)
     else :

@@ -46,8 +46,8 @@ def init():
     if os.path.isdir(BASE_DIR) == False:
         pmkdir(BASE_DIR)
         print("[+] The Project Folder will contain later the folders for the pdf to analyse")
-        #srcConf=SOURCE_DIR+"empty.conf"
-        srcConf="empty.conf"
+        srcConf=SOURCE_DIR+"empty.conf"
+        # srcConf="empty.conf"
         if os.path.isfile("SLR.conf"):
             print("[!] Error SLR.conf already created")
             print("[!] Please complete it")
@@ -79,7 +79,7 @@ def main():
             # merge 1st round
             requests, COMPARISON, KWORDS, NKWORDS, ROUND, PAPERS_BY_REQUEST, DATABASES = ConfigParse(BASE_DIR, False)
             sorted_papers,merged_papers=MergeRequests(requests,PAPERS_BY_REQUEST,DATABASES,BASE_DIR)
-            titles_sorted=[t.replace("_"," ") in sorted_papers.keys()]
+            titles_sorted=[t.replace("_"," ") for t in sorted_papers]
             StatsForRequests(sorted_papers,merged_papers,PAPERS_BY_REQUEST,requests,DATABASES,BASE_DIR)
             GenDirectoriesForPapers(merged_papers,sorted_papers,BASE_DIR,0)
             with open("papers_r0.txt","w") as tit_files :
@@ -97,7 +97,7 @@ def main():
             # for each folder, extract References
             # ASK to check txt file
         if arg.command == "merge" :
-            print("TOFO")
+            #print("TODO")
             requests, COMPARISON, KWORDS, NKWORDS, ROUND, PAPERS_BY_REQUEST, DATABASES = ConfigParse(BASE_DIR, False)
             folder_path="./papers_round_"+str(ROUND)
             os.chdir(BASE_DIR)

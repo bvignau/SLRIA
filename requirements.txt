@@ -1,4 +1,4 @@
-bibtexparser
-PyMuPDF
-jellyfish
+bibtexparser==1.4.1
+PyMuPDF==1.23.21
+jellyfish==1.0.3
 #anystyle-cli (ruby app for parsing ref to install)
